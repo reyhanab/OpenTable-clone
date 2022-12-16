@@ -15,8 +15,17 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(255), nullable=False, unique=True)
     hashed_password = db.Column(db.String(255), nullable=False)
     phone_number = db.Column(db.String(10))
-    city = db.Column(db.string(40))
+    city = db.Column(db.String(40))
     address = db.Column(db.String(255))
+
+    reservations = db.relationship("Reservation", back_populates="user",
+         cascade="all, delete-orphan")
+
+    reviews = db.relationship("Review", back_populates="user",
+         cascade="all, delete-orphan")
+
+    saved = db.relationship("Saved", back_populates="user",
+         cascade="all, delete-orphan")
 
     @property
     def password(self):

@@ -1,0 +1,28 @@
+from .db import db,  environment, SCHEMA
+
+class Reservation(db.Model):
+    __tablename__ = 'reservations'
+
+    if environment == "production":
+        __table_args__ = {'schema': SCHEMA}
+
+    id = db.Column(db.Integer, primary_key=True)
+    count = db.Column(db.Integer, nullable=False)
+    date = db.Column(db.Date, nullable=False)
+    time = db.Column(db.Time, nullable=False)
+    restaurant_id = db.Column(db.Integer, db.ForeignKey("restaurants.id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+
+    user = db.relationship("User", back_populates="reservations")
+    restaurant = db.relationship("Restaurant", back_populates="reservations")
+
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'count': self.count,
+            'date': self.date,
+            'time': self.time,
+            'user_id': self.user_id,
+            'restaurant_id': self.restaurant_id,
+        }
