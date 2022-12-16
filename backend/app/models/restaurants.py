@@ -19,7 +19,7 @@ class Restaurant(db.Model):
     lng = db.Column(db.DECIMAL)
     preview_image = db.Column(db.String)
 
-    menu_items = db.relationship("Menu_item", secondary = "menus", backref = "restaurants")
+    menus = db.relationship("Menu", back_populates = "restaurant")
 
     reservations = db.relationship("Reservation", back_populates="restaurant",
          cascade="all, delete-orphan")
@@ -42,6 +42,6 @@ class Restaurant(db.Model):
             'description': self.description,
             'city': self.city,
             'address': self.address,
-            'rating': self.rating,
+            'rating': float(self.rating),
             'preview_image': self.preview_image
         }

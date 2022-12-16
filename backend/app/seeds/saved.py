@@ -1,28 +1,27 @@
-from app.models import db, Reservation, environment, SCHEMA
-import datetime
+from app.models import db, Saved, environment, SCHEMA
 
-reservations = [
+
+saved = [
     {
-        "count":2,
-        "date":datetime.date(2022,12,16),
-        "time":datetime.time(21,0,0),
         "user_id":1 ,
-        "restaurant_id":1
+        "restaurant_id":1,
     },
     {
-        "count":2,
-        "date":datetime.date(2022,12,16),
-        "time":datetime.time(21,0,0),
+        "user_id":1 ,
+        "restaurant_id":2,
+    },
+    {
         "user_id":2 ,
-        "restaurant_id":2
+        "restaurant_id":2,
     }
+
 ]
 
 
 # Adds a demo user, you can add other users here if you want
-def seed_reservations():
+def seed_saved():
 
-    db.session.add_all([Reservation(**reservation) for reservation in reservations])
+    db.session.add_all([Saved(**item) for item in saved])
     db.session.commit()
 
 
@@ -32,10 +31,10 @@ def seed_reservations():
 # incrementing primary key, CASCADE deletes any dependent entities.  With
 # sqlite3 in development you need to instead use DELETE to remove all data and
 # it will reset the primary keys for you as well.
-def undo_reservations():
+def undo_saved():
     if environment == "production":
-        db.session.execute(f"TRUNCATE table {SCHEMA}.reservations RESTART IDENTITY CASCADE;")
+        db.session.execute(f"TRUNCATE table {SCHEMA}.saved RESTART IDENTITY CASCADE;")
     else:
-        db.session.execute("DELETE FROM reservations")
+        db.session.execute("DELETE FROM saved")
 
     db.session.commit()

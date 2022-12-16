@@ -12,7 +12,7 @@ restaurants = [
         "capacity":20,
         "lat":42.62791074578997,
         "lng":-83.00381527246627,
-        "preveiw_image":"https://resizer.otstatic.com/v2/photos/wide-huge/3/49675557.png"
+        "preview_image":"https://resizer.otstatic.com/v2/photos/wide-huge/3/49675557.png"
     },
     {
         "name":"Kona Grill",
@@ -25,7 +25,7 @@ restaurants = [
         "capacity":20,
         "lat":42.561880022953204,
         "lng":-83.14689190130257,
-        "preveiw_image":"https://resizer.otstatic.com/v2/photos/wide-huge/3/50237353.jpg"
+        "preview_image":"https://resizer.otstatic.com/v2/photos/wide-huge/3/50237353.jpg"
     }
 ]
 

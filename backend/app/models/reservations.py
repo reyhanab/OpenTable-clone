@@ -1,4 +1,4 @@
-from .db import db,  environment, SCHEMA
+from .db import db,  environment, SCHEMA, add_prefix_for_prod
 
 class Reservation(db.Model):
     __tablename__ = 'reservations'
@@ -10,8 +10,8 @@ class Reservation(db.Model):
     count = db.Column(db.Integer, nullable=False)
     date = db.Column(db.Date, nullable=False)
     time = db.Column(db.Time, nullable=False)
-    restaurant_id = db.Column(db.Integer, db.ForeignKey("restaurants.id"), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    restaurant_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod("restaurants.id")), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod("users.id")), nullable=False)
 
     user = db.relationship("User", back_populates="reservations")
     restaurant = db.relationship("Restaurant", back_populates="reservations")

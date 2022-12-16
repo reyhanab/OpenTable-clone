@@ -11,7 +11,7 @@ class Menu_item(db.Model):
     description = db.Column(db.Text(1000), nullable=False)
     price = db.Column(db.DECIMAL)
 
-    restaurants = db.relationship("Restaurant", secondary = "menus", backref = "menu_items")
+    menus = db.relationship("Menu", back_populates = "menu_item")
 
 
     def to_dict(self):
@@ -19,6 +19,6 @@ class Menu_item(db.Model):
             'id': self.id,
             'name': self.name,
             'description': self.description,
-            'price': self.price,
+            'price': float(self.price)
             # 'restaurant_id': self.restaurant_id,
         }

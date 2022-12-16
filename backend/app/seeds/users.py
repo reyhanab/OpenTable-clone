@@ -1,4 +1,4 @@
-from app.models import db, User, environment, SCHEMA
+from app.models import db, User,Reservation, environment, SCHEMA
 
 
 # Adds a demo user, you can add other users here if you want
@@ -14,6 +14,7 @@ def seed_users():
     db.session.add(marnie)
     db.session.add(bobbie)
     db.session.commit()
+
 
 
 # Uses a raw SQL query to TRUNCATE or DELETE the users table. SQLAlchemy doesn't

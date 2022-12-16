@@ -1,4 +1,4 @@
-from .db import db,  environment, SCHEMA
+from .db import db,  environment, SCHEMA, add_prefix_for_prod
 
 class Review(db.Model):
     __tablename__ = 'reviews'
@@ -10,8 +10,8 @@ class Review(db.Model):
     rating = db.Column(db.DECIMAL, nullable=False)
     review = db.Column(db.Text(2000), nullable=False)
     edited = db.Column(db.Boolean, default=False)
-    restaurant_id = db.Column(db.Integer, db.ForeignKey("restaurants.id"), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
+    restaurant_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod("restaurants.id")), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey(add_prefix_for_prod("users.id")), nullable=False)
 
     user = db.relationship("User", back_populates="reviews")
     restaurant = db.relationship("Restaurant", back_populates="reviews")
@@ -20,8 +20,9 @@ class Review(db.Model):
     def to_dict(self):
         return {
             'id': self.id,
-            'rating': self.rating,
+            'rating': float(self.rating),
             'review': self.review,
             'user_id': self.user_id,
             'restaurant_id': self.restaurant_id,
+            'edited':self.edited
         }
