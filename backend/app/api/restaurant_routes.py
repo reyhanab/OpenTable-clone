@@ -1,7 +1,9 @@
 from flask import Blueprint, request
-from app.models import Restaurant, Menu, Review, db
+from app.models import Restaurant, Menu, Review, Reservation, db
 from flask_login import current_user, login_required
-from app.forms import ReviewForm
+from app.forms import ReviewForm, ReservationForm
+import datetime
+from sqlalchemy import func
 from .auth_routes import validation_errors_to_error_messages
 
 
@@ -59,4 +61,42 @@ def add_review(restaurant_id):
         db.session.add(review)
         db.session.commit()
         return review.to_dict()
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+
+
+#Create a reservation for a restaurant
+@restaurant_routes.route('/<int:restaurant_id>/reservations', methods=['POST'])
+@login_required
+def add_reservation(restaurant_id):
+
+    form = ReservationForm()
+    form["csrf_token"].data = request.cookies["csrf_token"]
+    count = form.data["count"]
+    date = form.data["date"]
+    time = form.data["time"]
+    hour = time.strftime("%H")
+    start_hour = datetime.time(int(hour), 0)
+    end_hour = datetime.time(int(hour), 59)
+
+    reserved = db.session.query(Reservation, func.sum(Reservation.count))\
+        .filter(Reservation.time <= end_hour).filter(Reservation.time >= start_hour)\
+        .group_by(Reservation.date).first()
+ 
+    restaurant = Restaurant.query.get_or_404(restaurant_id)
+    if reserved is None or len(reserved) == 0: valid_reserveation = True
+    else: valid_reserveation = count + reserved[1] <= restaurant.capacity
+
+    if form.validate_on_submit():
+        if valid_reserveation:
+            reservation = Reservation(
+                user_id = current_user.id,
+                restaurant_id = restaurant_id,
+                count = count,
+                date = date,
+                time = time
+            )
+            db.session.add(reservation)
+            db.session.commit()
+            return reservation.to_dict()
+        return {"message": "No capacity at this time"}
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401

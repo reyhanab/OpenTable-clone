@@ -22,7 +22,7 @@ class Reservation(db.Model):
             'id': self.id,
             'count': self.count,
             'date': self.date,
-            'time': self.time,
+            'time': str(self.time),
             'user_id': self.user_id,
             'restaurant_id': self.restaurant_id,
         }
