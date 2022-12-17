@@ -1,5 +1,5 @@
 from flask import Blueprint, request
-from app.models import Restaurant, Menu, Review, Reservation, db
+from app.models import Restaurant, Menu, Review, Reservation,Image, db
 from flask_login import current_user, login_required
 from app.forms import ReviewForm, ReservationForm
 import datetime
@@ -81,7 +81,7 @@ def add_reservation(restaurant_id):
     reserved = db.session.query(Reservation, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour).filter(Reservation.time >= start_hour)\
         .group_by(Reservation.date).first()
- 
+
     restaurant = Restaurant.query.get_or_404(restaurant_id)
     if reserved is None or len(reserved) == 0: valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
@@ -100,3 +100,22 @@ def add_reservation(restaurant_id):
             return reservation.to_dict()
         return {"message": "No capacity at this time"}
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+
+
+#Get all reservations of a restaurant
+@restaurant_routes.route('/<int:restaurant_id>/reservations', methods=['GET'])
+@login_required
+def get_reservations(restaurant_id):
+
+    reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id).all()
+    return {"Reservations":[reservation.to_dict()
+                           for reservation in reservations]}
+
+
+#Get all images of a restaurant
+@restaurant_routes.route('/<int:restaurant_id>/images', methods=['GET'])
+def get_images(restaurant_id):
+
+    images = Image.query.filter(Image.restaurant_id == restaurant_id).all()
+    return {"Images":[image.to_dict()
+                           for image in images]}
