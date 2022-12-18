@@ -1,6 +1,8 @@
-from flask import Blueprint, jsonify
-from flask_login import login_required
-from app.models import User, Saved
+from flask import Blueprint, jsonify, redirect, url_for, request
+from flask_login import login_required, current_user
+from app.models import User, Saved, db
+from app.forms import EditProfileForm
+from .auth_routes import validation_errors_to_error_messages
 
 user_routes = Blueprint('users', __name__)
 
@@ -34,5 +36,29 @@ def get_saved(id):
                            for saved in saved_rests]}
 
 
+#Delete a user profile
+@user_routes.route('/profile', methods=['DELETE'])
+@login_required
+def delete_user():
+
+    db.session.delete(current_user)
+    db.session.commit()
+    return jsonify({"message":"Successfully deleted"})
+
+
 #Edit user profile
-# user_routes.route('/<int:id>/edit', methods=['PUT'])
+@user_routes.route('/profile', methods=['PUT'])
+@login_required
+def edit_user_profile():
+
+    form = EditProfileForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+
+    if form.validate_on_submit():
+        for key, val in form.data.items():
+            if val:
+                setattr(current_user, key, val)
+        db.session.commit()
+        return current_user.to_dict()
+
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
