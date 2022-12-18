@@ -24,7 +24,7 @@ export const authenticate = () => async (dispatch) => {
     if (data.errors) {
       return;
     }
-  
+
     dispatch(setUser(data));
   }
 }
@@ -40,8 +40,8 @@ export const login = (email, password) => async (dispatch) => {
       password
     })
   });
-  
-  
+
+
   if (response.ok) {
     const data = await response.json();
     dispatch(setUser(data))
@@ -70,19 +70,20 @@ export const logout = () => async (dispatch) => {
 };
 
 
-export const signUp = (username, email, password) => async (dispatch) => {
+export const signUp = (firstName , lastName, email, password) => async (dispatch) => {
   const response = await fetch('/api/auth/signup', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      username,
+      first_name: firstName,
+      last_name: lastName,
       email,
       password,
     }),
   });
-  
+
   if (response.ok) {
     const data = await response.json();
     dispatch(setUser(data))
@@ -96,6 +97,50 @@ export const signUp = (username, email, password) => async (dispatch) => {
     return ['An error occurred. Please try again.']
   }
 }
+
+export const editProfile =
+  ({firstName, lastName, email, phoneNumber, city, address }) =>
+  async (dispatch) => {
+    const res = await fetch(`/api/users/profile`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        first_name: firstName,
+        last_name: lastName,
+        email,
+        phone_number: phoneNumber,
+        city,
+        address
+      }),
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      dispatch(setUser(data));
+      return null;
+    } else if (res.status < 500) {
+      const data = await res.json();
+      if (data.errors) {
+        return data.errors;
+      }
+    } else {
+      return ["An error occurred. Please try again."];
+    }
+  };
+
+  export const deleteProfile = () => async (dispatch) => {
+    const res = await fetch(`/api/users/profile`, {
+      method: "DELETE",
+    });
+
+    if (res.ok) {
+      dispatch(removeUser());
+      return { message: "Deleted Profile" };
+    }
+  };
+
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {

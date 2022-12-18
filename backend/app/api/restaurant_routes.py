@@ -18,6 +18,14 @@ def load_restaurants():
                            for restaurant in restaurants]}
 
 
+#Get details of a restaurant
+@restaurant_routes.route('/<int:restaurant_id>', methods = ['GET'])
+def load_details(restaurant_id):
+
+    restaurant = Restaurant.query.get_or_404(restaurant_id)
+    return restaurant.to_dict()
+
+
 #Get restaurant menus
 @restaurant_routes.route('/<int:restaurant_id>/menus', methods=['GET'])
 def load_menus(restaurant_id):
