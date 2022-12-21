@@ -46,6 +46,8 @@ const restaurantsReducer = (state = {}, action) => {
                 ...state,
                 [action.restaurant.id]: { ...state[action.restaurant.id], ...action.restaurant },
             }
+        default:
+            return state;
     }
 }
 

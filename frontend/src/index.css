@@ -1,1 +1,12 @@
 /* TODO Add site wide styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .time-btn {
+      @apply py-1 px-1.5 bg-red-600 text-sm text-white rounded-md shadow-md focus:outline-none;
+    }
+}
+
