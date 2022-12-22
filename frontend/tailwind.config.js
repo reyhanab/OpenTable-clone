@@ -14,7 +14,8 @@ module.exports = {
         cyan:colors.cyan,
         sky: colors.sky,
         'gdblue': '#142149',
-        'glblue': "#72788e"
+        'glblue': '#72788e',
+        'signup_blue': '#257f9f'
       }
     }
   },

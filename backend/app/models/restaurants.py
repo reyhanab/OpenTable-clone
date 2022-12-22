@@ -43,5 +43,6 @@ class Restaurant(db.Model):
             'city': self.city,
             'address': self.address,
             'rating': float(self.rating),
-            'preview_image': self.preview_image
+            'preview_image': self.preview_image,
+            'num_of_reviews': len(self.reviews)
         }
