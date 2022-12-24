@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Modal } from '../../context/Modal';
 import LogoutButton from '../auth/LogoutButton';
 import SignupModal from './SignupModal';
+import SigninModal from './SigninModal';
 
 const NavBar = () => {
 
@@ -15,9 +16,9 @@ const NavBar = () => {
     setSignupModal((state) => !state)
   }
 
-  // const toggleSigninModal = () =>{
-  //   setSigninModal((state) => !state)
-  // }
+  const toggleSigninModal = () =>{
+    setSigninModal((state) => !state)
+  }
 
   return (
     <>
@@ -44,7 +45,7 @@ const NavBar = () => {
               </button>
               <button
                 className='text-xs w-20 h-8 border border-gray-300 rounded-sm'
-                // onClick={toggleSigninModal}
+                onClick={toggleSigninModal}
                 >Sign in
               </button>
             </div>
@@ -67,6 +68,16 @@ const NavBar = () => {
         onClose={toggleSignupModal}>
           <SignupModal
             onClose={toggleSignupModal}
+          />
+        </Modal>
+      )}
+
+      {signinModal && (
+        <Modal
+        className="w-64 h-96 bg-white"
+        onClose={toggleSigninModal}>
+          <SigninModal
+            onClose={toggleSigninModal}
           />
         </Modal>
       )}

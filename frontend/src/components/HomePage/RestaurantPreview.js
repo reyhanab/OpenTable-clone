@@ -7,11 +7,11 @@ const RestaurantPreview = ({restaurant, takeout = false}) =>{
 
 
     return (
-        <div className="flex flex-col w-64 h-72 rounded border border-gray-400/75 transition
+        <div className="flex flex-col w-60 h-72 rounded border border-gray-400/75 transition
         transform hover:-translate-y-1.5 motion-reduce:transition-none
         motion-reduce:hover:transform-none hover:shadow-lg">
             <div >
-                <img className="rounded-t h-32 w-64"
+                <img className="rounded-t h-32 w-60 max-w-4xl"
                 src={restaurant?.preview_image} />
             </div>
             <div className="m-2.5">

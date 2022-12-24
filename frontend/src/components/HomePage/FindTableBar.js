@@ -16,7 +16,7 @@ const FindTableBar = () => {
                 className="h-10 w-40 border rounded-l"
                 type="date"
                 value={date}
-                // placeholder="12-23-2022"
+                placeholder="12-23-2022"
                 onChange={(e) => setDate(e.target.value)}
                 >
                 </input>
