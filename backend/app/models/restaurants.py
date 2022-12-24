@@ -10,7 +10,7 @@ class Restaurant(db.Model):
     name = db.Column(db.String(40), nullable=False)
     description = db.Column(db.Text(2000), nullable=False)
     type = db.Column(db.String(40), nullable=False)
-    phone_number = db.Column(db.String(10))
+    phone_number = db.Column(db.String)
     city = db.Column(db.String(40), nullable=False)
     address = db.Column(db.String(255), nullable=False)
     rating = db.Column(db.DECIMAL)
@@ -39,6 +39,7 @@ class Restaurant(db.Model):
             'id': self.id,
             'name': self.name,
             'type': self.type,
+            'phone_number': self.phone_number,
             'description': self.description,
             'city': self.city,
             'address': self.address,

@@ -3,36 +3,38 @@ import getDate from "../Utills/GetDate";
 
 const FindTableBar = () => {
 
-    const [date, setDate] = useState();
+    const [date, setDate] = useState("2022-12-23");
     const [time, setTime] = useState();
     const [people, setPeople] = useState(2)
 
 
     return (
-        <div className="flex items-center space-x-4 mt-5">
+        <div className="flex items-center space-x-4 mt-7">
             <div >
 
                 <input
-                className="h-10 w-36 border rounded-l"
+                className="h-10 w-40 border rounded-l"
                 type="date"
                 value={date}
+                // placeholder="12-23-2022"
                 onChange={(e) => setDate(e.target.value)}
                 >
                 </input>
                 <input
                 type="time"
-                className="h-10 w-36"
+                className="h-10 w-40"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
                 ></input>
                 <input
-                className="h-10 w-36 border rounded-r"
+                className="h-10 w-40 border rounded-r"
                 type="number"
                 value={people}
+                placeholder="2"
                 onChange={(e) => setPeople(e.target.value)}
                 ></input>
             </div>
-            <button className=" bg-red-600 w-32 h-10 border border-red-600 rounded text-sm"
+            <button className=" bg-red-600 w-36 h-10 border border-red-600 rounded text-sm"
             >Let's go</button>
             {/* <svg
             viewBox="0 0 24 24"
