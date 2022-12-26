@@ -17,6 +17,7 @@ class User(db.Model, UserMixin):
     phone_number = db.Column(db.String(10))
     city = db.Column(db.String(40))
     address = db.Column(db.String(255))
+    profile_picture = db.Column(db.String)
 
     reservations = db.relationship("Reservation", back_populates="user",
          cascade="all, delete-orphan")
@@ -43,5 +44,7 @@ class User(db.Model, UserMixin):
             'id': self.id,
             'first_name': self.first_name,
             'last_name': self.last_name,
-            'email': self.email
+            'email': self.email,
+            'prfile_picture': self.profile_picture
+
         }

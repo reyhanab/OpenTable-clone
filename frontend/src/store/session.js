@@ -99,7 +99,7 @@ export const signUp = (firstName , lastName, email, password) => async (dispatch
 }
 
 export const editProfile =
-  ({firstName, lastName, email, phoneNumber, city, address }) =>
+  ({firstName, lastName, email, phoneNumber, city, address, profilePicture }) =>
   async (dispatch) => {
     const res = await fetch(`/api/users/profile`, {
       method: "PUT",
@@ -111,6 +111,7 @@ export const editProfile =
         last_name: lastName,
         email,
         phone_number: phoneNumber,
+        profile_picture: profilePicture,
         city,
         address
       }),

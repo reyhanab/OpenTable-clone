@@ -9,6 +9,7 @@ import UsersList from './components/UsersList';
 import User from './components/User';
 import { authenticate } from './store/session';
 import { HomePage } from './components/HomePage';
+import Profile from './components/UserProfile/Profile';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -42,7 +43,7 @@ function App() {
           <UsersList/>
         </ProtectedRoute>
         <ProtectedRoute path='/users/:userId' exact={true} >
-          <User />
+          <Profile />
         </ProtectedRoute>
         <Route path='/' exact={true} >
           <HomePage />

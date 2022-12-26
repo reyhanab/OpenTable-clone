@@ -1,8 +1,8 @@
-"""creating tables
+"""creating models
 
-Revision ID: 31fe0aaed96b
+Revision ID: 8491bae5f0ce
 Revises: 
-Create Date: 2022-12-16 11:32:02.663691
+Create Date: 2022-12-25 17:34:30.894982
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '31fe0aaed96b'
+revision = '8491bae5f0ce'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -30,7 +30,7 @@ def upgrade():
     sa.Column('name', sa.String(length=40), nullable=False),
     sa.Column('description', sa.Text(length=2000), nullable=False),
     sa.Column('type', sa.String(length=40), nullable=False),
-    sa.Column('phone_number', sa.String(length=10), nullable=True),
+    sa.Column('phone_number', sa.String(), nullable=True),
     sa.Column('city', sa.String(length=40), nullable=False),
     sa.Column('address', sa.String(length=255), nullable=False),
     sa.Column('rating', sa.DECIMAL(), nullable=True),
@@ -49,6 +49,7 @@ def upgrade():
     sa.Column('phone_number', sa.String(length=10), nullable=True),
     sa.Column('city', sa.String(length=40), nullable=True),
     sa.Column('address', sa.String(length=255), nullable=True),
+    sa.Column('profile_picture', sa.String(), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('email')
     )

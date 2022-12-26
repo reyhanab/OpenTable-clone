@@ -44,7 +44,7 @@ const SignupModal = ({onClose}) => {
                         >Enter some information about yourself.</span>
                     </div>
                     <svg
-                    onClick={(e) => onClose()}
+                    onClick={e => onClose()}
                     className="w-6 h-6 ml-auto cursor-pointer"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"

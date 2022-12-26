@@ -18,3 +18,4 @@ class EditProfileForm(FlaskForm):
                                optional, Length(min=10, max=10, message="Invalid phone number.")])
     city = StringField('city', validators=[optional])
     address = StringField('address', validators=[optional])
+    profile_picture = StringField('profile_picture', validators=[optional])
