@@ -109,15 +109,29 @@ const Profile = () =>{
                     >
                 </input>
             </div>
-            <div>
-                Profile picture
+            <div
+            className="flex flex-row items-center"
+            >
+                <p className="pr-4">
+                    Profile picture
+                </p>
                 <input
                 type="file"
                 accept="image/*"
                 onChange={updateImage}
                 >
+
                 </input>
+                {
+                user.profile_picture && (
+                <img
+                className='w-8 h-8 border rounded-full'
+                src={user?.profile_picture}
+                />
+                )
+                }
                 {(imageLoading) && <p>Loading ...</p>}
+
             </div>
             <button
                     type="submit"

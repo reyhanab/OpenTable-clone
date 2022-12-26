@@ -1,6 +1,7 @@
 
-const getDate = () => {
-    const date = new Date();
+const getDate = (date) => {
+    let newDate = new Date(date);
+    newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
     const months = [
       "JAN",
       "FEB",
@@ -15,9 +16,9 @@ const getDate = () => {
       "NOV",
       "DEC",
     ];
-    const month = date.getMonth();
-    const day = date.getDate();
-    const year = date.getFullYear();
+    const month = newDate.getMonth();
+    const day = newDate.getDate();
+    const year = newDate.getFullYear();
 
     let result = `${months[month]} ${day} ${year}`;
 

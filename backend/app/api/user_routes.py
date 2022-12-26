@@ -60,7 +60,6 @@ def edit_user_profile():
     form = EditProfileForm()
     form['csrf_token'].data = request.cookies['csrf_token']
 
-    print("Image", image)
     if not allow_file(image.filename):
         return {"errors": "file type not permitted"}
 

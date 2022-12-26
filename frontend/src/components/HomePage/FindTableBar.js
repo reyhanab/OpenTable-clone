@@ -1,19 +1,29 @@
 import { useState, useRef } from "react";
+import { applyMiddleware } from "redux";
 import getDate from "../Utills/GetDate";
+import getTime from "../Utills/GetTime";
+import getTimeNav, { allTimes } from "../Utills/GetTimeNavbar";
 
 const FindTableBar = () => {
 
 	const datePicker = useRef(null)
-    const [date, setDate] = useState(getDate());
-    const [time, setTime] = useState();
+	const timePicker = useRef(null)
+    const [date, setDate] = useState(getDate(new Date()));
+    const [time, setTime] = useState(getTimeNav());
     const [people, setPeople] = useState(2)
 
+	const times = allTimes()
+
 	const clickDatePicker = (e) => {
-		console.log(datePicker.current)
-		// console.log(datePicker.current.showDateTimePicker)
         datePicker.current.showPicker()
 
 	}
+	const clickTimePicker = (e) => {
+		e.preventDefault();
+        timePicker.current.click()
+	}
+
+
 
     return (
         <div className="flex items-center space-x-4 mt-7">
@@ -22,14 +32,13 @@ const FindTableBar = () => {
 					<input
 						className="w-[100%] h-[100%] z-[-1] absolute"
 						type="date"
-						onChange={(e) => setDate(e.target.value)}
+						onChange={(e) => setDate(getDate(e.target.value))}
 						ref={datePicker}
 					>
 					</input>
 					<div className='border-y border-r h-10
 									inline-flex w-[100%] text-black bg-white
-									items-center justify-around
-									'
+									items-center justify-around rounded-l'
 						 onClick={(e) => clickDatePicker()}
 									>
 						<span className='inline-block leading-none h-6 w-6 min-w-[1.5rem]'>
@@ -48,14 +57,38 @@ const FindTableBar = () => {
 						{date}
 					</div>
 				</div>
-                <input
+                {/* <input
                 type="time"
-                className="h-10 w-40"
+                className="h-10 w-40 text-black"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                ></input>
+                ></input> */}
+				<div className="inline-flex items-center justify-end h-10 w-40 cursor-pointer relative">
+					<select
+					ref={timePicker}
+					className="w-[100%] h-[100%] z-[-1] absolute"
+					onChange={(e) => setTime(getTimeNav(e.target.value) )}
+					>
+						{
+							times.map((time, i) =>{
+								return <option value ={time} key={i}>{time}</option>
+							})
+						}
+					</select>
+					<div className='border-y border-r h-10
+									inline-flex w-[100%] text-black bg-white
+									items-center justify-around'
+						 onClick={(e) => clickTimePicker()}
+									>
+						{/* <span className='inline-block leading-none h-6 w-6 min-w-[1.5rem]'>
+
+						</span> */}
+						{time}
+					</div>
+
+				</div>
                 <input
-                className="h-10 w-40 border rounded-r"
+                className="h-10 w-40 border rounded-r text-black"
                 type="number"
                 value={people}
                 placeholder="2"
