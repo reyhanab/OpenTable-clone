@@ -99,22 +99,13 @@ export const signUp = (firstName , lastName, email, password) => async (dispatch
 }
 
 export const editProfile =
-  ({firstName, lastName, email, phoneNumber, city, address, profilePicture }) =>
+  (data) =>
+
   async (dispatch) => {
+    console.log(data)
     const res = await fetch(`/api/users/profile`, {
       method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        first_name: firstName,
-        last_name: lastName,
-        email,
-        phone_number: phoneNumber,
-        profile_picture: profilePicture,
-        city,
-        address
-      }),
+      body: data,
     });
 
     if (res.ok) {

@@ -52,16 +52,16 @@ def delete_user():
 @login_required
 def edit_user_profile():
 
-    # if "image" not in request.files:
-    #     return {"errors": "no images found"}, 400
-
+    if "profile_picture" in request.files:
+        image = request.files['profile_picture']
+    else:
+        image = ""
 
     form = EditProfileForm()
     form['csrf_token'].data = request.cookies['csrf_token']
 
-    image = request.files['image']
-
-    if not allow_file(image):
+    print("Image", image)
+    if not allow_file(image.filename):
         return {"errors": "file type not permitted"}
 
     image.filename = get_unique_filename(image.filename)
@@ -72,45 +72,17 @@ def edit_user_profile():
         return {"errors": "failed to upload into s3"}
 
     url = upload['url']
-
     if form.validate_on_submit():
-        # for key, val in form.data.items():
-        #     if val:
-        #         setattr(current_user, key, val)
-        current_user.first_name = form.data["first_name"]
-        current_user.last_name = form.data["last_name"]
-        current_user.email = form.data["email"]
-        current_user.phone_number = form.data["phone_number"]
-        current_user.city = form.data["city"]
-        current_user.address = form.data["address"]
-        current_user.profile_picture = url
+        for key, val in form.data.items():
+            if val != "undefined":
+                setattr(current_user, key, val)
+            else:
+                setattr(current_user, key, None)
+        if url:
+            current_user.profile_picture = url
+
         db.session.commit()
         return current_user.to_dict()
 
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-
-
-#upload profile picture
-# @user_routes.route('/upload_image')
-# def upload_image():
-#     if "image" not in request.files:
-#         return {"errors": "no images found"}, 400
-
-#     image = request.files['image']
-
-#     if not allow_file(image):
-#         return {"errors": "file type not permitted"}
-
-#     image.filename = get_unique_filename(image.filename)
-
-#     upload = upload_file_to_s3(image)
-
-#     if "url" not in upload:
-#         return {"errors": "failed to upload into s3"}
-
-#     url = upload['url']
-
-#     current_user.profile_picture = url
-#     db.session.commit()
-#     return {"success": "new image uploaded", "url": url}
 

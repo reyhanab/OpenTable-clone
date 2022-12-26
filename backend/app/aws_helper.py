@@ -14,6 +14,7 @@ s3 = boto3.client(
 )
 
 def allow_file(filename):
+    print(filename.rsplit('.', 1)[1].lower())
     return '.' in filename and \
         filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 

@@ -18,15 +18,15 @@ const Profile = () =>{
     const onSubmit = async (e) =>{
         e.preventDefault();
 
-        const data = {
-            firstName,
-            lastName,
-            email,
-            phoneNumber,
-            city,
-            address,
-            profilePicture
-        }
+        const data = new FormData()
+        data.append('first_name', firstName)
+        data.append('last_name', lastName)
+        data.append('email', email)
+        data.append('phone_number', phoneNumber)
+        data.append('city', city)
+        data.append('address', address)
+        data.append('profile_picture', profilePicture)
+
         const res = await dispatch(editProfile(data))
 
         if (res.ok) {

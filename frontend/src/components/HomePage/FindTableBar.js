@@ -11,8 +11,8 @@ const FindTableBar = () => {
 	const clickDatePicker = (e) => {
 		console.log(datePicker.current)
 		// console.log(datePicker.current.showDateTimePicker)
-        // datePicker.current.showDateTimePicker()
-        datePicker.show()
+        datePicker.current.showPicker()
+
 	}
 
     return (
