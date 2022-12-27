@@ -14,7 +14,7 @@ const HomePage = ()=> {
     },[dispatch])
 
     return (
-        <div className="w-full max-w-screen-2xl m-auto bg-white h-full">
+        <div className="w-full max-w-screen-2xl m-auto bg-white h-full font-outfit">
             <div className="flex flex-col items-center justify-center h-60 text-white bg-gradient-to-r from-gdblue to-glblue">
                 <h1 className="font-semibold text-5xl"
                 >Find your table for any occasion</h1>

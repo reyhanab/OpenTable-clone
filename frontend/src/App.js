@@ -10,6 +10,7 @@ import User from './components/User';
 import { authenticate } from './store/session';
 import { HomePage } from './components/HomePage';
 import Profile from './components/UserProfile/Profile';
+import RestaurantPage from './components/RestaurantPage/RestaurantPage';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -28,9 +29,6 @@ function App() {
 
   return (
     <BrowserRouter>
-      {/* <div>
-        Hello
-      </div> */}
       <NavBar />
       <Switch>
         {/* <Route path='/login' exact={true}>
@@ -39,11 +37,14 @@ function App() {
         <Route path='/sign-up' exact={true}>
           <SignUpForm />
         </Route> */}
-        <ProtectedRoute path='/users' exact={true} >
+        {/* <ProtectedRoute path='/users' exact={true} >
           <UsersList/>
-        </ProtectedRoute>
+        </ProtectedRoute> */}
         <ProtectedRoute path='/users/:userId' exact={true} >
           <Profile />
+        </ProtectedRoute>
+        <ProtectedRoute path='/restaurants/:restaurantId' exact={true}>
+          <RestaurantPage />
         </ProtectedRoute>
         <Route path='/' exact={true} >
           <HomePage />

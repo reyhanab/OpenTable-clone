@@ -3,12 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
 
 @layer components {
     .time-btn {
      @apply
-     w-16 py-1 px-1.5 bg-red-600 text-sm text-white rounded-md shadow-md focus:outline-none;
+     w-16 py-1 px-1.5 bg-red-600 text-sm text-white
+     rounded-md shadow-md focus:outline-none hover:bg-red-800;
     }
 }
 
