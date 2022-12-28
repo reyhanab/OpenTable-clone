@@ -19,35 +19,7 @@ const FindTableBar = () => {
         datePicker.current.showPicker()
 
 	}
-	console.log("outside render")
-	const clickTimePicker = () => {
 
-        // timePicker.current.show()
-
-		console.log("time picker render")
-		timePicker.current.focus()
-		timePicker.current.classList.remove("z-\[-1\]")
-		timePicker.current.classList.add("z-\[1\]")
-		timePicker.current.size = timePicker.current.length
-		// if(isFocused){
-
-		// 	timePicker.current.blur()
-		// 	setIsFocused(false)
-		// }else{
-		// 	setTimeout(()=>{
-		//
-
-		// 	},0)
-		// 	setIsFocused(true)
-		// }
-	}
-	// useEffect(()=>{
-	// 	if(isFocused){
-	// 		timePicker.current.size = timePicker.current.length
-	// 	}else{
-	// 		timePicker.current.size = 0
-	// 	}
-	// },[isFocused])
 
     return (
         <div className="flex items-center space-x-4 mt-7">
@@ -90,20 +62,7 @@ const FindTableBar = () => {
 				<div className="inline-flex items-center justify-end h-10 w-40 cursor-pointer relative">
 					<div className='border-y border-r h-10 text-center
 									inline-flex w-[100%] text-black bg-white
-									items-center justify-around'
-						 onClick={(e) => clickTimePicker()}
-						>
-						<select
-						ref={timePicker}
-
-						className="w-[100%] h-16 z-[-1] absolute"
-						onChange={(e) => setTime(getTimeNav(e.target.value) )}
-						>
-							{times.map((time, i) =>{
-									return <option value ={time} key={i}>{time}</option>
-								})
-							}
-						</select>
+									items-center justify-around'>
 
 						<span className='inline-block leading-none h-6 w-6 min-w-[1.5rem]'>
 							<svg
@@ -120,7 +79,15 @@ const FindTableBar = () => {
 						</span>
 						{time}
 					</div>
-
+					<select
+						className="w-[100%] h-[100%] absolute opacity-0"
+						onChange={(e) => setTime(e.target.value)}
+						>
+							{times.map((time, i) =>{
+									return <option value ={time} key={i}>{time}</option>
+								})
+							}
+					</select>
 				</div>
                 <input
                 className="h-10 w-40 border rounded-r text-black"
@@ -131,7 +98,7 @@ const FindTableBar = () => {
                 >
 				</input>
             </div>
-            <button className=" bg-red-600 w-36 h-10 border border-red-600 rounded text-sm"
+            <button className="bg-red-600 w-36 h-10 border border-red-600 rounded text-sm"
             >Let's go</button>
             {/* <svg
             viewBox="0 0 24 24"
