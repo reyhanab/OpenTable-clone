@@ -18,9 +18,12 @@ module.exports = {
         sky: colors.sky,
         'gdblue': '#142149',
         'glblue': '#72788e',
-        'signup_blue': '#257f9f'
+        'signup_blue': '#257f9f',
+        'black':'#2d333f'
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp')
+  ],
 }

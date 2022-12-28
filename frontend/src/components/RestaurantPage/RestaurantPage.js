@@ -1,11 +1,33 @@
-import { useSelector } from "react-redux";
+import { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Rating from "../HomePage/Rating";
+import { getAllRestaurants } from "../../store/restaurants";
 
 const RestaurantPage = () =>{
 
+    const dispatch = useDispatch()
     const {restaurantId} = useParams()
     const restaurant = useSelector((state => state.restaurants[restaurantId]))
+    const showMore = useRef(null)
+    const [readMore, setReadMore] = useState(true)
+
+    useEffect(()=>{
+        if (!restaurant){
+            dispatch(getAllRestaurants())
+        }
+    },[dispatch])
+
+    const handleShowMore = () =>{
+        console.log(showMore)
+        if(readMore){
+            showMore.current.classList.remove("line-clamp-3")
+        }else{
+            showMore.current.classList.add("line-clamp-3")
+        }
+        setReadMore(state => !state)
+    }
+
 
     return (
         <div className="flex flex-col w-full max-w-screen-2xl m-auto bg-white h-full
@@ -16,7 +38,7 @@ const RestaurantPage = () =>{
             </div>
             <div className="w-[640px] h-[1000px] z-3 bg-white absolute z-2
                             top-[480px] left-auto right-[800px] rounded-t p-8">
-                <p className="text-5xl font-semibold border-b border-gray-200 pb-10"
+                <p className="text-5xl font-semibold border-b border-gray-200 pb-10 text-black"
                 >{restaurant?.name} - {restaurant?.city}</p>
             <div className="flex space-x-5 mt-5 mb-8">
                 <Rating rate={restaurant?.rating} size="medium"/>
@@ -43,9 +65,15 @@ const RestaurantPage = () =>{
                     <p>{restaurant?.type}</p>
                 </p>
             </div>
-                <div className="text-md text-gray-600 font-thin">
+                <div
+                ref={showMore}
+                className="text-md text-gray-600 font-thin line-clamp-3">
                     {restaurant?.description}
                 </div>
+                <button
+                onClick={handleShowMore}
+                className="text-red-400"
+                >{readMore ?"+ Read more" : "- Read less"}</button>
             </div>
 
         </div>
