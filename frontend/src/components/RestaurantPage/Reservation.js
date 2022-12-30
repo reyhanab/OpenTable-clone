@@ -5,7 +5,7 @@ import PartySize from "../Utills/PartySize";
 import Svg from "./Svg";
 import ShowTimes from "./ShowTimes";
 
-const Reservation = ({reservationRef}) =>{
+const Reservation = ({reservationRef, restaurant}) =>{
 
     const times = allTimes()
     const partySize = PartySize()
@@ -106,7 +106,11 @@ const Reservation = ({reservationRef}) =>{
                     Find a time
                 </button>
                 {showTimes && (
-                    <ShowTimes />
+                    <ShowTimes
+                    date={new Date(date)}
+                    restaurant = {restaurant}
+                    time={new Date("1970-01-01T" + time)}
+                    />
                 )
                 }
             </div>

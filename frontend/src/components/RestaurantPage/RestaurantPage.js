@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Rating from "../HomePage/Rating";
 import { getAllRestaurants } from "../../store/restaurants";
 import Reservation from "./Reservation";
+import { loadAllReservations } from "../../store/reservations";
 
 const RestaurantPage = () =>{
 
@@ -14,10 +15,12 @@ const RestaurantPage = () =>{
     const reservationDiv = useRef(null)
     const [readMore, setReadMore] = useState(true)
 
-    useEffect(()=>{
-        if (!restaurant){
-            dispatch(getAllRestaurants())
+    useEffect(()=> {
+        async function inner(){
+            const data = await dispatch(getAllRestaurants())
+            dispatch(loadAllReservations(Object.keys(data.Restaurants)))
         }
+        inner()
     },[dispatch])
 
     const handleShowMore = () =>{
@@ -82,7 +85,10 @@ const RestaurantPage = () =>{
                 ref = {reservationDiv}
                 className="w-[320px] h-[330px] z-2 bg-white absolute
                                 top-[480px] left-auto right-[440px] rounded-t">
-                    <Reservation reservationRef = {reservationDiv} />
+                    <Reservation
+                    reservationRef = {reservationDiv}
+                    restaurant = {restaurant}
+                     />
                 </div>
 
             </div>

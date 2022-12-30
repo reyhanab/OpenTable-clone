@@ -42,6 +42,7 @@ class Restaurant(db.Model):
             'phone_number': self.phone_number,
             'description': self.description,
             'city': self.city,
+            'capacity':self.capacity,
             'address': self.address,
             'rating': float(self.rating),
             'preview_image': self.preview_image,

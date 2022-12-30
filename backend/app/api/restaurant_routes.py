@@ -88,6 +88,7 @@ def add_reservation(restaurant_id):
 
     reserved = db.session.query(Reservation, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour).filter(Reservation.time >= start_hour)\
+        .filter(Reservation.date == date)\
         .group_by(Reservation.date).first()
 
     restaurant = Restaurant.query.get_or_404(restaurant_id)
@@ -118,6 +119,18 @@ def get_reservations(restaurant_id):
     reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id).all()
     return {"Reservations":[reservation.to_dict()
                            for reservation in reservations]}
+
+
+#Get all reservations of all restaurants
+@restaurant_routes.route('/reservations', methods=['POST'])
+def get_all_reservations():
+
+    restaurant_ids = request.json
+    print("hereeeeee",restaurant_ids)
+    reservations = Reservation.query.filter(Reservation.restaurant_id.in_(restaurant_ids)).all()
+    print("reservationssssss", reservations)
+    return {"Reservations":[reservation.to_dict()
+                        for reservation in reservations]}
 
 
 #Get all images of a restaurant

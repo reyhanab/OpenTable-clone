@@ -11,5 +11,10 @@
      w-16 py-1 px-1.5 bg-red-600 text-sm text-white
      rounded-md shadow-md focus:outline-none hover:bg-red-800;
     }
+    .time-btn-lg {
+        @apply
+        w-20 h-8 mr-2 mt-4 bg-red-600 text-sm text-white
+        rounded-md shadow-md focus:outline-none hover:bg-red-800;
+       }
 }
 

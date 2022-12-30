@@ -3,15 +3,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllRestaurants } from "../../store/restaurants";
 import FindTableBar from "./FindTableBar";
 import RestaurantPreview from "./RestaurantPreview";
+import { loadAllReservations } from "../../store/reservations";
 
 const HomePage = ()=> {
 
     const dispatch = useDispatch();
     const restaurants = useSelector((state) => Object.values(state.restaurants))
 
-    useEffect(()=>{
-        dispatch(getAllRestaurants())
+    useEffect(()=> {
+        async function inner(){
+            const data = await dispatch(getAllRestaurants())
+            dispatch(loadAllReservations(Object.keys(data.Restaurants)))
+        }
+        inner()
     },[dispatch])
+
 
     return (
         <div className="w-full max-w-screen-2xl m-auto bg-white h-full font-outfit">

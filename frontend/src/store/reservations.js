@@ -53,6 +53,22 @@ export const loadReservations = (restaurant_id) => async (dispatch) => {
     dispatch(getReservations(payload));
 };
 
+export const loadAllReservations = (restaurant_ids) => async (dispatch) => {
+    const response = await fetch(`/api/restaurants/reservations`,{
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(restaurant_ids),
+    }
+    );
+    const data = await response.json();
+    const payload = {};
+
+    for (let obj of data.Reservations) {
+      payload[obj.id] = obj;
+    }
+    dispatch(getReservations(payload));
+};
+
 export const editReservation = (reservation, reservation_id) => async (dispatch) => {
     const response = await fetch(`/api/reservations/${reservation_id}`, {
       method: "PUT",
@@ -82,7 +98,7 @@ const reservationReducer = (state = {}, action) => {
         case ADD_RESERVATION:
             return { ...state, [action.reservation.id]: action.reservation }
         case LOAD_RESERVATIONS:
-            return { ...action.reservations }
+            return {  ...state, ...action.reservations  }
         case EDIT_RESERVATION:
             return { ...state, [action.reservation.id]: action.reservation }
         case DELETE_RESERVATION:

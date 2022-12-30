@@ -24,6 +24,7 @@ export const getAllRestaurants = () => async (dispatch) =>{
     }
 
     dispatch(loadAllRestaurant(payload));
+    return data;
 }
 
 export const getRestDetails = (restId) => async (dispatch) => {

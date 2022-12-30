@@ -1,4 +1,4 @@
-import getTime from "../Utills/GetTime";
+import GetTime from "../Utills/GetTime";
 import RestaurantPage from "../RestaurantPage/RestaurantPage";
 import { Link, NavLink } from "react-router-dom";
 import { Redirect } from "react-router-dom";
@@ -8,17 +8,10 @@ import Rating from "./Rating";
 const RestaurantPreview = ({restaurant, takeout = false}) =>{
 
     const rate = restaurant?.rating
-    const timeRange = getTime()
+    const timeRange = GetTime({restaurant})
     const [showRest, setShowRest] = useState(false)
 
-    const openRestaurant = () =>{
-            return (<Redirect to={`/restaurants/${restaurant?.id}`} >
-                        <RestaurantPage restaurant={restaurant}/>
-                    </Redirect>
-            )
-    }
-
-
+    console.log(timeRange)
     return (
         <Link to={`/restaurants/${restaurant?.id}`}>
             <div
@@ -44,9 +37,9 @@ const RestaurantPreview = ({restaurant, takeout = false}) =>{
                     >{restaurant?.type} . {restaurant?.city} </p>
                     {!takeout &&
                         <div className="flex space-x-2 my-4 justify-center">
-                            <button className="time-btn"> {timeRange[0]}</button>
-                            <button className="time-btn"> {timeRange[1]}</button>
-                            <button className="time-btn"> {timeRange[2]}</button>
+                            {!timeRange[0].includes("undefined") && <button className="time-btn"> {timeRange[0]}</button>}
+                            {!timeRange[1].includes("undefined") && <button className="time-btn"> {timeRange[1]}</button>}
+                            {!timeRange[2].includes("undefined") && <button className="time-btn"> {timeRange[2]}</button>}
                         </div>
                     }
                     {takeout &&
