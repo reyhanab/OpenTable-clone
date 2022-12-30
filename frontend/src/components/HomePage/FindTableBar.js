@@ -7,15 +7,15 @@ import getTimeNav, { allTimes } from "../Utills/GetTimeNavbar";
 import PartySize from "../Utills/PartySize";
 
 const FindTableBar = (
-	// {date = new Date(), time = getTimeNav(), people="2 people"}
+	{date = new Date(), time = getTimeNav(), people="2 people"}
 	) => {
 
 	const times = allTimes()
 	const partySize = PartySize()
 	const datePicker = useRef(null)
-    const [dateInput, setDateInput] = useState(getDate(new Date()));
-    const [timeInput, setTimeInput] = useState(times[0]);
-    const [peopleInput, setPeopleInput] = useState(partySize[0])
+    const [dateInput, setDateInput] = useState(getDate(date));
+    const [timeInput, setTimeInput] = useState(time);
+    const [peopleInput, setPeopleInput] = useState(people)
 
 
 	const clickDatePicker = (e) => {
@@ -35,7 +35,7 @@ const FindTableBar = (
 						ref={datePicker}
 					>
 					</input>
-					<div className='border-y border-r h-10
+					<div className='border border-r h-10
 									inline-flex w-[100%] text-black bg-white
 									items-center justify-around rounded-l'
 						 onClick={(e) => clickDatePicker()}
@@ -131,8 +131,8 @@ const FindTableBar = (
 					</select>
 				</div>
             </div>
-            <button className="bg-red-600 w-36 h-10 border border-red-600 rounded text-sm"
-            >Let's go</button>
+            {/* <button className="bg-red-600 w-36 h-10 border border-red-600 rounded text-sm"
+            >Let's go</button> */}
         </div>
     )
 }

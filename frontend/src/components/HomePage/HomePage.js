@@ -21,10 +21,17 @@ const HomePage = ()=> {
 
     return (
         <div className="w-full max-w-screen-2xl m-auto bg-white h-full font-outfit">
-            <div className="flex flex-col items-center justify-center h-60 text-white bg-gradient-to-r from-gdblue to-glblue">
+            <div className="flex flex-col items-center justify-center h-60
+                         text-white bg-gradient-to-r from-gdblue to-glblue">
                 <h1 className="font-semibold text-5xl"
                 >Find your table for any occasion</h1>
-                <FindTableBar />
+                <div className="flex space-x-5">
+                    <FindTableBar />
+                    <button className="bg-red-600 w-36 h-10 border
+                                     border-red-600 rounded text-sm mt-7"
+                    >Let's go</button>
+                </div>
+
             </div>
             <div className="max-w-7xl mx-auto mt-10"
             >

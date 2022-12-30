@@ -64,7 +64,7 @@ const ShowTimes = ({restaurant, date=new Date(), time=new Date(), people="2 peop
                     <ReserveModal
                     onClose={toggleReserveModal}
                     date={date}
-                    time={time}
+                    time={chosenTime}
                     people={people}
                     restaurant={restaurant}
                     />
