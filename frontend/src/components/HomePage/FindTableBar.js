@@ -6,14 +6,16 @@ import getTime from "../Utills/GetTime";
 import getTimeNav, { allTimes } from "../Utills/GetTimeNavbar";
 import PartySize from "../Utills/PartySize";
 
-const FindTableBar = () => {
+const FindTableBar = (
+	// {date = new Date(), time = getTimeNav(), people="2 people"}
+	) => {
 
 	const times = allTimes()
 	const partySize = PartySize()
 	const datePicker = useRef(null)
-    const [date, setDate] = useState(getDate(new Date()));
-    const [time, setTime] = useState(times[0]);
-    const [people, setPeople] = useState(partySize[0])
+    const [dateInput, setDateInput] = useState(getDate(new Date()));
+    const [timeInput, setTimeInput] = useState(times[0]);
+    const [peopleInput, setPeopleInput] = useState(partySize[0])
 
 
 	const clickDatePicker = (e) => {
@@ -28,7 +30,8 @@ const FindTableBar = () => {
 					<input
 						className="w-[100%] h-[100%] z-[-1] absolute"
 						type="date"
-						onChange={(e) => setDate(getDate(e.target.value))}
+						value={dateInput}
+						onChange={(e) => setDateInput(getDate(e.target.value))}
 						ref={datePicker}
 					>
 					</input>
@@ -49,7 +52,7 @@ const FindTableBar = () => {
 								</g>
 							</svg>
 						</span>
-						{date}
+						{dateInput}
 						<Svg />
 					</div>
 				</div>
@@ -71,12 +74,13 @@ const FindTableBar = () => {
 							21 Z M12,19 C15.8659932,19 19,15.8659932 19,12 C19,8.13400675 15.8659932,5 12,5 C8.13400675,5 5,
 							8.13400675 5,12 C5,15.8659932 8.13400675,19 12,19 Z" fill="#2D333F"></path></g></svg>
 						</span>
-						{time}
+						{timeInput}
 						<Svg />
 					</div>
 					<select
 						className="w-[100%] h-[100%] absolute opacity-0"
-						onChange={(e) => setTime(e.target.value)}
+						onChange={(e) => setTimeInput(e.target.value)}
+						value={timeInput}
 						>
 							{times.map((time, i) =>{
 									return <option value ={time} key={i}>{time}</option>
@@ -112,12 +116,13 @@ const FindTableBar = () => {
 							18.9999469 C17.5459684,18.9999469 17.9936623,18.552253 17.9936623,17.9999945 C17.9936623,
 							17.8931928 17.9765523,17.7870807 17.9429826,17.6856919 Z" fill="#2D333F"></path></g></svg>
 						</span>
-						{people}
+						{peopleInput}
 						<Svg />
 					</div>
 					<select
 						className="w-[100%] h-[100%] absolute opacity-0"
-						onChange={(e) => setPeople(e.target.value)}
+						onChange={(e) => setPeopleInput(e.target.value)}
+						value={peopleInput}
 						>
 							{partySize.map((item, i) =>{
 									return <option value ={item} key={i}>{item}</option>
