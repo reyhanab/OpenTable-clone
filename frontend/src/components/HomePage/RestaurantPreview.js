@@ -1,49 +1,51 @@
 import GetTime from "../Utills/GetTime";
 import RestaurantPage from "../RestaurantPage/RestaurantPage";
 import { Link, NavLink } from "react-router-dom";
-import { Redirect } from "react-router-dom";
 import { useState } from "react";
 import Rating from "./Rating";
+import ShowTimes from "../RestaurantPage/ShowTimes";
 
 const RestaurantPreview = ({restaurant, takeout = false}) =>{
 
     const rate = restaurant?.rating
-    const timeRange = GetTime({restaurant})
     const [showRest, setShowRest] = useState(false)
 
-    console.log(timeRange)
     return (
-        <Link to={`/restaurants/${restaurant?.id}`}>
+
             <div
             onClick={(e) => setShowRest(true)}
             className="flex flex-col w-60 h-72 rounded border border-gray-400/75 transition
             transform hover:-translate-y-1.5 motion-reduce:transition-none space-y-3
             motion-reduce:hover:transform-none hover:shadow-lg hover:cursor-pointer">
-
-                <div>
-                    <img className="rounded-t h-32 w-60 max-w-4xl"
-                    src={restaurant?.preview_image} />
-                </div>
-                <div className="m-2.5">
-                    <p className="text-md font-semibold truncate"
-                    >{restaurant?.name}</p>
+                <Link to={`/restaurants/${restaurant?.id}`}>
                     <div>
-                        <Rating rate={rate} size="small"/>
-                        <span className="text-sm pl-2"
-                        >{restaurant.num_of_reviews} reviews</span>
-                    </div>
-
-                    <p className="truncate text-md"
-                    >{restaurant?.type} . {restaurant?.city} </p>
-                    {!takeout &&
-                        <div className="flex space-x-2 my-4 justify-center">
-                            {!timeRange[0].includes("undefined") && <button className="time-btn"> {timeRange[0]}</button>}
-                            {!timeRange[1].includes("undefined") && <button className="time-btn"> {timeRange[1]}</button>}
-                            {!timeRange[2].includes("undefined") && <button className="time-btn"> {timeRange[2]}</button>}
+                        <div>
+                            <img className="rounded-t h-32 w-60 max-w-4xl"
+                            src={restaurant?.preview_image} />
                         </div>
+                        <div className="m-2.5">
+                            <p className="text-md font-semibold truncate"
+                            >{restaurant?.name}</p>
+                            <div>
+                                <Rating rate={rate} size="small"/>
+                                <span className="text-sm pl-2"
+                                >{restaurant.num_of_reviews} reviews</span>
+                            </div>
+                            <p className="truncate text-md"
+                            >{restaurant?.type} . {restaurant?.city} </p>
+                        </div>
+                    </div>
+                </Link>
+
+
+                    {!takeout &&
+                        <ShowTimes
+                        restaurant={restaurant}
+                        />
                     }
                     {takeout &&
-                        <div className="flex items-center space-x-2 w-40 h-9 border border-gray-300 rounded  mt-5 text-red-500 text-sm font-medium hover:border-2 hover:border-red-600 ">
+                        <div className="flex items-center space-x-2 w-40 h-9 border border-gray-300 rounded ml-4
+                                        mt-5 text-red-500 text-sm font-medium hover:border-2 hover:border-red-600">
                             <svg
                             className="w-6 h-6 ml-2"
                             viewBox="0 0 24 24"
@@ -53,11 +55,9 @@ const RestaurantPreview = ({restaurant, takeout = false}) =>{
                             <span>{restaurant?.phone_number}</span>
                         </div>
                     }
-                </div>
-
             </div>
-        </Link>
     )
+
 }
 
 export default RestaurantPreview;

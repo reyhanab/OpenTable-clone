@@ -3,9 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadReservations } from "../../store/reservations";
 
 
-
-
-
 const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = false}) =>{
 
     const checkAvailableHours = (timeFrames, hour) =>{

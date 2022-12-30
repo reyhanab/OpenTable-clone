@@ -110,6 +110,8 @@ const Reservation = ({reservationRef, restaurant}) =>{
                     date={new Date(date)}
                     restaurant = {restaurant}
                     time={new Date("1970-01-01T" + time)}
+                    people={people}
+                    resPage={true}
                     />
                 )
                 }

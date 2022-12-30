@@ -21,7 +21,6 @@ const FindTableBar = () => {
 
 	}
 
-
     return (
         <div className="flex items-center space-x-4 mt-7">
             <div className='flex items-center'>
@@ -86,7 +85,7 @@ const FindTableBar = () => {
 					</select>
 				</div>
 				<div className="inline-flex items-center justify-end h-10 w-40 cursor-pointer relative">
-					<div className='border-y border-r h-10 text-center
+					<div className='border-y border-r h-10 text-center rounded-r
 									inline-flex w-[100%] text-black bg-white
 									items-center justify-around'>
 
