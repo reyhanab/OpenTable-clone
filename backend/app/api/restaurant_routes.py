@@ -126,9 +126,7 @@ def get_reservations(restaurant_id):
 def get_all_reservations():
 
     restaurant_ids = request.json
-    print("hereeeeee",restaurant_ids)
     reservations = Reservation.query.filter(Reservation.restaurant_id.in_(restaurant_ids)).all()
-    print("reservationssssss", reservations)
     return {"Reservations":[reservation.to_dict()
                         for reservation in reservations]}
 

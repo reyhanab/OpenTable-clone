@@ -13,8 +13,9 @@ const Reservation = ({reservationRef, restaurant}) =>{
     const datePicker = useRef(null)
     const [date, setDate] = useState(getDate(new Date()));
     const [time, setTime] = useState(times[0]);
-    const [people, setPeople] = useState(partySize[0])
+    const [people, setPeople] = useState(partySize[1])
     const [showTimes, setShowTimes] = useState(false)
+    const currentDate = new Date().toISOString().slice(0, 10);
 
 
     const clickDatePicker = (e) => {
@@ -64,6 +65,7 @@ const Reservation = ({reservationRef, restaurant}) =>{
                             type="date"
                             onChange={(e) => setDate(getDate(e.target.value))}
                             ref={datePicker}
+                            min={currentDate}
                         >
                         </input>
                         <div className='border-b h-10 flex w-full bg-white

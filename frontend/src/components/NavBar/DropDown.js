@@ -4,7 +4,7 @@ import LogoutButton from "../auth/LogoutButton";
 const DropDown = ({user}) =>{
 
     return(
-        <div className="w-72 h-64 p-5 space-y-6 z-1 mt-10
+        <div className="w-72 h-72 p-5 space-y-6 z-1 mt-10
         inline-block absolute bg-white border border-gray-300 rounded">
             <div
             className="relative font-semibold border-b pb-4"
@@ -14,6 +14,13 @@ const DropDown = ({user}) =>{
             >
                 <NavLink to='/users/profile' exact={true} activeClassName='active'>
                 My Profile
+                </NavLink>
+            </div>
+            <div
+            className="text-gray-700"
+            >
+                <NavLink to='/users/reservations' exact={true} activeClassName='active'
+                >My Reservations
                 </NavLink>
             </div>
             <div

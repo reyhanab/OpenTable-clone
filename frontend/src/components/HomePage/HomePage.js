@@ -26,7 +26,7 @@ const HomePage = ()=> {
                 <h1 className="font-semibold text-5xl"
                 >Find your table for any occasion</h1>
                 <div className="flex space-x-5">
-                    <FindTableBar />
+                    <FindTableBar tyep ="edit"/>
                     <button className="bg-red-600 w-36 h-10 border
                                      border-red-600 rounded text-sm mt-7"
                     >Let's go</button>

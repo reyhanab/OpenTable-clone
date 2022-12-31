@@ -18,3 +18,10 @@
        }
 }
 
+@layer base{
+    html {
+        font-family: "outfit";
+    }
+
+}
+

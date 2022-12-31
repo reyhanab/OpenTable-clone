@@ -7,7 +7,7 @@ import getTimeNav, { allTimes } from "../Utills/GetTimeNavbar";
 import PartySize from "../Utills/PartySize";
 
 const FindTableBar = (
-	{date = new Date(), time = getTimeNav(), people="2 people"}
+	{type, setPayload, date = new Date(), time = getTimeNav(), people="2 people"}
 	) => {
 
 	const times = allTimes()
@@ -16,11 +16,23 @@ const FindTableBar = (
     const [dateInput, setDateInput] = useState(getDate(date));
     const [timeInput, setTimeInput] = useState(time);
     const [peopleInput, setPeopleInput] = useState(people)
+	const currentDate = new Date().toISOString().slice(0, 10)
 
+
+	useEffect(()=>{
+		if(setPayload){
+			setPayload({
+				date: date.toISOString().slice(0,10),
+				time: time,
+				count: Number(peopleInput[0])
+			})
+		}
+	},[peopleInput])
 
 	const clickDatePicker = (e) => {
-        datePicker.current.showPicker()
-
+		if(type != "create"){
+			datePicker.current.showPicker()
+		}
 	}
 
     return (
@@ -31,8 +43,10 @@ const FindTableBar = (
 						className="w-[100%] h-[100%] z-[-1] absolute"
 						type="date"
 						value={dateInput}
+						disabled={type=="create" ? true : false}
 						onChange={(e) => setDateInput(getDate(e.target.value))}
 						ref={datePicker}
+						min={currentDate}
 					>
 					</input>
 					<div className='border border-r h-10
@@ -81,6 +95,7 @@ const FindTableBar = (
 						className="w-[100%] h-[100%] absolute opacity-0"
 						onChange={(e) => setTimeInput(e.target.value)}
 						value={timeInput}
+						disabled={type=="create" ? true : false}
 						>
 							{times.map((time, i) =>{
 									return <option value ={time} key={i}>{time}</option>
