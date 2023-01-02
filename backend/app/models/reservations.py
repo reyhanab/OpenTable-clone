@@ -1,4 +1,6 @@
 from .db import db,  environment, SCHEMA, add_prefix_for_prod
+from pytz import timezone
+from datetime import time, datetime
 
 class Reservation(db.Model):
     __tablename__ = 'reservations'
@@ -18,10 +20,14 @@ class Reservation(db.Model):
 
 
     def to_dict(self):
+        do = datetime.combine(self.date, time.min)
+        est_time = do.astimezone(timezone("EST"))
+        print("dateeee", est_time)
+
         return {
             'id': self.id,
             'count': self.count,
-            'date': self.date,
+            'date': est_time,
             'time': str(self.time),
             'user_id': self.user_id,
             'restaurant_id': self.restaurant_id,

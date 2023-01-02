@@ -89,10 +89,11 @@ def add_reservation(restaurant_id):
     reserved = db.session.query(Reservation, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour).filter(Reservation.time >= start_hour)\
         .filter(Reservation.date == date)\
+        .filter(Reservation.restaurant_id == restaurant_id)\
         .group_by(Reservation.date).first()
 
     restaurant = Restaurant.query.get_or_404(restaurant_id)
-    if reserved is None or len(reserved) == 0: valid_reserveation = True
+    if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
 
     if form.validate_on_submit():

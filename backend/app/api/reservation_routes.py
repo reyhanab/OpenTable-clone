@@ -29,10 +29,14 @@ def edit_reservation(reservation_id):
     reserved = db.session.query(Reservation, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour).filter(Reservation.time >= start_hour)\
         .filter(Reservation.date == date)\
+        .filter(Reservation.restaurant_id == reservation.restaurant_id)\
+        .filter(Reservation.id != reservation.id)\
         .group_by(Reservation.date).first()
 
+    print("reserved **************",reserved)
+
     restaurant = Restaurant.query.get_or_404(reservation.restaurant_id)
-    if reserved is None or len(reserved) == 0: valid_reserveation = True
+    if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
 
     if form.validate_on_submit():
@@ -47,7 +51,7 @@ def edit_reservation(reservation_id):
                 print("**********************", reservation_id)
                 db.session.commit()
                 return reservation.to_dict()
-            return {"message": "No capacity at this time"}
+            return {"message": "No capacity at this time"}, 401
         return redirect(url_for("auth.unauthorized"))
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
