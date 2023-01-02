@@ -24,7 +24,7 @@ const FindTableBar = (
 			setPayload({
 				date: date.toISOString().slice(0,10),
 				time: time,
-				count: Number(peopleInput[0])
+				count: Number(peopleInput.split(" ")[0])
 			})
 		}
 	},[peopleInput])
@@ -38,7 +38,8 @@ const FindTableBar = (
     return (
         <div className="flex items-center space-x-4 mt-7">
             <div className='flex items-center'>
-				<div className="inline-flex items-center justify-end h-10 w-48 cursor-pointer relative">
+				<div className="inline-flex items-center justify-end h-10 w-48
+								cursor-pointer relative">
 					<input
 						className="w-[100%] h-[100%] z-[-1] absolute"
 						type="date"

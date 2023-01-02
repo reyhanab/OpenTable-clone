@@ -82,7 +82,7 @@ export const editReservation = (reservation, reservation_id) => async (dispatch)
     }
 };
 
-export const deleteReservationhunk = (reservation_id) => async (dispatch) => {
+export const deleteReservationthunk = (reservation_id) => async (dispatch) => {
     const response = await fetch(`/api/reservations/${reservation_id}`, {
       method: "DELETE",
     });

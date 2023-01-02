@@ -78,7 +78,7 @@ const NavBar = () => {
             }
             <div className='absolute left-auto right-[330px] z-10'>
               {dropDown && (
-                  <DropDown user={user} />
+                  <DropDown user={user} setDropDown={setDropDown} />
                 )
               }
             </div>

@@ -9,12 +9,13 @@ const Reservation = ({reservationRef, restaurant}) =>{
 
     const times = allTimes()
     const partySize = PartySize()
-
+    const loadingSvg = useRef(null)
     const datePicker = useRef(null)
     const [date, setDate] = useState(getDate(new Date()));
     const [time, setTime] = useState(times[0]);
     const [people, setPeople] = useState(partySize[1])
     const [showTimes, setShowTimes] = useState(false)
+    const [loading, setLoading] = useState(false)
     const currentDate = new Date().toISOString().slice(0, 10);
 
 
@@ -22,10 +23,16 @@ const Reservation = ({reservationRef, restaurant}) =>{
         datePicker.current.showPicker()
 	}
 
-    const handleShowTimes = () => {
+    const handleShowTimes = async () => {
         reservationRef.current.classList.remove("h-[330px]")
         reservationRef.current.classList.add("h-[500px]")
-        setShowTimes(true)
+        await setLoading(true)
+        loadingSvg.current.classList.add("animate-spin")
+        setTimeout(()=>{
+            setShowTimes(true)
+            loadingSvg.current.classList.remove("animate-spin")
+            setLoading(false)
+        }, 500)
     }
 
     return (
@@ -102,10 +109,20 @@ const Reservation = ({reservationRef, restaurant}) =>{
                     </div>
                 </div>
                 <button
-                className="bg-red-600 h-12 rounded text-white"
+
+
+                className="bg-red-600 h-12 rounded text-white relative"
                 onClick={(e) => handleShowTimes()}
                 >
-                    Find a time
+                    {loading && (
+                    <div
+                    className="absolute right-1/2 bottom-1/2  transform translate-x-1/2 translate-y-1/2 ">
+                        <div
+                        ref={loadingSvg}
+                        className="border-t-transparent border-solid rounded-full border-white border-4 h-8 w-8"></div>
+                    </div>
+                    )}
+                    {!loading &&<p>Find a time</p>}
                 </button>
                 {showTimes && (
                     <ShowTimes

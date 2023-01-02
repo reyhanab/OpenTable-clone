@@ -3,18 +3,18 @@ const getDate = (date) => {
     let newDate = new Date(date);
     newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
     const months = [
-      "JAN",
-      "FEB",
-      "MAR",
-      "APR",
-      "MAY",
-      "JUNE",
-      "JULY",
-      "AUG",
-      "SEP",
-      "OCT",
-      "NOV",
-      "DEC",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "June",
+      "July",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
     ];
     const month = newDate.getMonth();
     const day = newDate.getDate();

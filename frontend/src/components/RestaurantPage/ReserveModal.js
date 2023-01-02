@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { createReservation } from "../../store/reservations";
+import { createReservation, editReservation } from "../../store/reservations";
 import FindTableBar from "../HomePage/FindTableBar";
 
-const ReserveModal = ({restaurant, date, time, people, onClose}) =>{
+const ReserveModal = ({restaurant, date, time, people, onClose, type = "create", reservation={}}) =>{
 
     const dispatch = useDispatch()
     const [payload, setPayload] = useState({})
@@ -11,7 +11,12 @@ const ReserveModal = ({restaurant, date, time, people, onClose}) =>{
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        dispatch(createReservation(payload, restaurant?.id))
+        console.log(payload)
+        if(type == "edit"){
+            dispatch(editReservation(payload, reservation?.id))
+        }else{
+            dispatch(createReservation(payload, restaurant?.id))
+        }
         setConfirmation(true)
     }
 
@@ -40,7 +45,7 @@ const ReserveModal = ({restaurant, date, time, people, onClose}) =>{
                     date={date}
                     time={time}
                     people={people}
-                    type="create"
+                    type={type}
                     setPayload={setPayload}
                     />
                 </div>
