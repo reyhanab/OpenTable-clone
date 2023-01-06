@@ -23,7 +23,7 @@ def upgrade():
     op.create_table('menu_items',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(), nullable=False),
-    sa.Column('description', sa.Text(length=1000), nullable=False),
+    sa.Column('description', sa.Text(), nullable=False),
     sa.Column('price', sa.DECIMAL(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
@@ -33,7 +33,7 @@ def upgrade():
     op.create_table('restaurants',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(length=40), nullable=False),
-    sa.Column('description', sa.Text(length=2000), nullable=False),
+    sa.Column('description', sa.Text(), nullable=False),
     sa.Column('type', sa.String(length=40), nullable=False),
     sa.Column('phone_number', sa.String(), nullable=True),
     sa.Column('city', sa.String(length=40), nullable=False),
@@ -103,7 +103,7 @@ def upgrade():
     op.create_table('reviews',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('rating', sa.DECIMAL(), nullable=False),
-    sa.Column('review', sa.Text(length=2000), nullable=False),
+    sa.Column('review', sa.Text(), nullable=False),
     sa.Column('edited', sa.Boolean(), nullable=True),
     sa.Column('restaurant_id', sa.Integer(), nullable=False),
     sa.Column('user_id', sa.Integer(), nullable=False),
