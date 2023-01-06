@@ -1,7 +1,11 @@
 
 const getDate = (date) => {
+
+    // newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
+    if(date.length == 10){
+      date += "T00:00:00-05:00"
+    }
     let newDate = new Date(date);
-    newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
     const months = [
       "Jan",
       "Feb",

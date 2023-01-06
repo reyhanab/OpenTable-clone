@@ -15,6 +15,7 @@ import UserReservations from './components/UserReservations/UserReservations';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
+  const [dropDown, setDropDown] = useState(false)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -30,27 +31,29 @@ function App() {
 
   return (
     <BrowserRouter>
-      <NavBar />
-      <Switch>
-        {/* <Route path='/login' exact={true}>
-          <LoginForm />
-        </Route>
-        <Route path='/sign-up' exact={true}>
-          <SignUpForm />
-        </Route> */}
-        <Route path='/users/reservations' exact={true} >
-          <UserReservations />
-        </Route>
-        <Route path='/users/:userId' exact={true} >
-          <Profile />
-        </Route>
-        <Route path='/restaurants/:restaurantId' exact={true}>
-          <RestaurantPage />
-        </Route>
-        <Route path='/' exact={true} >
-          <HomePage />
-        </Route>
-      </Switch>
+          <NavBar dropDown={dropDown} setDropDown={setDropDown} />
+      <div onClick={()=> setDropDown(false)}>
+          <Switch>
+            {/* <Route path='/login' exact={true}>
+              <LoginForm />
+            </Route>
+            <Route path='/sign-up' exact={true}>
+              <SignUpForm />
+            </Route> */}
+            <Route path='/users/reservations' exact={true} >
+              <UserReservations />
+            </Route>
+            <Route path='/users/:userId' exact={true} >
+              <Profile />
+            </Route>
+            <Route path='/restaurants/:restaurantId' exact={true}>
+              <RestaurantPage />
+            </Route>
+            <Route path='/' exact={true} >
+              <HomePage />
+            </Route>
+          </Switch>
+        </div>
     </BrowserRouter>
   );
 }

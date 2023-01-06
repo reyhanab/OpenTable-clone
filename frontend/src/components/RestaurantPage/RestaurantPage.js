@@ -5,23 +5,37 @@ import Rating from "../HomePage/Rating";
 import { getAllRestaurants } from "../../store/restaurants";
 import Reservation from "./Reservation";
 import { loadAllReservations } from "../../store/reservations";
+import { loadReviews } from "../../store/reviews";
+import { loadAllUsers } from "../../store/users";
+import {Modal} from "../../context/Modal"
+import ReviewModal from "./ReviewModal";
+import Review from "./Review";
 
 const RestaurantPage = () =>{
 
     const dispatch = useDispatch()
     const {restaurantId} = useParams()
-    const restaurant = useSelector((state => state.restaurants[restaurantId]))
     const showMore = useRef(null)
     const reservationDiv = useRef(null)
     const [readMore, setReadMore] = useState(true)
+    const [reviewModal, setReviewModal] = useState(false)
+    const [reviewOptionsModal, setReviewOptionsModal] = useState({})
+    const user = useSelector(state => state.session.user)
+    const restaurant = useSelector((state => state.restaurants[restaurantId]))
+    const reviews = useSelector(state => Object.values(state.reviews))
+    const userReview = reviews.filter(review => (review?.user_id == user?.id &&
+                                                review?.restaurant_id == restaurant?.id ))
 
     useEffect(()=> {
         async function inner(){
             const data = await dispatch(getAllRestaurants())
-            dispatch(loadAllReservations(Object.keys(data.Restaurants)))
+            await dispatch(loadAllReservations(Object.keys(data.Restaurants)))
+            await dispatch(loadReviews(restaurant?.id))
+            dispatch(loadAllUsers())
         }
         inner()
-    },[dispatch])
+    },[dispatch, restaurant?.id])
+
 
     const handleShowMore = () =>{
         console.log(showMore)
@@ -33,6 +47,26 @@ const RestaurantPage = () =>{
         setReadMore(state => !state)
     }
 
+    const toggleReviewModal = () =>{
+        setReviewModal((state) => !state)
+    }
+
+    const toggleReviewOptionsModal = (idx) => () => {
+        setReviewOptionsModal((state) => ({
+          ...state,
+          [idx]: !state[idx],
+        }));
+      };
+
+      useEffect(() => {
+        reviews?.forEach((_, idx) => {
+          setReviewOptionsModal((state) => ({
+            ...state,
+            [idx]: false,
+          }));
+        });
+      }, []);
+
 
     return (
         <div className="flex flex-col w-full max-w-screen-2xl m-auto bg-white h-full
@@ -42,7 +76,7 @@ const RestaurantPage = () =>{
                 src={restaurant?.preview_image}/>
             </div>
             <div className="flex">
-                <div className="w-[640px] h-[1000px] bg-white absolute z-2
+                <div className="w-[640px] bg-white absolute z-2
                                 top-[480px] left-auto right-[800px] rounded-t p-8">
                     <p className="text-5xl font-semibold border-b border-gray-200 pb-10 text-black"
                     >{restaurant?.name} - {restaurant?.city}</p>
@@ -58,7 +92,7 @@ const RestaurantPage = () =>{
                             focusable="false"><g fill="none"
                             fill-rule="evenodd">
                             <path d="M19,4 L5,4 C3.8954305,4 3,4.8954305 3,6 L3,15 C3,16.1045695 3.8954305,17 5,17 L11,17 L15.36,20.63 C15.6583354,20.8784924 16.0735425,20.9318337 16.4250008,20.7668198 C16.776459,20.6018059 17.0006314,20.2482681 17,19.86 L17,17 L19,17 C20.1045695,17 21,16.1045695 21,15 L21,6 C21,4.8954305 20.1045695,4 19,4 Z M19,15 L15,15 L15,17.73 L11.72,15 L5,15 L5,6 L19,6 L19,15 Z" fill="#2D333F" fill-rule="nonzero"></path></g></svg>
-                            <p>{restaurant?.num_of_reviews} Reviews</p>
+                            <p>{reviews.length} Reviews</p>
                             </p>
                         <p className="text-mg pl-2 flex space-x-2">
                             <svg
@@ -80,6 +114,45 @@ const RestaurantPage = () =>{
                     onClick={handleShowMore}
                     className="text-red-400"
                     >{readMore ?"+ Read more" : "- Read less"}</button>
+                    <div className="mt-16">
+                        {reviews.length == 1 &&
+                            <p className="pb-5 border-b text-2xl font-semibold"
+                        >What {reviews.length} person is saying</p>}
+                        {reviews.length > 1 &&
+                            <p className="pb-5 border-b text-2xl font-semibold"
+                        >What {reviews.length} people are saying</p>}
+                        <div>
+                            {reviews.map((review, i)=>{
+                                return <Review
+                                review={review}
+                                key={i}
+                                toggleReviewOptionsModal={toggleReviewOptionsModal}
+                                reviewOptionsModal ={reviewOptionsModal}
+                                />
+                            })
+                            }
+                        </div>
+                    </div>
+                    <div>
+                        <div className="mt-8 flex justify-center">
+                            <button
+                            disabled={userReview.length > 0 ? true : false}
+                            className="w-full h-[48px] border bg-red-600 text-white rounded"
+                            onClick={toggleReviewModal}
+                            >
+                                Leave a review
+                            </button>
+                        </div>
+                        {reviewModal && (
+                            <Modal onClose={toggleReviewModal}>
+                                <ReviewModal
+                                restaurant={restaurant}
+                                onClose={toggleReviewModal}
+                                type="create"
+                                />
+                            </Modal>
+                        )}
+                    </div>
                 </div>
                 <div
                 ref = {reservationDiv}
@@ -89,7 +162,9 @@ const RestaurantPage = () =>{
                     reservationRef = {reservationDiv}
                     restaurant = {restaurant}
                      />
+
                 </div>
+
 
             </div>
 

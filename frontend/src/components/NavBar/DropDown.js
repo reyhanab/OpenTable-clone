@@ -4,7 +4,8 @@ import LogoutButton from "../auth/LogoutButton";
 const DropDown = ({user, setDropDown}) =>{
 
     return(
-        <div className="w-72 h-72 p-5 space-y-6 z-1 mt-10
+        <div
+        className="w-72 h-72 p-5 space-y-6 z-1 mt-10
         inline-block absolute bg-white border border-gray-300 rounded">
             <div
             className="relative font-semibold border-b pb-4"

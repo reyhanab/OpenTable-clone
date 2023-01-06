@@ -22,12 +22,12 @@ const FindTableBar = (
 	useEffect(()=>{
 		if(setPayload){
 			setPayload({
-				date: date.toISOString().slice(0,10),
-				time: time,
+				date: new Date(dateInput).toISOString().slice(0,10),
+				time: timeInput,
 				count: Number(peopleInput.split(" ")[0])
 			})
 		}
-	},[peopleInput])
+	},[peopleInput, dateInput, timeInput])
 
 	const clickDatePicker = (e) => {
 		if(type != "create"){

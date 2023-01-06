@@ -1,5 +1,4 @@
 
-
 export const allTimes = () =>{
     const date = new Date();
 
