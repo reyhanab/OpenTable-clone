@@ -1,7 +1,9 @@
+import os
+cwd = os.getcwd()
 
 def convert_to_data_object():
 
-	with open('/opt/render/project/src/backend/app/seeds/data.txt', 'r') as f:
+	with open(cwd + "/app/seeds/data.txt", 'r') as f:
 		data = [x.replace('\n', '').split() for x in f.readlines()]
 		current_resto = {}
 		restaurants = []
@@ -59,7 +61,7 @@ def convert_to_data_object():
 	# 	print(current_resto)
 
 def add_description_to_data_object(restaurants):
-	with open('/opt/render/project/src/backend/app/seeds/descriptions.txt', 'r') as f:
+	with open(cwd + "/app/seeds/descriptions.txt", 'r') as f:
 		# data = [x.replace('\n', '').split('description:') for x in f.readlines()]
 
 		# data = []
@@ -85,10 +87,4 @@ def add_description_to_data_object(restaurants):
 
 	restaurants[len(restaurants)-2]['description'] = current_description
 	return restaurants
-	# print(len(restaurants))
-	# print(len(data))
 
-
-# print(data)
-
-# print(restaurants)

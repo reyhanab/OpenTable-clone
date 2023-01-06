@@ -15,8 +15,8 @@ const SigninModal = ({onClose}) => {
     const onSubmit = async (e) => {
         e.preventDefault();
         const data = await dispatch(login(email, password));
-        if (data) {
-          setErrors(data);
+        if (data.errors) {
+          setErrors(data.errors);
         }
         onClose()
       };
@@ -68,6 +68,13 @@ const SigninModal = ({onClose}) => {
                     >
                     Sign In
                     </button>
+
+                    {
+                        errors.length > 0 && (
+                            <div>
+                            </div>
+                        )
+                    }
 
                 </div>
             </div>
