@@ -28,7 +28,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'menu_items' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE menu_items SET SCHEMA {SCHEMA};")
 
     op.create_table('restaurants',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -46,7 +46,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'restaurants' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE restaurants SET SCHEMA {SCHEMA};")
 
     op.create_table('users',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -62,7 +62,7 @@ def upgrade():
     sa.UniqueConstraint('email')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'users' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE users SET SCHEMA {SCHEMA};")
 
     op.create_table('images',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -72,7 +72,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'images' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE images SET SCHEMA {SCHEMA};")
 
     op.create_table('menus',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -84,7 +84,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'menus' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE menus SET SCHEMA {SCHEMA};")
 
     op.create_table('reservations',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -98,7 +98,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'reservations' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE reservations SET SCHEMA {SCHEMA};")
 
     op.create_table('reviews',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -112,7 +112,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'reviews' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE reviews SET SCHEMA {SCHEMA};")
 
     op.create_table('saved',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -123,7 +123,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('id')
     )
     if environment == "production":
-        op.execute(f"ALTER TABLE 'saved' SET SCHEMA {SCHEMA};")
+        op.execute(f"ALTER TABLE saved SET SCHEMA {SCHEMA};")
     # ### end Alembic commands ###
 
 
