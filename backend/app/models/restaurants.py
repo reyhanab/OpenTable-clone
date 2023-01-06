@@ -8,7 +8,7 @@ class Restaurant(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(40), nullable=False)
-    description = db.Column(db.Text(2000), nullable=False)
+    description = db.Column(db.Text, nullable=False)
     type = db.Column(db.String(40), nullable=False)
     phone_number = db.Column(db.String)
     city = db.Column(db.String(40), nullable=False)
