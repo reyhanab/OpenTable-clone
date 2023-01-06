@@ -29,16 +29,17 @@ const RestaurantPage = () =>{
     useEffect(()=> {
         async function inner(){
             const data = await dispatch(getAllRestaurants())
+            console.log("rey")
             await dispatch(loadAllReservations(Object.keys(data.Restaurants)))
-            await dispatch(loadReviews(restaurant?.id))
-            dispatch(loadAllUsers())
         }
-        inner()
+        if(!restaurant) inner()
+        else {
+            dispatch(loadReviews(restaurant?.id))
+        }
     },[dispatch, restaurant?.id])
 
 
     const handleShowMore = () =>{
-        console.log(showMore)
         if(readMore){
             showMore.current.classList.remove("line-clamp-3")
         }else{

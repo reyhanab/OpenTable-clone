@@ -69,12 +69,12 @@ const SigninModal = ({onClose}) => {
                     Sign In
                     </button>
 
-                    {
+                    {/* {
                         errors.length > 0 && (
                             <div>
                             </div>
                         )
-                    }
+                    } */}
 
                 </div>
             </div>

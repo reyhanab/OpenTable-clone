@@ -24,5 +24,7 @@ class Review(db.Model):
             'review': self.review,
             'user_id': self.user_id,
             'restaurant_id': self.restaurant_id,
-            'edited':self.edited
+            'edited':self.edited,
+            'user_pp': self.user.profile_picture,
+            'user_name': self.user.first_name
         }

@@ -5,15 +5,15 @@ import { Modal } from '../../context/Modal'
 
 const Review = ({review, toggleReviewOptionsModal, reviewOptionsModal}) =>{
 
-    const user = useSelector(state => state.users[review?.user_id])
+    // const user = useSelector(state => state.users[review?.user_id])
 
     return (
         <div className="flex mt-5 space-x-8 border-b pb-5">
             <div className="flex flex-col place-items-center">
                 <img
                 className="w-16 h-16 rounded-full"
-                src={(user?.profile_picture) ? user?.profile_picture : "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-default-avatar-profile-icon-vector-social-media-user-image-vector-illustration-227787227.jpg"}/>
-                <p>{user?.first_name}</p>
+                src={(review?.user_pp) ? review?.user_pp : "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-default-avatar-profile-icon-vector-social-media-user-image-vector-illustration-227787227.jpg"}/>
+                <p>{review?.user_name}</p>
             </div>
             <div className="flex flex-col pt-2 w-[450px]">
                 <Rating rate={review?.rating} size="medium" />
@@ -39,10 +39,10 @@ const Review = ({review, toggleReviewOptionsModal, reviewOptionsModal}) =>{
                 </svg>
             </div>
             {
-                reviewOptionsModal[review.id] && (
-                    <Modal onClose={toggleReviewOptionsModal(review.id)}>
+                reviewOptionsModal[review?.id] && (
+                    <Modal onClose={toggleReviewOptionsModal(review?.id)}>
                         <ReviewOptionsModal
-                        onClose={toggleReviewOptionsModal(review.id)}
+                        onClose={toggleReviewOptionsModal(review?.id)}
                         review = {review}
                          />
 
