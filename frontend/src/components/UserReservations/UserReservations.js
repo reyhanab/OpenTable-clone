@@ -49,7 +49,7 @@ const UserReservations = () =>{
             <div className="flex w-full max-w-screen-2xl items-center h-20
                             bg-white m-auto border-b">
                 <p className="text-2xl font-semibold text-black ml-10"
-                >{user.first_name} {user.last_name} Reservations</p>
+                >{user?.first_name} {user?.last_name} Reservations</p>
 
             </div>
             <div className="flex flex-col w-[750px] bg-white rounded-md

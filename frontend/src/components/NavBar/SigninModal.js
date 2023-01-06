@@ -17,8 +17,9 @@ const SigninModal = ({onClose}) => {
         const data = await dispatch(login(email, password));
         if (data.errors) {
           setErrors(data.errors);
+        }else{
+            onClose()
         }
-        onClose()
       };
 
     return (
@@ -69,12 +70,17 @@ const SigninModal = ({onClose}) => {
                     Sign In
                     </button>
 
-                    {/* {
+                    {
                         errors.length > 0 && (
-                            <div>
+                            <div className="text-red-500 text-center">
+                                <ul>
+                                    {errors.map((value, key) =>{
+                                    return   <li key={key}>{value}</li>
+                                    })}
+                                </ul>
                             </div>
                         )
-                    } */}
+                    }
 
                 </div>
             </div>

@@ -34,10 +34,19 @@ export const createReservation= (reservation, restaurant_id) => async (dispatch)
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(reservation),
     });
-    const newReservation = await response.json();
     if (response.ok) {
+      const newReservation = await response.json();
       dispatch(addReservation(newReservation));
       return newReservation;
+    }
+    else if (response.status < 500) {
+        const data = await response.json();
+        // console.log(data.errors)
+        if (data.errors) {
+        return data;
+        }
+    } else {
+        return ['An error occurred. Please try again.']
     }
 };
 
@@ -63,7 +72,6 @@ export const loadAllReservations = (restaurant_ids) => async (dispatch) => {
 
     const data = await response.json();
     const payload = {};
-    console.log("dataaaaaaa",data)
     for (let obj of data.Reservations) {
       payload[obj.id] = obj;
     }
@@ -80,6 +88,14 @@ export const editReservation = (reservation, reservation_id) => async (dispatch)
     if (response.ok) {
       dispatch(updateReservation(editedReservation));
       return editedReservation;
+    }
+    else if (response.status < 500) {
+        const data = await response.json();
+        if (data.errors) {
+        return data;
+        }
+    } else {
+        return ['An error occurred. Please try again.']
     }
 };
 

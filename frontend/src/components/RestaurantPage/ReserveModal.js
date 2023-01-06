@@ -8,16 +8,24 @@ const ReserveModal = ({restaurant, date, time, people, onClose, type = "create",
     const dispatch = useDispatch()
     const [payload, setPayload] = useState({})
     const [confirmation, setConfirmation] = useState(false)
+    const [error, setError] = useState("")
 
-    const handleSubmit = (e) =>{
-        e.preventDefault()
-        console.log(payload)
+    const handleSubmit = async (e) =>{
+        setError("")
+        e.preventDefault();
+        let data;
         if(type == "edit"){
-            dispatch(editReservation(payload, reservation?.id))
-        }else{
-            dispatch(createReservation(payload, restaurant?.id))
+          data = await dispatch(editReservation(payload, reservation?.id))
         }
-        setConfirmation(true)
+        else{
+            data = await dispatch(createReservation(payload, restaurant?.id))
+        }
+        if (data.errors){
+            setError(data.errors);
+        }
+        else{
+            setConfirmation(true)
+        }
     }
 
     return (
@@ -78,6 +86,13 @@ const ReserveModal = ({restaurant, date, time, people, onClose, type = "create",
                     </div>
                 )
                 }
+                  {
+                    error.length > 0 && (
+                        <div className="text-red-500 text-center">
+                            <p>{error}</p>
+                        </div>
+                    )
+                    }
             </div>
         </form>
     )

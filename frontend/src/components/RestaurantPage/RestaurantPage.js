@@ -29,7 +29,6 @@ const RestaurantPage = () =>{
     useEffect(()=> {
         async function inner(){
             const data = await dispatch(getAllRestaurants())
-            console.log("rey")
             await dispatch(loadAllReservations(Object.keys(data.Restaurants)))
         }
         if(!restaurant) inner()
