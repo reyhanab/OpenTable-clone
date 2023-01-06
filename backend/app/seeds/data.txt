@@ -1,0 +1,1314 @@
+---restaurant---
+name: Verona Inspired Italian
+type: Italian
+phone_number: (586) 473-0200
+address: 50741 Corporate Dr, Shelby Twp, MI 48315, USA
+rating: 4.4
+capacity: 20
+city: Shelby Twp
+lat: 42.6680319
+lng: -83.0118459
+photos:
+https://lh3.googleusercontent.com/places/AJDFj415wVlw08ApaJADv-jT-dOjKiShw3ogax4bTTYeMdjiZEQbo498EYpGP59PLuvyd1RU7njSGn3Hs9K9kDsSu_2M00ZwME5YeYI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj411JbOKLP8npPUlI1Rrok6MjJUY5yTIpqWj4gi7MUE2GJcWjX_oud_bi-zTNhAPjxTjl9yvj7lqjeLlYhkobLrJziblPg7ImYk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40M4_WSNlpIdkxsL6Tzlpig5utWfq_0KE9K6r3hiMpwXNXlNHV6oVWD5bMhvHeXCVL4EKyn29s_4C5LwRkLxYeC22IcpqWuOEE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41sgxIH0hHMbBva4H06yqDZv22MGBc1CZ8Z-6A4nCapTIYw9AhZcwLgXMmXbUWgQwz4rcUzZ7TBe23fLgh8l0Z9fVn-IKoj-DM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41AeGvpznKrzmzv1DM3Q-on9LbRdjZE0QxfBjEnCAVVpOwJsVcLVRyVenKyIOoyDiFk67zAzvFf50-aozZ4FuoI7Tv-KEr75PA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Jo6rG-MNur4cQPFA7Li8fDDGcusF5u0Kpj4Ui5GJTdbVNcgNufL2VB0_xdAeJ-4HOkYFQ1Dfev6ioCicF5Nc_ER49kVQxatY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43Oy-gGtwhxIwQaBlAmFhYLxh2ds2hQeC-lxt4IndPJIysVeCeHDOH8xO8ooJ_1v46PlfEzQ_9Qxj_fdBnMtX2K8q0o-3zbLtI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41wv4rYV7LZS4gWsmi8QN1PRx0ZrNsZXgXcI8U_k9fesZdKmsxT5c_C2zRcVOO2p7tCdG0LNQhKhg02Rkit1oMyLmV16slccgk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40RjrFVQf8T8SiX_YXuxpFDhvtSP8IFnMRx9-70Ee71Uuvn6BGHRkvUo6le1xZ2mfZ1Aur6Bpw6i3TGrE28h_3Hxgn7P5X3GNw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43NRi00Fe0Sp2mA6eWOnogLFC58l6NI50sfCEktJ7MvJGU2vtPOeFZPj0aZYXyUsa-Ohdip_n1yVxsoyWIEUIcrO5nK6-Ip38Y=s1600-w1000
+---restaurant---
+name: Kona Grill - Troy
+type: Contemporary American
+phone_number: (248) 619-9060
+address: 30 E Big Beaver Rd, Troy, MI 48083, USA
+rating: 4.4
+capacity: 20
+city: Troy
+lat: 42.5617299
+lng: -83.1468919
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43mIGRcAPxV5QpLYk3rNXBTz-nwzVyF6-8fYqI8pZJa-I4YfRk-8HZnh34ZeH9nSArMQCiwGDXQjBD5tcFH3drveWeJ75RbfIo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43EqjUD1jDSGxfxLX0yyCcOB-OSShCt0vPTXhwqZc9NB7pnjGoZXofPyHthvqjPGWCEYjLh6MUJo0WqpV3FXVyrvx-9S88gvc0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj400Il668sMhSJh0zSWhvgpP0GNLXgTFxKTirVNQ8RC5AFPNNsr63YuY_r0QcHKDKKUZ1O-75ywKz-rMwsIwTEXabdM3im_wa8I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42u7Uuhq7pgjdrIg2mh6GPIXpmngMLdFg1Q1ZCpceJdyotP4kN7nDkImXXCwI3pbINVyoKysJSkpZUbGI4oyN0aoZ4TMHROKvM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40ajx7oEngWldtys-oaB36MMjXFlYwRySBD_e4KTyWbATiPQcuMSSmDYISpFZ6HfT3UPTL_wAg136ZsakFIeXv42KgV3n8Zw7M=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42_Fb8GwKJnKqcz2N8Hp5x8jrfhlvO_hPA_PLiy7vJ9VaDfe_TesmWnPAaFFF9t_SbeGzPtRT7ErkR8-q3JFX8b86YkWnmOR2k=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41zqMC4evSRg8LLq-RNCosbwSid3SetptdsGxVYeY25UZ4monMrP_KH_ZicX8_sLGjd4MGjgJKwy3UbaUdMs5HDm0zc1QlXrP8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41NK_KpLxon9YqGokAs0lAvhutYhOWNWqQCm0INimPn6yNoAZP6-kdMeG17G_IDO7I_B-tNRHd7v4_k3KuX2l8f8NMMzzNXgyg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4255ZucJy8vylVVrFx8thNakoDlK7qUyCocluUqOo-r29Qn7IUFv-rTfpn3HnlWGosEjsKeZQRKh_FQkMnL_O5z58mzyYSMbUQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43L4iPrKAYb98jOBi3HHr_679oOz3VD9mwQ6A82xJMI7EtJLO7ih3iM2f1umfvlj2k3s6Vv2MDzPHNLVAkAkzny0_WYAXAKdZg=s1600-w1000
+---restaurant---
+name: Cooper’s Hawk Winery & Restaurant
+type: Contemporary American
+phone_number: (586) 464-9463
+address: 17440 Hall Rd, Clinton Twp, MI 48038, USA
+rating: 4.4
+capacity: 20
+city: Clinton Twp
+lat: 42.62592609999999
+lng: -82.9444754
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40mFjXgA0In8-1M852xXU9UXzoh5rtCKAhzRIK5vVWYcSPJKvMpuxbGev63zZ9GoAAxMpZJcn_LhZmBlVZanrWIPEXcNJoG42U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40vDybM0_FH5DWwy4y4RcvBryz2TJrPOgRFQyg8IJYPBVUHkQqHN7eENACh5dGzrmUkcp72T3_Jd_pNw7b6INmoMkS2p2MW8oE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42oq4Kz3Dm7JB3LWOqkC5dgkhv7G7gNvINzDAIf_762KMXZypxOrc0Iy-3h-7XqNCmDxzc2PLx1ru8gC3V7fitMM8uWcpchcVQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40UMBBY8eCwyebFtEXzWs0goskKbH-m1AWuCWN8Ua1ei9l4Mr0j8VQe1D4HBarEGuvW0-wPZAnubeaLAdukj9V7drDMc8m3LsM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj425uBa9KBNZY3SVZjOetcJhHFt_4BLUDkGu69gvx7A0mH9hFQdalawtzp0eCMOSdFUSkvN6G7jcPAkxYbjIOyUnUPjFsNeoke8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42VnP2snSzzH4r9Bgzra-GTYdaDj01_WNar1yADjmIBhGyZ-3SaSBNZEr3LpEy57PgTYvrdClYADOfwBfjoHwPTGzeS-aO7FBM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40MwEl07GSsVSDh0_04vIAgQx2Q7E-tW-vBQ0T0ALrl5-4narWxISlrhaJk4zng6A5_WobgTI27TkNG7lZxTphTbYesBUIGQRs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43zdWufGrG-kd-yWlxiYEkeIAIobmD7iGgHVFSP0KNmeGsVyXZgcpV-bXSKD7Zgtad2olS1LqZRvXr6XDP1CuJjBMYguEAm_l0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40c-LqUDn3c4kONe4PsdJidKLzGjxSB_tU8y5Tu7Imn4KxSeVVJIWxqBOmzdHUXg0BblryRTocRbNYx8ad_4wodnmotRHLOgxU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4396sidirS-teMDTKprh5nnCIho04UPuEcp80sH2Mwt_ozidEBd2puQKP3KPMpBmFmaj4nTueWwS6uIx-aXPdX0OlAfwKCg7-M=s1600-w1000
+---restaurant---
+name: Cooper's Hawk Winery & Restaurant
+type: Contemporary American
+phone_number: (248) 781-8811
+address: 151 E Big Beaver Rd, Troy, MI 48083, USA
+rating: 4.5
+capacity: 20
+city: Troy
+lat: 42.56292550000001
+lng: -83.1447013
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42Rg4E7F4reWH4CAgwWMD4_y4tfd-5x5gwaI-FJCX8-Hp2KzbzcI0TUjS_xqosE3Z59_x49_AMKfHhRrox0nSD4L0n2D6ab6HM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43qvzhro8nLbLJu_ig8bvArRXPMRAf230-ZMyfWdZLSZdyR6MxnDDVMyQYmQRP4a671wpTjrd2g6Ndvm_jGLCrr0UmXv8wzHyA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42_70vD12moOFbP_diwrnaHoqksN5oY6aleJbrki0fmCND-vhYjqVrvYKQZoxMJcw_fTK4VZy8p_BflFaf4Yc_jdRPlIOMoHJA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj406EwqcVV7UDoOwScCAr3WT-wVweZRILLQHPbQz6wAAmUK6p2l6R695I31AxNfKM22Hp1d16dv0E6czg_volPcHVln6bBUfijY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41YQC8YAHdlACWhyOeVGxOusCy83ThgGuKAQ76sUvfTgeTR4j3X-qlQMZw2Y-DDgFQkZn3Wdbo05enN0FeS8efOBcBozGE34xU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40wgm0J04xymTUh9yQZRq4WixPRm1ADEr2I9Cw8jxn_ZDC0JUBC1r9uzhKTAkVliuqSqI2EdS6ll93c21IurfWE7dgdT2LFHxY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Fu0jF6PVdYoP1QjaZApxiLE4IDGuJmyKcSmpi4gyKSH3wJ_DjEDIIHJj9_2UDfxeARjZ2CNw62CnaAha5nlGw04-VAiT3sZo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43JTTYp4P_T-aYzWIFNb753VQac8EUzKg84qoY7ym2dZA3ZSOfErLXJtCF-SwqU87uziXqbzTZ8GdVF9NQxPmbZvIDEwPh6deY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43euwCLAFgFrGx743urWvd1dYOjyl56-iT71Wfxt6LhEJ5YpzUSaNjMxXiFlLFTCVhRFa1iC7aHd-p9soxUKj1i9rjIBQB9QS0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40k0WHjvHd6uDr0u7LqoJDdRq9vcxwujXQ9ZZ5-FHYoFRsCecujNNV9HrlJDxUIz5JN5gwxla-Arc5dWWX-zPgLv9L7vX2_CyE=s1600-w1000
+---restaurant---
+name: Brio Italian Grille
+type: Italian
+phone_number: (586) 263-7310
+address: 17430 Hall Rd, Sterling Heights, MI 48038, USA
+rating: 4
+capacity: 20
+city: Sterling Heights
+lat: 42.62655900000001
+lng: -82.9456857
+photos:
+https://lh3.googleusercontent.com/places/AJDFj405vNeu-fXkUhei91QxjhTSSoD7h61NlBjE_j9zPBgtWhhQVh_abN6Y61gZ9hhboTWTGZvY19urF7P7Pt1ttQCApprKg-GUGNI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42AgTFabUMZ6NYR87XyUsZZ89iTrfC9OMJBi5eaLt99HDiKkLmRl29qIqRCGNVMk6Cue4RdE7fHIsDAdktKhZg0oaIWB6ZHXug=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj424Qs6Wd3NYJWG7t7f_nXMrxfwphOy1wUp09ErMtlIjBv7ZRvbxwsNAD0Vp4oTHFq4INBdoWnRUnqTUUiPfM3AGv2WXyGafnac=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42t3zS-l7HqYadmIbNB62JjulF3nHeDhGmzxTjgOMgd8u4wp9WhLNRQqgOlFPdW0GWf2T7eMq0pXJeWp5gBJg6cZ9Hh7v5RqJY=s1600-w640
+https://lh3.googleusercontent.com/places/AJDFj42xko2Zra3c1EnPaHEL4IX0Cb535E6rd49vH5pVPbhX9fDxDajWxE-XSu0dJTm-WCYjubwOD1K_lBYOU5r_hFtlSHcKU4XE8v8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42dzNsvUr55Z__6q0zAsRSAoCz8v6cdFIGK6Kubjm97OoZLAzVTb3PH861JQQD2Cb5Pi7S4FzLq8kFJgWdzMhFLze4AnLg9wIw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj401u3TCMAgJ4E6FVzkp5JtvNqClTDhEIAWbvjvajwVlAYVGxIAjh3-BgcSY7PKg0mlmGY60pry1jtPuohKHX1mz5UV7y-MuBmc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4225k-C5sqwtJw0dkPd5QR5IhC0Uc1zJetBWvFa7MAJwbqeRSHCdUVmbJskMKvH5JlJ9FSAO1VwWNFKvLOScCzl7Ri9_irAPts=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42OcmKJuaWon75hoAKafLqXotrrRE4Grx0VCM6RYGI2VzHeJLthUDoWfOn2UTpod84WarQmFP3dmnOM60fLtKbCgU9HA-D6Src=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43xPNVsq4lQkwVOnkNofNV4pdpT3autS0AgIqu7cgkgAaTwm8BOkjET4shcAVPARSStYVnltyDT6L1i9px0MTyTPpxJbtiC3A=s1600-w1000
+---restaurant---
+name: Bath City Bistro
+type: American
+phone_number: (586) 469-0917
+address: 75 Macomb Pl, Mt Clemens, MI 48043, USA
+rating: 4.3
+capacity: 20
+city: Mt Clemens
+lat: 42.5985573
+lng: -82.87908829999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42L2YZmKAwFG0A3mdEaojpD2i4-oZOMYfZQ4ZwlWyARHpDUXthvHWKEWhb5Tq8Ghi85x1GGkhxvWPs9w9MU2f6VbHXMi_gNikE=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj43kFYM-qBu7rlg0NTemqfB3hRKsdCPSqkN7DLOabsnjhXsYABRcSvkHUGdwZkDpDhm2tGkAlmq0nuwGIV7GuSluMLzvvf9V44M=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj41XlwiWmJOBWQZlmhrYSerXTa0DAQjOpXmbC8V89UtvYC-wpaqnI5XpGyBfEykAxCu-xf9CP7znk6OOhTaayC0RLUlc0sys2No=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41515ANsSFK-Uvy6szciskGOQF-59aHky4iFpHdhfV6UObFBApmNKzBL-IM61FY40NRzekg2LGYia7DGxfD2lcvowNU-8kekGI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41dWlXhuu4Rg7emmbSiLUrC8mE9aBIBY8LlA1oG7EV-h8pVydKILpVQVah-Bvbkb7Xjl-0BAFPvQ3qXvprsB9giKYj08JGiVjI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42KsxqMwLxqzmkZDCaLRvRYQ8dk_m6k15Nfx1wtilrWEzya26SSw-CKyVNKhKpxoVuABufggH6ze-4v4Kuq9cgYbR2TwRA5rjw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40HafnbNT9PIDzIFHzJNKb1Aen-YrZpmhfxYh2KYPdk1KZzuweSfXQi-Lj3kOs_xvfJ0FMtj6GtqkBa03D0B8VQ0dzwnfu-PRQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42xesl1FJowVaASsZH_Qd4w0d1yyOdDtCeHBwOGDAwZNiwvP0-aVd5uLTbrfMZ0QDWHcW0i6Dzfj-gv2kgOquqjUuitzd30J3w=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41xw8y2REyd2_PIyRa8tBjihAvGNKHW0CM9DoSghD6Az-Rxjvogr7FMI_gjuPPvZOgOoGA9aTE1BPr04bUAewpVclu_yHPADGU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4165gBeXL7Wl6jumzPYBJXezKKGEy4HjkzULzHVEFBSjZn7rGJG7lKD4iSmJz809W4c_5ZXy3eZxoCdplQ5oXfLFC5eXiXR3rM=s1600-w1000
+---restaurant---
+name: Terry's Terrace
+type: American
+phone_number: (586) 463-2671
+address: 36470 Jefferson Ave, Harrison Twp, MI 48045, USA
+rating: 4.2
+capacity: 20
+city: Harrison Twp
+lat: 42.5661392
+lng: -82.8422851
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43HdvlU2_NX6MjFjo0zNnFAMZ9yIR7xNlNnYrRo1OFEUDnLMuZdIKcCtGyCUzAIO_L3FwMoaeaYdr15LfBjEsYfxzPBrxWI4Vo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj400Fam6-5Bd0lsIc-GmIN-1EAU2h4KjSSsf-8p8Qh5YZDeATnC7KR7fhiBL1Tol9FUED_WZJZUdq7US2rfxbSt5aRG-29pvpx0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42QwQdLY3XalpzBDMkyCktvwcYA4glW_SX4i7oTBWAtCs5k6ynFNstODRvJVeg55CAko6ChREv5nhiMKBdl8_t9silYwq3zVpI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40xepo2dP17Oh8l8Qcg1zwsIOU_pRKH8VNGpWFeTQj6KQ_KX0-3TwyqKZEIPLOMRocwne0M-ccSxjBMIa0VRzGVrGpMf63xcDE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40hYDOE9esoqoo7g8VIJXLuYbKO9OBifw-oi-OBxA8N76GzI4Q5ThclDXy2DgcCcldU-BFJjkORkJBsDHu5SpCWN5JXwiLcPCk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj428jjM_KZ4Td4GZ0__U4e-VyFm1UoMDkej8_NEl-FCkvKMtGx6S9iW8LeUbPui5SPiGlx2GnFj7OkGVWiBaF_DQlqjWwkCKMaI=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj43Ik741w2NplE6eqxV1JWmGTZgsgneZyH-XrpzMBaImV-Nj_Rvtd_2m62QZL_KTzEiuDXWvDiJ5jkJ-mcZASt1FBVY0XmO_UHo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40LnS4ztG2oYgEPz4zqCh-qNpXeex2JHdZb3Hc-jLTC2ZICGgX3eDBXOST8SgJw1z3wsDp92P4q33xmdNLDRK2ato1z7gFnv7I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40I0CntLr_yDV4wgXSbz0qXSfig2WO9XY-qO9Mglxiy6aIUI099mYWntKToTwzTmXkjvt4KHeHNWrBLtAxxd-jYKIYhIXeeDDY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43l5g4Yrw02ucLTU4XErXgAGZsdpl3i6uUjLAQuOiNaRIBxch8bRO5_hEh0bpw6BA2kgWzpDGx7snnRIu3YSONr3F3g5sZyvBY=s1600-w1000
+---restaurant---
+name: P.F. Chang's
+type: Asian
+phone_number: (586) 263-0860
+address: 17390 Hall Rd Unit R-103, Clinton Twp, MI 48038, USA
+rating: 4.2
+capacity: 20
+city: Clinton Twp
+lat: 42.6265339
+lng: -82.94633520000001
+photos:
+https://lh3.googleusercontent.com/places/AJDFj416DB2bmCiD0rk3kXZO9FCZsxJ85jLYWMi-UhazH08pzXMCPc-8MnTOsi6f2KK3qmFJxIrWQMROoxGKVXnS4fatRBY4-2Rf5UM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41LeJc0UpN1jACtjXQgCnuqVVB7P6-un1v2MpiP5wI_j5jHI52Fttk4pYzViu8xV55og9zyLT2lB8DDvAg0APUub1r0rtPe95w=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43fC9TYux234LlZ8EhXzM2r8DO3lvd6UEGTlJYNIux3PGBojGtH6JVbhwHSVoI9BdueZpavKHVuZnXDeR-VnAEevF497zeoztg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40RC3WG2FDMYtThxYfR_WtXrVckquYjNJX9qErKaN23dpLVpAGj7Tivc-ovNWBj8dXQyFZ30lfJxPEzxoYwSNV6-Qi2T-AJ4Z0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42nyVDMuYHUU9_HuDYuDfoFzmznZzcwBEDW-bCjR7zMt7kz1NcW370tsSUU8Jvf6OVL0GlG0IcCnq-31y46SCcRpGMDpLndflQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40TOtXTt0qkr6UMH1Gn5d4bxrrc_LlSoUeKkqT6qn_C0Up02EZjGcnvdx5km01iYisOTsIiW21UU-cslUnPVLEQzEh4OvnSj54=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41u2s1t4OJ4GeyCOivn9CwsX5y7R8f_NvBmy6RVQaj7BqxI6A-wjC2Rvf_A0JyjRE2WFiWUCVrxt8xKLnXKjRgUwRu0PIkG1wg=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43k5eij89muXba-MSxjAekA1w2H7xDEpQdPRkromOp7XHRL9xXiAo-vV8BMvOfnHfWSs9PgOSRdRlLfNAdZAKfBvKGze9-YTGs=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43tcd4i1wVUTzRrWTVdDOy-LTsExhvZW0ZnnGk1m9zRoXFolN9l_xCxPqSXwxDEs16Rm9KDp5qlXVJoeQ7tDFlSLDAMPkwQLwQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42VGA0g2fwP8nR75rb3pdJoNdenLxcGYyCERBQuMYS5vcOWy52kJQLtweYX8IPSMwuxkIZ58lUIICcjoANC4p6-uYnnyHtrvjY=s1600-w1000
+---restaurant---
+name: Harbor House Restaurant
+type: Seafood
+phone_number: (586) 791-6070
+address: 34250 Groesbeck Hwy, Clinton Twp, MI 48035, USA
+rating: 3.9
+capacity: 20
+city: Clinton Twp
+lat: 42.5486179
+lng: -82.9272337
+photos:
+https://lh3.googleusercontent.com/places/AJDFj41_8xVMytPEGhNtGv7sKn6leP_JXY58bf_nFuHEXgXIxVcBrsEpzZHVeLa6PJ6HtL8P6DkqjY6qjC-ju5B_zH0-9pSjvMSOn7Q=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40I08GFxSl_axfK6GcZyC-0k2SrEUhxwy8FcyZlJCr92HEDtCkwOZrxOJyxw-rJIAUs5o-nmHW_fZr5iMpGOwG-wjW1SvXaHWE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43l1yHh4kOJjZnKl2mravkXj7LbXQS_Ob3ob_JYOuIKfvCHi8tZIQWVKmpRt92UlIMT5hJjdEIvlFzidFXUSTz0LtX7tf8W2eQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43VtxYXD0r0Me2nvqx3woM-afGLaj98gJ0HY3A7P1AyWUnG3v9miAvAUja4aaaCHbuntN8OjXw_g5l5FrYYESQ_xC_BLooaq2U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40gNW4qd0ZvIeTvJgI1MXjh-GvAs_ytqwHy7fo-FUo5fDnLxHlgxC8HJiLmvKsRpYWrFFdDYlpW7xCxzoziIIhC_HAIpJmDT9w=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43A9hArRU7FO4LU_e2wbHePqyTtwme7ttTdLVmuhHUnDw9QXR_HYJXcvKWRONgXphkVaT0SVXtQS8_5hjmgSXS3P0WDM11XRdY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40KZ91VX0-5EC28uFKDiNhtYCmlzU5t4xbKBhwasn5Yiv4RP-eF0TFApGrwcMt2-pjf_5H7875MRU8D4jMSuEwbEI2D9Wwyg-U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41GQo85sUQ7ttQt0okAN7-JxaG0ighV3oaI5PqFnAhHYoNKawA-ehwXj1DI-IZkSdvV9VfB3jHojBUqizdqn29_vS04ujeG5sI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42SnPt3v5gZtKwuiSYEK9vDqeiqOpg7CUQvtHVaAXU_4xckrf4wG9U1QO91kdNRND0SIp4It4XeCkEHjAs3Jx3W8uUTRe-MdtI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40UruDhTN9yRxcPAsinJDcclU87StD57XjJ5H2M_ANRMbJXzPhfoEz5Quc2wQlJIvEKB7yaGcbxn2DglCYRn5dxpkCkctqGaDU=s1600-w1000
+---restaurant---
+name: Cloverleaf Pizza
+type: 1 review
+phone_number: (586) 264-9700
+address: 13411 15 Mile Rd, Sterling Heights, MI 48312, USA
+rating: 4.4
+capacity: 20
+city: Sterling Heights
+lat: 42.5534819
+lng: -82.9905473
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40vKy7rEfSAorKuuJ6_4zWzFpP5ispy3erfVlKxXZntN5h2b_Ir2Td-BZT82lgkaSTVPBL3GXvh0gf5OpE1XccwxZPOpi7w7fw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42Sd75l9BkUm9Fc6emA1Wqq9d_kdG41tOTyQLiKQSDZXkZL6NVs5ygJjz8tepvdQmLvDbR3OrxiTBvj3nwbyYVykVS63USKYkY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40BY8eLcDQKC2iuQE7dLY2CjZd4j_DG8DMA1vTxIgVHWoFabX0q6ekipcD2CFMjoaxcWcykKhHFSTyYjcQ-7GrMqNrJfht29BQ=s1600-w768
+https://lh3.googleusercontent.com/places/AJDFj41LF9RMfhOofV1ND6yonqG47dP38vL7xXjv0jMZ49eky4I6iH9nP5NXZMOJ_-4_IeYCplk7H5X4nH-msD9vwGubtgWQ_mYIv30=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42vmIW50nxY19J6oc-5Us3ret9VUmoEzX8pqaL5PjIg1fFN0FIZks4UFYLSB8RHXsvZche3WLK9eotpKX1oyNPvI-9af2ZqdLU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40ymLMob6L-yLcvXsQkL4Eg-O6uMtx69itXHolDpc3UQG_mf90PaE3Csa7p1Stk0_hycIIVHZgsrliBOiQKH2JZGT1zJvQICdQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40QqhQf3I8uIe_WQ0xEOkW1tFF1sVCoiTcwAGFGiaKA-4JWi8syJq0hCWVWJmsx0X1tqsm02uxhuG46x0O-ndfwc9HVu753vYg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42NZRndHEpmEjLjxtWSZIQ8xR0DHpl4Xy8P7LH8T2FRuCa9MA90Wri-OuSwkzuNcyW2hb1UmKjYnvWOqsQAtQe1YtcH1145dt0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4311Fr3qpsyCDHS683D9qv8a6CdHjim7d7fodjhDmBvpeNqg7OqC7CN-hfixShT42UmgeYWG8hlJB4dp1NyJNwHiFxWoXJY-Wk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40SGXJc75xwKheZQE2HWac52hyOtRY_5hWcO78xplt6eWr7c038drL1cRvZseGOCOvtTeJ8SUY39fsqXop1Aaxk23VrrLnxkQ=s1600-w1000
+---restaurant---
+name: Da Francesco's Ristorante & Bar
+type: Italian
+phone_number: (586) 731-7544
+address: 49521 Van Dyke Ave, Shelby Township, MI 48317, USA
+rating: 4.6
+capacity: 20
+city: Shelby Twp
+lat: 42.65900389999999
+lng: -83.0343753
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40H_RF8ck6WQh8pcCoIqAwW9Hjxw_cnjJ2jCqAS7UOLEGP2yp0Ewjo2ppNQ03crBhHuLt3fqZKkjlR3JWZxaIPc193M92VGBPs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Ak93VsUP9tSmnEW1OnFe-N8eTz9uDXimmRt2_pvB60JDyNNDSKCe6Rw__MBKmUTgapUl3oSE666jGSRy8ojktj4xmKd7FIbs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43InHfAyg4Mf56B0cXIctSQPsm-1vG7CvRfwB3PWvqGjquJOSlViRNx6J67nMJ9E4GcKbknqPuVsBHB215nz56cCTrcVnHyxpo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42pcZf-IGOiSpjBjRyIsq6-aLQtWVDwnoxdrdctNN_OWJxmxFCW04Sz_H8gQhZEWz-HY4FodqBaxj04TQRSyPa5MTmKHYXMSH0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40f1-Ha2ZYo-rw-NGU1-snttc70KGrsma4_-ZFW5nQq414g9RNRwRSpkGDsaspY8_OJIeErCl2Pf5aOvdQ8miXVYubhVjWiaYk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43ZqBOiTNPfW6_f4JL7tNCj48ig2pToXDJqPACOXvNbisxMoDfL9N_oKpjqZ3Y2VqgKh6a3o5OjzWCSHPUq76t5AxNA3AIoqcU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41GzTyfMLd3A9u31_61AmUpjPzIFBckbSSUMJzXeCeEI69qmdjs_xaZDy4p1YQ1BN5I6m19jZ0ov3npIi-iqDqdRN9GqP3om6g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41sw2IYcn05KvSctx3KPHHJCx-PxIOm02EhZ9y6kv-CXimNdnVOUeO_myYZH0eVdBkUxqlO_y7el2Syrb-YgG88aGgUPLd4ZDw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43vzNqXclQ6z1z6jLJDVYN07bQcYhMfRUmvOYeEjglsZnZAec8dmqDBV17OHl48pE7lk2-g5FM5r10DOaOvcoI60033ztIclY4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42cai_JxesiTo6vlkwyBp_cI0idb0F4YXn-b9CnmbjAV-bUUihtkJRDCNLt6HFPDq04LKDk35S6BI7bnQq4YEdMxNW0MN0YyTA=s1600-w1000
+---restaurant---
+name: Ocean Prime Detroit
+type: Seafood
+phone_number: (248) 458-0500
+address: 2915 Coolidge Hwy, Troy, MI 48084, USA
+rating: 4.6
+capacity: 20
+city: Troy
+lat: 42.56048969999999
+lng: -83.1874242
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40WT2U8RwvxAVn8WSB6sXsI96y646UnasYnR9Mu_ewyhRVZE2s6VNzNcg-G8JeVdalW1l8dLabxQMJPpN86IekusTgKUhzffOc=s1600-w845
+https://lh3.googleusercontent.com/places/AJDFj40xWFbvd47K8n-UqPDinX5mjApo3bnEQhl8XR60LAokKeBUd4o7lPJaDWebi8tPViIY976BVDXJc5d9Id6Iik42suAUq_-VQ_k=s1600-w690
+https://lh3.googleusercontent.com/places/AJDFj42G0WzeIdIYkhlFLJCJVeitLRXNPm61jS6LtxqGlUm0or3QkeH-1fg9CtIj7jZJn4lA8B7XnEw82tOQI4CQ2RAduZqeqyHOweI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43eYFh8J3SvnbY6z4v-bRjwKIK-_t6jNVSfYU0t0wDKsiCfNx5VNGBjfNRI5Mr-xQint3WpI18-X7aghbGoj-hY-Wu_4pVE8nQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41cUyPsX36u_gOwzANhGqbcnry_BJ-x4EQCIpxaBKTSgOl5ymg438mNA21E9sILnkcOR67_Uhm4UlwS8ztb7K1MsLm5wmPzwv4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42WvpLQBuYqYVR1udgr2etD4OYfSwjh917kan0_hLVUGIyenIBz6c2UmSv89IQ5nMLKEnS4JZKMAgB-xCFkNn2NwnYjS9ZNNgc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41-f1WJBEuXtZWo_HbvgExb4g7rTPq-81bLKnbjfZ5GRqYlGu0nUuhCFXsPUgPjLT-3gMVklXyJafUo6NSypKsOkQZg9RhT2p8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41FcYBYGzSJPt75fzuBB79hyylN9gqbZdoItu0sLUn-75hri1QsdOAKWlHIxegPREA-KAhUkfOqrwmsmddiECzqgiAPXfbh2J4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43HUl8tR7EG7oeYhkdQ7Y0r_zSU7vly8eh8lBO9IEG_Yv-03hte8AsnrCgXRrG6h6mKGsKHc9aj-XSeGL_n2Iyl7yP20d1lBPA=s1600-w845
+https://lh3.googleusercontent.com/places/AJDFj42CKFAi3h-APW5UW2frTMfEeo8AqG2Td9wStYWFa8HyHBVwaYYQZAS8cK4CLorn98byTaVG6L8rMG4Q3qi_QbqWW7H3Pw7lu70=s1600-w1000
+---restaurant---
+name: Eddie V's Prime Seafood
+type: Oyster Bar
+phone_number: (248) 649-7319
+address: 2100 W Big Beaver Rd, Troy, MI 48084, USA
+rating: 4.6
+capacity: 20
+city: Troy
+lat: 42.5621239
+lng: -83.17625500000001
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43zW_chPggoPOJW4Sqe4XBhdTvuNwIKpotk5QimRhJPUbTKb6qmD9S-Bo3FZ099uaOeg05w_vTAtt2_SV2gRt449lxjUijU_1g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Fb8nqqwCrcyxcDZilwZhvCr9fuz72QuogImviCp7JijMY-SNCq1P0Vnde-8A8IzU48MFSw0lqw-_VuDKkgoZGd-l84AYCX2o=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42mXo5w0ZNW7XH0ViFW3qu7uepxkH3Dq-ga43R5pLE6zC1nfKmemIi3yeUQvZyom-RdXby2qYEXpvA4nSKLGO2WXUGfjNTuoGw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42v_M2Qcv-lE22K2oELjQ1fWVWbvmPD1_hm9Iwrx-gnvVKovqUkZkqtzlhklqXfsi0dKyMd34mfszhAnkNQ7UmqhN_ZM19g1BY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40J7fMEZzAw2js6fsStlnuzwrG2_MzQivThW146ivQjZs-oFshWC_7VEsPwMA-BsL2CeqivDbI3AcTkKoxQFbTbHltW5g5U2Lw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42lr62VkgTX7GxMzppYBgI-e_dp1Ltl2-jN9eY6Dwt6uOb4PWURnkLJ_tfKum6hvU_hK82Od19B_SHzqtqRtx_1mf29WPzah9Y=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42YjWXUNidYwwXjqOY4pIpCnLSD3UJvvzvb4AmVerGz3RLr-pIF9SYj5q1e-69_bJoTdbX0cY4OxBWskSe5bf1EjoQFGAvvCd8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40HgqAPfARmNOB8T0DEBffJU0B21f4b5aVsYcIG6I6-TefB0QWRt9-JJWqTbdCNmpTqFNu8TsbKO88PnLWOGVqtnBFcSNu-QjM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41zi4vbV6Dcohdk9lm4uiGfvMKTbAYUe_EW8gMHZNHhYVdDtH0aHzktrs-XDJ7V5n56gHJwHljjPcC8fZ7Bp5sQZkXOeEwnq5g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Lh-CjkhF4NnXcCQ5cvYQFl7xDV5aWiAU43vKXLpCg75ZquIMD0dMTkx1gNVo0njj0vK9nDbHneIWwyZTnkDkVaUpQdhqPrGY=s1600-w1000
+---restaurant---
+name: Seasons 52
+type: American
+phone_number: (248) 362-9752
+address: 1000 W Big Beaver Rd, Troy, MI 48084, USA
+rating: 4.5
+capacity: 20
+city: Troy
+lat: 42.56277780000001
+lng: -83.166823
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40bGR7CoayN3gjJk-D-KCxqIt4wSCVUzGvFlgUG1ndIUlJ8LPewv6zQ5rKO8UWHpb3kSocqwf1kfmTpe0pcIR_-TuTB1KJDJqA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42KEc873-8tFcXmOZwfCFOMBRqx1Jp3zq7kmjfszjVqcQQ41vkhlW64wR-Jv0uxqBKRogbNSi34N4ZSBscqlloyKMaEW0IMI7A=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ghsE4tcRa-4vGH9EwyF8z7YJZnLODugpYj4MNeqqP6Iz-RrJKZNzYOv2IfBsuWnjoTu_q46Q2-uuqLPaHh3gWq7udmW8-2wk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43wbfEv_SnRsWIHQn0r7pGs8OcHn2V1WGcqStKicdfTAswK5zeLzxVjFk2H5mXRhwxw7n1L0sdht1fFIpPe4UBzgPM0HnXr1zc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43ebd3efNl6w8KxDVYhfNOWod4tRItCgg-5fyc48DDd0KMDw82CIdKhLaRHTiJeYmEKKuDQX1IyXD3ICT-0FNbuiI8HYX51_ho=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43UciBvBGBsKFDLzA_Y4D_zPgIJeSl7ZiIUYDTJ3KlHxQrKPd_4QQYtjQC6r0JDVyJXZou7Ep1c6aNH8e-VvaCIuf5IPpi-rjY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj438onoKb9sIZiwH5XZYTSvT_hRyJjfIRBwUypdWomcJaOsS4HlLECcDhDa3DN-wsaIoa3TD1ST6wbbY875YoPsqLotFKExS_c4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40CdKU9Ez0zbtUk65ssqeP6yGMmujmImGDnd0YuSXp5uHNKx13GwomUwTuVb-Mfx3xxNnV1rLZjr0l2Wcy8tOL9dK-KfxWNE2I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40-0965tTGxDiLcwEk50x3sAeBIvCvzO8_ADDtspIOvgsoJKAh2Zocr9I87ep3L4SdvB3di-5LAdcdti2WtHhyI_eHGl1Gv6xY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43LTbUSzEJiOJCYcK5To7vm7fRrBmg_xIKjgx9AUZTbCspSB6ZRte-kbvIZzhvjB6RSejbNAZsurUnxNU6QBEWTocof4h4WAtQ=s1600-w1000
+---restaurant---
+name: Cooper’s Hawk Winery & Restaurant
+type: Contemporary American
+phone_number: (586) 464-9463
+address: 17440 Hall Rd, Clinton Twp, MI 48038, USA
+rating: 4.4
+capacity: 20
+city: Clinton Twp
+lat: 42.62592609999999
+lng: -82.9444754
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40mFjXgA0In8-1M852xXU9UXzoh5rtCKAhzRIK5vVWYcSPJKvMpuxbGev63zZ9GoAAxMpZJcn_LhZmBlVZanrWIPEXcNJoG42U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40vDybM0_FH5DWwy4y4RcvBryz2TJrPOgRFQyg8IJYPBVUHkQqHN7eENACh5dGzrmUkcp72T3_Jd_pNw7b6INmoMkS2p2MW8oE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42oq4Kz3Dm7JB3LWOqkC5dgkhv7G7gNvINzDAIf_762KMXZypxOrc0Iy-3h-7XqNCmDxzc2PLx1ru8gC3V7fitMM8uWcpchcVQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40UMBBY8eCwyebFtEXzWs0goskKbH-m1AWuCWN8Ua1ei9l4Mr0j8VQe1D4HBarEGuvW0-wPZAnubeaLAdukj9V7drDMc8m3LsM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj425uBa9KBNZY3SVZjOetcJhHFt_4BLUDkGu69gvx7A0mH9hFQdalawtzp0eCMOSdFUSkvN6G7jcPAkxYbjIOyUnUPjFsNeoke8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42VnP2snSzzH4r9Bgzra-GTYdaDj01_WNar1yADjmIBhGyZ-3SaSBNZEr3LpEy57PgTYvrdClYADOfwBfjoHwPTGzeS-aO7FBM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40MwEl07GSsVSDh0_04vIAgQx2Q7E-tW-vBQ0T0ALrl5-4narWxISlrhaJk4zng6A5_WobgTI27TkNG7lZxTphTbYesBUIGQRs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43zdWufGrG-kd-yWlxiYEkeIAIobmD7iGgHVFSP0KNmeGsVyXZgcpV-bXSKD7Zgtad2olS1LqZRvXr6XDP1CuJjBMYguEAm_l0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40c-LqUDn3c4kONe4PsdJidKLzGjxSB_tU8y5Tu7Imn4KxSeVVJIWxqBOmzdHUXg0BblryRTocRbNYx8ad_4wodnmotRHLOgxU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4396sidirS-teMDTKprh5nnCIho04UPuEcp80sH2Mwt_ozidEBd2puQKP3KPMpBmFmaj4nTueWwS6uIx-aXPdX0OlAfwKCg7-M=s1600-w1000
+---restaurant---
+name: Cooper's Hawk Winery & Restaurant
+type: Contemporary American
+phone_number: (248) 781-8811
+address: 151 E Big Beaver Rd, Troy, MI 48083, USA
+rating: 4.5
+capacity: 20
+city: Troy
+lat: 42.56292550000001
+lng: -83.1447013
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42Rg4E7F4reWH4CAgwWMD4_y4tfd-5x5gwaI-FJCX8-Hp2KzbzcI0TUjS_xqosE3Z59_x49_AMKfHhRrox0nSD4L0n2D6ab6HM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43qvzhro8nLbLJu_ig8bvArRXPMRAf230-ZMyfWdZLSZdyR6MxnDDVMyQYmQRP4a671wpTjrd2g6Ndvm_jGLCrr0UmXv8wzHyA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42_70vD12moOFbP_diwrnaHoqksN5oY6aleJbrki0fmCND-vhYjqVrvYKQZoxMJcw_fTK4VZy8p_BflFaf4Yc_jdRPlIOMoHJA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj406EwqcVV7UDoOwScCAr3WT-wVweZRILLQHPbQz6wAAmUK6p2l6R695I31AxNfKM22Hp1d16dv0E6czg_volPcHVln6bBUfijY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41YQC8YAHdlACWhyOeVGxOusCy83ThgGuKAQ76sUvfTgeTR4j3X-qlQMZw2Y-DDgFQkZn3Wdbo05enN0FeS8efOBcBozGE34xU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40wgm0J04xymTUh9yQZRq4WixPRm1ADEr2I9Cw8jxn_ZDC0JUBC1r9uzhKTAkVliuqSqI2EdS6ll93c21IurfWE7dgdT2LFHxY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Fu0jF6PVdYoP1QjaZApxiLE4IDGuJmyKcSmpi4gyKSH3wJ_DjEDIIHJj9_2UDfxeARjZ2CNw62CnaAha5nlGw04-VAiT3sZo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43JTTYp4P_T-aYzWIFNb753VQac8EUzKg84qoY7ym2dZA3ZSOfErLXJtCF-SwqU87uziXqbzTZ8GdVF9NQxPmbZvIDEwPh6deY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43euwCLAFgFrGx743urWvd1dYOjyl56-iT71Wfxt6LhEJ5YpzUSaNjMxXiFlLFTCVhRFa1iC7aHd-p9soxUKj1i9rjIBQB9QS0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40k0WHjvHd6uDr0u7LqoJDdRq9vcxwujXQ9ZZ5-FHYoFRsCecujNNV9HrlJDxUIz5JN5gwxla-Arc5dWWX-zPgLv9L7vX2_CyE=s1600-w1000
+---restaurant---
+name: Ruth's Chris Steak House
+type: Steakhouse
+phone_number: (248) 269-8424
+address: 755 W Big Beaver Rd Suite 151, Troy, MI 48084, USA
+rating: 4.4
+capacity: 20
+city: Troy
+lat: 42.5603213
+lng: -83.16155529999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40h3FJLUPIQmKWa_K7LUn9mLRwBlCzkd1uhWg3cJMabKKDhGu4b-CoFDjir1zOKGY7_fMk1nL50NJFgmfXvUGi1q0v6gLxweYA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43Tp5t7byL_otp14GRCixg4xkWJf0b1nt7KnrXxBQkviTCoFHJt8W7BaoLnWk2AYqMTR6lKx8t7M698f5BjfJXnihrQ0O6D-cQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42G3KxIyKikXS-K_EF6co84CbROqQ7v3Buz_Pnmwx1GPE-BhUhC-yUEr9WzQB3vrUMHXTB1_ycQ9hqtbJUznUchCc8zf3P9-p8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41hGC-tW2IW2LWl0-jL0wPU5tnoJ8EjyX0ZMf1X2Lp5jn8ChNHe5qadqyIWLiketsN371apuHiRULfSOvXFGBit192Ty3vGLDU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40_T5IdK6NwGKlnjGn7R1KDlVSftgV9pGYdJbYM-UI8KWVyLVZ3CxGOOnwMH-Az7RKOZQZOm8Rhe8N0RjWvsv2uax3dkg_6Gsk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42h0epxP3zU12jUHbu9QeNicLHdJdEzrHPMtjxCF8AkYFdIWEQorOJyGGlQT4RW_217Cv5vHlV2ftcZASMXcHOK4VTJXs3pRpM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42GAqmrNe4kVSi6d-CLZ5av5k8K1ygFsFGa9A6632zCDlxOvHMY6BO3DhrPTrg6uMEpb4y2D2IjqSKOCwfQCbIboKHNpUQrFqM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj403tjwOW3_Apr9mK46x9NGJ4D4E3FQ1H9HTwVahD3OyT5kjRKiYIZEvUb7gdQVvGoA13aB8YpQuMtre0D60WzVya03EN-ZCpeU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40sUXNfvmySyrM-XKdF9R1SZyRAk6OIpua8XU6njR5scaq4MfU0-Uos8E0CtNwVGi-BxzjltGPGCT0Y15iiaSHPs9lSF8OaWWQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43NDgp9pKepTz3OhzYzdJDi-5747AI_laLb3ZvFXnZhYbvG_UkHs4BryWGOj3s3r_AKLgRetMzZFR8Opbq9nk_d6ZQanSTqY-U=s1600-w1000
+---restaurant---
+name: Ale Mary's Beer Hall
+type: Beer Garden
+phone_number: (248) 268-1939
+address: 316 S Main St, Royal Oak, MI 48067, USA
+rating: 4.3
+capacity: 20
+city: Royal Oak
+lat: 42.4876295
+lng: -83.1443717
+photos:
+https://lh3.googleusercontent.com/places/AJDFj407m1hzP8OINDl4zlwRO_i8z-tLREahaOh3wvLAppP_IBf_7Q4GbVMpJILu3QaZ0NMcZn5TY0-DazDcdNpSrnsg3fMkqlx1-GI=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj42UzXFfLzAXwrkSmiJUY-1xRxsFt5wrUOBlZhCcE6J5rB5_gpy_N3GxcBh01-_buyPGklRb_iPcChuBV_aVaYSvvOX82Zhb430=s1600-w540
+https://lh3.googleusercontent.com/places/AJDFj41Ro2DxoUEbB51eeMQmfoyZ5n4SC1m-Fh5RcMBJkuXQU1X25nt1JzEvDQVyaZjBJxiZLeIgXBCJd3vN2OhIfQDT1RbJ_YAEAv8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj428PM2VyEp_ZecoYBJF2uNSlR62MBbOsMlD6TScTXNCKEvrhEaE-W9kgqr2wIDTRDIlxGT05yIcD5ea9RdHTYNBmNWYpTxs42A=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40hGlQQEBJcQ_X-LBAsXpzu3jhTdwdoFoh7WyIrfjZoGAo3y6Rw8rN3y81znKWyxb_D5gbA20jmygMPftG14GGFnmRGQiMCMP0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43GTRMkVaqhmveuRx0JwRIPPurPRGjFuyG0XTikC7mW2edSjgSmh-3m1JW6PAA_iGuBSMZRuvS3aGNGatD9R-cwmmkKYCxh9YQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41XSBiwjy6Ub3QoZbyy5UPeGeRFITfZFgAhUNMiLOYlv2IWlybpVi0QK2row0wLO3gfOaiHAQg0Syk-5hMHuw78lXaRg4HEofM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43g-Td8xqOaUFbBCw1XgNbUi7gpi6HTCiaaYy94xRcbO8bBjRDMTfX9YQ_XKLTj95v1VwVDXonYTsUXmEOiu_hUPlvp2ahfgu4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40rA_9JGw_oh6hOXb9AhN6tsnvYSecMeZxjsPdk7BvaccvJkBF-uEYzgQOn8NM2biwGXDzAtFH24xq5vgM55B8jOPj4OT0p_Xw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj413ZjmGIhtcO1JhUAShhS1T77Mkc4tDYXoiAnhvDf78mOQXMxCkbPkFb0OJTsWUAu-miIAQMdXrkMPzRnuxdnfFujmFmMUXXPo=s1600-w1000
+---restaurant---
+name: Tom's Oyster Bar
+type: American
+phone_number: (248) 541-1186
+address: 318 S Main St, Royal Oak, MI 48067, USA
+rating: 4.2
+capacity: 20
+city: Royal Oak
+lat: 42.4875952
+lng: -83.1444932
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43nDPuMgIlt3RyNvCT3eg9uLieRHZHZeYDMgef6fpObAbzcKGs8I7SFL7MRcpvvleQeQBJP33LTCrhjHIa772hOwR0stfusIKo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42B159TS3plplwF2Lkp8K9eDhMrBELw_sOdeNwbM9iQ7LsmpkZwa_93ZndpUjUrwl8R8mt2h_mGD647LkoZ-Um1feVvJN5LCE8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj427GUfBNVSB8TunOiDbE4UCBb27_9AYyG8v8umva4qmq38QZDPNY0cuH6HCJCaunp7FLedMlckVif4dvnJYWKq3_LS8pLXaz4Y=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43LQWG3tgVuRHGaJv734BxHOKCeFKGytLzBZQI2dSiX8XYEaemduvaTGqa89GkxQswpl2eVPsBvOtjPN20sLCzpGqhHl5PXWZ0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40T4hZpuC2WpKQKJ8VfmLOIkC6M0gJTPfz9RJuz0ddQkl3sRUcPiAZzNaGBF7DI4Vmq7qWBCDzmDECRHLBxrLi52gX7EVRZ2gM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41DQ2AApiPXDKSyKGp3GzzkPijJfdeGqxjHTFDauc-r8kRuxsBWnHH0BCwJbOZkUTsMkmbyfrwFrczkQTOWcLDdfs8YwfRsyq8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40AzRL9diOcqyF6kRybkxww4EqKYI2ptC01Jv4RpwSnrI9NU67R88DV9G1YD54A4O8O9pImcWyb1JLDDI8WYg4LU4JYku3rQw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42-QIe0qq9al8jz16aVrWIs_NyPDvSoAnS04lkqzhh_NFqnYnb1HzN_2L_3o2W43RGXZUpdtmW1T39w-Jn9Q0kCKcnyNj45gus=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj417Z9ywDtLfdxkv_zxs6PhHSoUvizAGWYMypg240pFMgM_8i_2nEU4li8q7wsdNO1-IAUsNZMxSLvZXHVg3fit4dnPR_kTq5A4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41LnRCqbYpUFpMrEDdLcD3nNY78jH_Cku5UE1IGUlfw0X5VSNiHgJDlIX2LnChPpMETQybLA_iYj3WkJtwi0NW7DBR-HVrH0sE=s1600-w1000
+---restaurant---
+name: Mesa Tacos and Tequila
+type: Mexican
+phone_number: (248) 545-1940
+address: 312 S Main St, Royal Oak, MI 48067, USA
+rating: 3.7
+capacity: 20
+city: Royal Oak
+lat: 42.4876744
+lng: -83.1444951
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40FJDwPgdvO4bbForLN7T-HHtHBFQpc6gR-v2KdfGc4KbhaGjmPPBQ0uPB7xButwN_oVm7vFE_lzGNUrCHp9EhcZROB4hqqJdc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43nLBOffQYJ6RqUsD1HOMLLX4O34BEbCQiDApQPaRkyxyNXmYIl7WTSo2sMRbIwcfx1Py0o1A4SoXSS3HksW6ov9znHoGMZ7d8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43EAtaHNyx7ww2EZEHwHScgvHV_Htl5d2cTXlfwXHw7KG_xx6gwB4-ePtC8XJ2OWjTIX7IZy46EoAmVbgzgAkscjNYxtXUjYII=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43CB_7XrIz6d9clvvLyoAY7EdEBIV9HcDwFCpBvEi1ky1eftBlGgQTVsK5ZOiRq8yRs3pHGegsmeXbjaDnfVl6ULj1BJSEaCxw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj411pS-t8KEMDNhO0qyPxFUsmKOA1JoS7O-w0BhKda3PpMwhqTXriVoZA-TqWYoxxfL3B2OITWJoNH1wIuEMYdOTRZ3chToweeY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41V2SUbjcs1XCfny_mwO-4tdfgCSa6goU4Ph6pdCq8rccR4Dc0YbhO7NWzcS-AwvN0Z9lOE0BW3Kr5wG-IY6M6P5jK0FzjYnC4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Y85iOU99fyGjN3CZkx6EQl--I0fnPTlenLit8WHRgRx30dyDXnvaSwSi-qeqDaQ0sjXTo6NvU0D8MnbDiwnV9RypXGY4DwJM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj429_hzu-5EyVEO-XDZHnuFBYbkjGKJPBzU3j1ojQbn1_x1-WxKml_6lD6N21NrOo7Z_WZq6SXQ6hBcWpgtvA4oEkOhbAg0EV9E=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42slxhofaFY6pOkgoseFeGhHhZ5WYVaXvOP4BcY1g1vrJShI9H3aKIcHU7aYJw7Sxn2HqcQKHTP_4Wajkk6vnqL0Ovf9wWgIeA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42FbCmc1C6XordHI8MSne-erFa_1EQ5SlW4ZU4YtSiSSJJ1FqRHg_FRFxtly7G3vxnftuI155pY3e4OJ7GTBxaf5bMH8MmOuck=s1600-w1000
+---restaurant---
+name: Prime29 Steakhouse
+type: Steakhouse
+phone_number: (248) 737-7463
+address: 6545 Orchard Lake Rd, West Bloomfield Township, MI 48322, USA
+rating: 4.5
+capacity: 20
+city: West Bloomfield Township
+lat: 42.5426055
+lng: -83.35877769999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42CoJhbTE1NR8H-rouFhlJa5nHVvAet74GioVs1E6R8-SBqxb8UwQhECr0zyxRrU7hl_9xY1FVdlG5IKXSCCffBqSWZ08C_mCs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4050jpNM5-kw981Dul-5rDHFhCHTsBzrZf2icWszp2uHJ6pPDw2NRVLGb9Wh5tqlwQQJMgfRTVrvoHzz95Xb69a7rCqfXoJoxQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41dLI5OWyGY9iLinQBd7D_n-k_ow6ej-4OeZ5kt3MH9Ky5LQ3DSfknbYvn8oFpVGOnp0LzKrtIxNpdeCn1AeX4ERRPNS7Mk3wE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40NR4NIQnmCOTfJqyWREE5kMDdz8S-Ml6oxkW2z8f_-vHA8YYhUTrcj0LAKHg5TcesqUD3lLj5HKzEi_MkQ7v5hvTSK42PDIYw=s1600-w640
+https://lh3.googleusercontent.com/places/AJDFj43Ykh5Y8G7yh7IxYaFMaJ3f9Y2ORddOJLlUcfmmM0LbpSLoO4qajeupe0a0aeJKxUBCOenPonj2DceOIlVsOWfS_zowGG8-JM8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43UeTIIz0UzRn1RczQ6DE0KtaZao30I4n4v8pylmJnYMwITmL6mn6GkxPXoEESQkPQYwBcDMGGhn-rn0LRidcieyOuyvgMa0ws=s1600-w640
+https://lh3.googleusercontent.com/places/AJDFj41Hxzx-BecKkrIc79e-_6p4FBdQbGyZBwImqvX657Y7d5mPrT431fTnV2VJalEGY6mYHp1kIzCcKMJgqRXcXRi0-nR4-eI4SFk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41PuEDrezIHJPNiUQFlMUZJFw9QqJMQrCQUgczpMgLEZJSHH54iFPP8UELdYICsjOpRG97ppiiOPnBYTCRsdscYMSo8LkfrS1o=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41VjgFTaWAsdmfB7-V8uN5QcD2bAYwpW0FUPr7dgRS0vB_vR3XxKhtumEzawDVYucfsLnqUhSO12tMjVJbHhSRg8wOInVCylfg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj431UPBWnG7DN_kdDBaUgqNXJhiqEt8pR8CRa7gtQuBaFcAtTfLs8hN1cBxbpuWuNAnIQwUjU8lAtMqLgbYMXO_MqAjGlXZdM_o=s1600-w1000
+---restaurant---
+name: Harbour House Waterfront Eatery
+type: Seafood
+phone_number: (226) 620-0101
+address: 9550 Riverside Dr E, Windsor, ON N8P 1A1, Canada
+rating: 3.9
+capacity: 20
+city: Windsor
+lat: 42.3392918
+lng: -82.9280125
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40vBcHSaf-hlBAOVomwt57Yr_XhYM3zy1bB48EEmWu5YQpnTuiCqBQqdrXGxXB6PcTkHzccBPo1iHwKtjafKy2oms2kZMUi-x0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40jdnED_QZiHccQbduKk1QAMXy7chZUUtlesvdyg-B2vYDutbRlNdjLSYobJM1eTqFh1QjnYwK--pYf-WH1xoptVo7I0GfjBBU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42LmKwR18EIQOTbxGFnREvG59FO7r19EZtZRLJ_fxJKE_qxE3ndUUz3gxC8r5W42PkHNlItr36sZNBSY0aW3P8U9oE-FMd7V50=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj400Qyb06oPSTgXrrOa3OudBYI5RWtPvz8oqXN7030uGizZKRxeJboYczEkK_lzAU8eWpnzpsj8g0-bS3hMwx1DKcMWBOBPRPUs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43dM5rlZnyBYEeUyKgPBSY75fxtLCMtYN2E2PEsQc32YHUX7_H8NoUlAIRIOUwp5U-jJstqDi4Q09JTiGigKbNJw__0M7ZnETY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj435VafAMSPo8_fSApqDOzs1yyXh46gIYjiOWnDBBQpiLqwMSrsbo5akrtDDPB584xonPrKhS5bwYAmyaCGo0ltuEg1celn6kVU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41AREanGbNWSN1KFBwwwi-bBW8HyQD0JPWLuKIgGDOOi3pa-cF815Lq04Qopldc3xmI6ibGb-f5eRrGl4XLYP59AOLLMRzjv6M=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42ADD_FYZKm44tUWhObuEUXLYNFu9S0SZJKD75pdTQM8V6Rx2WTkFIhcVCoTy3S-eTrJuZ_hdM1ZAOPgNWKfDnNNiIhplK25x4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj416Xf1oo9gUu32KRULeuImIwDviZL_GASpIEW5AC5aIGtAcMfGtXHs168FuJijiT-GkYt6SZnQXNGRsq10rlzb1ztfsItSci1g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41h4Umxt0xPtz61wQjAGmwmvjBrvp9h_SQYbBoItqQkLJOBk71Iq7x-Bm3AUx8dBZsq2hMdCuEyanDz9B7hDe68C1Qn4GeVHLY=s1600-w1000
+---restaurant---
+name: John Max Sports & Wings Lauzon Pkwy
+type: American
+phone_number: (519) 915-1900
+address: 2601 Lauzon Pkwy, Windsor, ON N8T 3M4, Canada
+rating: 4.3
+capacity: 20
+city: Windsor
+lat: 42.3104036
+lng: -82.9375513
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40VwHYwxst3Y4jCPtNbStBeV9e5zEI_l3bf-o1avo-HoGXjQfN0hv9KIxjFAc-su_ofSP3GDT9Vad6sM-yG_K2EjOuNEEpay-8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40GjKfPOXUUIG3iFTWZI8u6Fv-zTIUkbPWJzXqQOY4aga9UpfPm8pNLhfUfTB2f6M_iL8qK_AWPYOC9jIFgw4R9qIroSjwlen0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42oSarCnbMoXqeYjBKiPl0IIdPkP7J7kmFN8uQA70Jj3GoedmbidnE4pszej8V1Rt_wLa5OiuKvdUB7Agb_0kzFfNF0FvFb5nE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42VEkfWCP83_wuKa9kfsuQwLjtPj4xfCRf2dplENRBuJdjqHNiDTfD_oyDRv_x2bK42-dAZ2JHpzmajt3jGRRemNC0yxydCelo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40whfTS6Xy-dGmotXlN9WuqgLpRyISt_gk7ZMHwElNldfy7hXifIZeX93utAXfAokMy3uNDcVyZjwQFPpWAdVtHsfrjOPBfI_Y=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41wPDMPl2kHpUjUrsiYAEoVheBzGsRHwNJOQEjS_7I6WVpYNYXDqVegWIsNQQJ7ou3-SUAWjF6RmQ1yD3kl4cEANzQdxHomWaU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42Ot1Nk_GuvB5YZJ-zU8zeo2U-fhtKQIrTCfEQJnB7siqkS8t8okBKMN_amSddIGsgQDOelkY7LfzL0jTSP-n3uiOo0Je_BvWE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj408i251jM4avwasHGHPhdEXCCo3Y0egoNSoelDEvU_VLyxEMDSADe9EDVQQDZRcHd8iB61l8NvQ_hlXs6lsM9spN3tIyPHFcSU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43FakXuFpyebw3sQvcaCukGKLbDR5M95EsirmlHMRO9iJ6IPxbav2M-LCIH7GuqQ490dksGy4-DVGnygfvhif_t8Jxvg-788ZA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40733N3uG4k7SVInYIZQ1oJ72kFsIgf40DO2ZdWxj-PZFJnTj7kgkQ7FJajsaPvw4x5EPz-8Zmo4lYxOhPDur9sCLLdRSEyHHg=s1600-w1000
+---restaurant---
+name: Fionn MacCool's Windsor
+type: American
+phone_number: (226) 315-2398
+address: 430 Ouellette Ave, Windsor, ON N9A 1B2, Canada
+rating: 4.3
+capacity: 20
+city: Windsor
+lat: 42.3160879
+lng: -83.0380282
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43dYAiG4NaJpO_PTDG3gy12rsAoILlERJ53V2uonTA0u8mJdrvqof4wI-zB76eaQ4GCLhUNOPvxca4QvXgngwWY4dD30fA1fzA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41W9zAZNb4Hy_TVQNQH3H_4NjlpIvmzFfZ4x0EjtKKjjoBOV1pdIzsyr79BIDrJ91AZ-VkyNcrxzHkrhmfpvyyTkeggRq6ALNc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj439HNlhte0fVSqzsQOtd8qnomhuyh-Tm3HZu3l75bopd_ObFMLmC1dCA3zgKbLpF_Wmfinip81PXOh3P_n92KJMJW4QDmdQ8tw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41_N47KICmQ3CtWPueORggC4I-HOxcOUMcZM2NFkfS11QAC9l5zbOFp7X2Juk1MWPe9ErSrF074l4JiWIWDtKIH7sKnJ66yaSg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43OeYeHjZ9-iQqQ3F0GFhcioNwL_RwCcGGfgR_7IHNilyyHxCpRnbft3AH38jx1LN3nWFmip5vkDacc9MAHMJ4IMX-s9qG2sig=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42rSidVmxM0hYY566-dHbLqxSyvHfAlafYg6kJZAvWbUhNOJncpIOiEcYGntjjER5lmRqm-QFmKvQLapxxH0I95UYIvTourI8A=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj426480YcCLCxOD_UdQv10OSKFMamGLrRajyrGbVEMDSKVYnw4F2gqCOZRPnVNzzz_i1v21Cx1xDHeoL23n6x15E2JGyPMSYM14=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43P5f8bs0LgOEl0JG9-AJpGpLKWMR1cyhIfsgrUJqa4lwl5kZwbndH7hcUy3urBIYjo0YYt9eUq6crg0nt6aWMVxkJn_iMWCKg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43E0-w8sRtVUicXKK5a9E2Fwztb2USM-PAfOLIRcupaMYOWtzZ3luhBtqX0LaAicClxougHmaCXpJzE78TlSW1Xivrkba6VcMI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41cxr9xdijUcINGqoqhUo0iQmW0hogOXTgdHg2HHSt5OpF5P2CovdxojFvCvS70eihzqX7U-4fJUEONBpDXSl3y5U1LRXOw0yU=s1600-w1000
+---restaurant---
+name: Kelseys Original Roadhouse
+type: Contemporary American
+phone_number: (519) 735-3390
+address: 9 Amy Croft Dr, Tecumseh, ON N9K 1C7, Canada
+rating: 3.7
+capacity: 20
+city: Tecumseh
+lat: 42.3068116
+lng: -82.86895040000002
+photos:
+https://lh3.googleusercontent.com/places/AJDFj410lX65zbU_fNN8lz2s5PqZfBZf8KVoBV28AB8tsESMVSxrpSGQvQVeDXT3YwUuGpFgChv-L5xAum5HSqarr3EdrLAxzGNmDQw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ES_CqVPlkARFfKMZfGnwNKANY8-0lx-Pb9D6CiNQhVkH88bzcuZADqt7DjiGEySrYFlUoo_Rc286iXq3M9ckBVdxVQ4udRwk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42jPmrzvpwN2MUKyzkx_CIPIUQNOAZyINsyn19tLSHzaWLWU8RZ7DduKZWzL1gVOy8KYqxWKbG4NbaIa3wibmRehktt-dRYw0Y=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40KUnHUsiKgYyUzMzbaK0nKDp33JDdV0Co7Jc568Qf5e_PR7a8NvqnemImro7Zly8zLcioNd1bFiaVc0_6ji21uGOnwX4kc_zk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42SBHJaONLTAy9vFC_Tq7bdvmRuAFWsNzUwGB1HvDn0joOGzIQ_k6Aaw5esmd_1t2v_xTI7D4MeLOtFq9t3idXhqeM9OiVL7h8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43NIUhTjj9beu8ckLwRmEB2blVGjeiiUVFTu3u4UpeUKnjOVebWUr2gWk_k72q6lNCTcxboInPR9TpRbbfR0jXysM3ns3xkt2o=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40XwB0zJ6VIhWmXPUisSrjSu9GRGhqHih1X33KWTNQKW_rJWL3X7EigClnPWDU5EXke7RqRmuCLTcfz9yju5QFS6NAN8VVck6A=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40scrUiCKVNf1bXsGH4rA2jF-noGGuSczckjDCz3TGUZSJ5FLT2s7zUB4ynknt-4zGZ0h5nsDBn5Q2sTbUEAlhnpGU0_1BJruI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40IOBPxz6fIMya89p1GU0zkUykbTLf42iXMUy_iftT25XVepN0TZwTywb0CnAutOin0pKGvWdwzslZ_ogqFafmbT__5EZ_duGY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42dsh0-c76T8q3I4C1unOJt_ueHQ6wATBhHDtICaPylQJ9K7VJf7Igwkz-_KcwxktyN1qzUeBuruIBs2tsH7UjB6gIDDoXUbyU=s1600-w1000
+---restaurant---
+name: Alex's Gourmet Market
+type: Mediterranean
+phone_number: (248) 297-5520
+address: 4707 White Lake Rd, Independence Charter Township, MI 48346, USA
+rating: 4.5
+capacity: 20
+city: Independence Charter Township
+lat: 42.7049183
+lng: -83.44257929999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40ryNPgWCywgHtOZysr7Ybh_ak9kdqC_dD-dJQ7lmHHu0jinlOCN0evLbYacoqL_30qX_Z6HOZu7Ej1-8tGJPxyqFZNyoNIQm0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj417Rkn-zET0ScuaFfY1bsvysNqjlGVUQm0MIkJpcDlraX5zyT0P8-zxawSaxDD83KH-RJG1YTSGV-VeyRegCYcEzJhgK_FLg4o=s1600-w864
+https://lh3.googleusercontent.com/places/AJDFj41MrVWhnb-vrROYh49FwyK4ATMhaLjUrUFuchVuRJ4Qg0LT_-UA8xCFL9kLeV2obdycCHmoLmd7eYH-ciK27ZrqELxQHArIuFM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41IxKkGJXVFYPXorlaC5HrDd1DoEaRAbhnN10GF73cXX45T-YKZrrnZVhLVVhzaiCW66c5VO7r-2QsIILJXczWxV9hJx1jT6q0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43eyOSdkw_c5DqvvxT__JyXdaTXvKdyeqQvFETNXjfH5MNBXWuI-ObGae_cbX8UV6rtBeb0irEN5m_zafuPcGBGAtxC76hnGLo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42JtknvSINvUJPSLvclO2CXFZfCw_K3EYMjVbc1CDdDF_5DjAmFxy-xZ7h933ZnIhf6R-KoIEt_j7o0SrLfuo8bRDyPHu0QQCI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40pO1jwp6cS4N-DSQ_0IQ-6HmrYKxIxUTa1bX9pZb2EIIMue_Wl0923b432cwonHuijPVnRCb1nIlyFUVp6FFT6HvZ0hQbtA7s=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj435eOKUeo7BZH82HUy09gY-GwFFG3_YkXkH90ss2xTKV08CcyB5ImjLy1hla46-Fx_rT69fLFoMBZYXod8LWNg-r-CEt3U1a7k=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43NJG0t_InjZpzkMfGxVDhwvWAb1MPbnjJZVqafF5HmS5Id3ZW0emG3ORDhx38DHoVgbQhA6F9PGQIrNR7jw3y5oJQkJ50lnV4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43v96X5Hqc-7y1lPAAjIpPqHhwYD5julokwR4vlajcWihHmBKLXEFaTj9cvxscpFCZdhSRW5o3j5q8ESt3KAl4DGSoNaJMD1V8=s1600-w1000
+---restaurant---
+name: Thompson Manor
+type: Steakhouse
+phone_number: (519) 948-9007
+address: 5355 Wyandotte St E, Windsor, ON N8S 1L6, Canada
+rating: 5
+capacity: 20
+city: Windsor
+lat: 42.3277876
+lng: -82.97140879999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj41TIbAaiiIrIlTGOlB9xSCNar1KNb1ekMliMEvWhhgDuMJ6shBeXMP3SsZoi1auc1xXhTqxK2j9va2mOe3x6ipTHwFeGVmTDVc=s1600-w1000
+---restaurant---
+name: Thompson Manor Steak and Seafood
+type: Steakhouse
+phone_number: (519) 712-9511
+address: 76 Main St E, Kingsville, ON N9Y 1A2, Canada
+rating: 4.3
+capacity: 20
+city: Kingsville
+lat: 42.03827860000001
+lng: -82.7364211
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42OS7FNGuR-3o7HVg2eo6uHvY4x1HfC5wdcct_Y-4lwZ4PU282l1kqgp9yiqysucz0kJ9DWeuMlcGRjIa7EXKPTKtfrWOcKBA=s1600-w988
+https://lh3.googleusercontent.com/places/AJDFj408vOuV-aXVkyqcDcwPFy85Hl5mHIXCxifus-6QAeiNGEJ7WhfDdea7JWvtMxdmETh6a_s35sM5om4J0eGtX3eArTsTCflcBHs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43V6iLIPVxm96cvIRUq_DBnPvjHT-SSfG-doguY3Ar7KzAwvs0qeHpakqLnFZvjiWSN6ZWfnfiSm0Tlu5uYR8p1K-KX8W1FwQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj401VswF5N-0FA3aiDF5OOAhToMnzK4pqNbiRtEsqC8sVlx5zoJOpi8jE72XLmfAOWaTa4KoKXICeuKqDOaXHQ4IjEVQ-lOpzf4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj422cbxQvZ9fiT45SP0WG81cHMnGSQNf8-9ZW5RfomKeCR3Tb01y2URr_XFGUoeLhQ1Ce6I_iKlSdfvZxg9on_ymPPQaNutj3MI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42GYtGnonv4HpkeHVS8JiOV-3DK1qsqF79avwv940AtvQn3mcE0wjifT7g5mu6_ASExnERPHrKUseqJozJliRdlz1_AhvR4OXQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43VGNeyAj2T6Zlg62I2esnVbrqzJJPTvup6zTpFGcmuSx5tN6cix67Fs3nwF2QnawpDRFTBIRg5i_V9GEjteOmRAcPJlENWFmY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj415Jv0ENzb-dVeCoz7YSSSNPA8c8MXHZbIzZFlsOl9Me__k2x8JhJvFPyzT9xV3OAIWR4Vdp2m5I5Bh-JYcbDIdM5d2GPvVMFo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42O-Op7RQBd_d-z9BeOfbdKbu-qHP4gK3zlmSbL9hTKS3gfA5IRBVjK8OOrVLCrTrfTzmi1cpNMEml0RE1as3N5YHAInNgo6tM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43QiYXm3NELO2SBthptJlTRK97iRmsmkgPaNhhpDPf6F4sf-dLHysWFUgUXk_hVRkxsi4ipwcullcL7U8gg-hItXvLvODjPHXY=s1600-w1000
+---restaurant---
+name: Buffalo Wild Wings
+type: American
+phone_number: (810) 603-1299
+address: 8251 Trillium Circle Avenue STE 102, Grand Blanc, MI 48439, USA
+rating: 4.1
+capacity: 20
+city: Grand Blanc
+lat: 42.9099259
+lng: -83.6267963
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40F_pXCuMyneXGc6yaSVUYsTJyFaCpB9lJM9JeP-Fks0uC14GJzZQDoDCrTn9OZJkt0Yj_ozvSksUoqRd7mBRdHJXUvLyuZZBs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42nXB-JgAp_InnJzPte3XaVyg0KcZ_hUyiglcZgy0py86QvaZacnxZDPmomLYdncEJ8Tll4UC9QxPHdyrCsbLUVQj0hNTj0fM4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41obnvZbz9bhb5LvgQl6_w7pXSFabnVICL9QlFIlV-ELWMZg7u14bVcJLqBcHIeLaDL9D4sghHog4vetH4xr20JAj8NIBxKDH8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43xVSADC9_qJPljmWpFXUrMTRDM9hatWY8i8ZYnlmpAFU8FMxBapUpsyS94m64ydGg2EimLaX0cmlxMW2Z6S0azzc-Y4frNsQ0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Nno_ln03rbqO4Nrjyu8khkjVUN1zpd9xx2SBBQOMvYoU7uJ5G4Y5rvOnIpi4ws3Q6ED5VpsKcnLNI1O5jsKuC60wy9ZyJv-8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43PhuMHUaQwQWhdC-oKcgxfuOJePpxdk5OzdY-ivUdg0qwuo7OTofQ_FQUtyuRl61ECtWrEtU9hEEyMQ1A0iwQWvhN-05Y1P_8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40d8LBmVOYbPiL-PuKAo5ZzKt6oDZsPyESAfSVg47lGh0d6tsPWb-3y5rLyweSwfCCB8P5UP_J0yN_5Zg_q0ghEmE9Aio5aVLY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43NFn9uM0cyrCgLaVe5TiayOpk7vfVfwZaNbBXLofeRx2sX8t3AlfnL-zoWxDJFtl4EaO1wJhcO41M2goWmT5ZPlLph3NVdV8g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40VsoN1eZyFOqVa-Hwy6baVSJsYU0V1mHBc0K0xs0X4AtP0ETTvCCuXLZvXlLpVEX-VD6E3e3lwIAvbtVHmWV2G9-ejf8Hcnqg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41unbQ2koOy22Hjn5rzY0xqh9oMWHoDkI-xAG5b3hobKx2c382b1As-CUR580GU8c0ayfl7uno00vXHtypR8fT5u8FWG7rSQpU=s1600-w1000
+---restaurant---
+name: Buffalo Wild Wings
+type: 1 review
+phone_number: (810) 629-0099
+address: 3190 Silver Lake Rd, Fenton, MI 48430, USA
+rating: 4.2
+capacity: 20
+city: Fenton
+lat: 42.8051584
+lng: -83.73264209999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43l4Tp-Wnbpc0_sCqQ2-vcIUzqFpviZIojNXAyJfdyDsjbSO5sN5eeeu3gbcGSYhu97mUw7t8OMkmgIAtUIPBtueJxv9eVRva4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42Lmk_GNQVFnOyNd5fn8WZ69AN_XzrlSa32ula7HE5lLd4BBbiynNSsDcT6hIK0sOZuA25kKjFmizdTq-vn9YM4adYKgToFxQ8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj416nN65oR1dcP9akM_9rMOhTJwP8lSMNv7N7MHy3uCYGOZeoFFGQM6LKXx5tygg-mF8bv_XFQ1p38l1Vhul2ljhSs3n_jb2AxM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43lkk_0AnUjbONRcQQ7WQUuCNuYrLOOjEqpryyuGWzqF_a268nI2s09yESOKvktURXiTKjG8B-Gs_xmAeTJfdnspxuKXK1gtwI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40O8RrWWbA16Ibd0TEH5E3V9zSiMPt--Vzz-lVNqVtQFGTQk9c6ABjnJv23jKXSNUYLf1qpeUE-yHVqhNUWeV6EWgUblU3G1jA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj435VeLoJCWlF1WPnAFumy1FIj_2SY9KIMbpo310mbft-NEMuJ4qOjrXdkwScHLyZCdDMvl04ZKmaib6BPmn1Io63-Li62oG3DM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43IMt06FGQrkl-BlLCH7iTSR2Wo_YwMJr-cq4uncHcK6mOHYK8ysvBzVfxptjPm-PVTpqNan0-1dbU5qQaXx2yYK-m31UcTUiA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40zKNMPcz3GfnhKulW9-h1I89lE8YZ5kk1qUdzREgKXI9Y013BL5bqou8JvKT7M1nyeWS5DflRkOrllrGMEUxTVv4IG5SFK4Qk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41R2nPlUX25GirYr3Tv_Ql2up06ApKOQMgenw5Gi8-C_Yz174O5mrXcfJsuqVl32luYFTUtLyBmt-2YiySyu4oJsMaDxKIB5WM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40gsUUywRJlAPZNVPI9oYAe9ed_WbMvSsATMq2cc1wBuS5-QsuCwBFABG_By9NAX-S8QOrRY844IEVoyjUmZxarGweezmaoJ1g=s1600-w1000
+---restaurant---
+name: BurgerFin Partridge Creek
+type: American
+phone_number: (586) 422-0085
+address: 17380 Hall Rd, Clinton Twp, MI 48038, USA
+rating: 4.2
+capacity: 20
+city: Clinton Twp
+lat: 42.625928
+lng: -82.9475927
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40mvmtwpcBHF_jXO19RGpB6pZAJ06cKWnmVT_cMFfbiHHmhS1gthA7IoZICcEkzWf0rME5ywJJHhC1xgt2HN5PvgZY9t7F_3tA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43d2z1PGNC3rw65QyJcle7hsixQQkmLWMvGsDhZiqgQxvhqE2LHWbau15sD13G1qUNzC66za8-bd7VXYgFd7zT5_5euzjyCMiw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj438Drb5zAySPTpZ4xaICjyatRT1vSFq_TyzNqNJ-GM-bX780nElJhuSI31Xzd_Qrvujgaqqr9KqXjIz22MUm5X6cT39DdDa6vg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40jlkRnmjGzRz95HGVmslMGN-GIUD48oN13SLHf_X_uPbRADg7djgiSafj8hMAaNcUwf3Gj0kfP80ofIWPzJZGzpAWHLR38b_M=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Q4xR2h4hrqzwHC8emlqIS1ckktBqBdTxbSHwTH4M_djNxrvx8LYhuzSO8EzKCWTEvcxnxiHgfMJc2anLWWBD_YtIAAhQPcgI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj413d8zjJbV5p2G6uVJVLAPNZV4mrsZyScaOjg7csWEtW9OUNJ7WpcupAceJxa-lb7aqrtch7FB_PZJT94RltxHqN8ZINzuV75I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43fqzDnqxiLt_amOUoO_Or9XaSnNmtSF42CJl9sKzVgpiZAz02FRAGCp3hoxquflTbYN0EsXPc-WE_2N-pWmzrxE6_Z56iXV5g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ln_vpxrqQ3UDu-nZV6pERQQiq6R1rPsGjADO3FHdSaz35MPjALgVupPZ9eqU4-RYeaJTexAeS7N6x15HAgXuxlECHZpxxIk4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj404wHQntdxCMRRzQ79Kqyoie5yxt0hjD0eXhJrlaF5tpcuOYwWhC3GJaza9Sa9uylRepBQTMx-ebAO7wtAkuKeMUyT9XJygKUc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ArOh1sAD0SPkV3IedFo1oMoSpwWuQiNe1ZdulwzkigsTJcV1j0WJ0zajhxIg5DVf8YSsflLmIGqsMdxAcYY6UEVz_o2BYJMI=s1600-w1000
+---restaurant---
+name: BJ's Restaurant & Brewhouse
+type: American
+phone_number: (586) 519-6250
+address: 14455 Lakeside Cir, Sterling Heights, MI 48313, USA
+rating: 3.6
+capacity: 20
+city: Sterling Heights
+lat: 42.6263892
+lng: -82.9839666
+photos:
+https://lh3.googleusercontent.com/places/AJDFj41y4DV1c70bcpRsLlNmV53aC4fb3RlaGLw744FxKbykC_TGzAbJ1IMeZqUkUuRrhITFjDCNvJq-2Cmn6HGQVug8WtftjzQ_hTA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40mOrK33oRboHBYMZzgGuye69_ZKAiL_OreQFVywuLj5-zjLpBJMUhOyqCT3cj8JlClrqR06dRLow2jls3GSrkDsNG2axYlRHk=s1600-w764
+https://lh3.googleusercontent.com/places/AJDFj404K17XPnYaL9bppyWtAEChNwHs53cDUN1mlFGMzQOymCJb8fhzYGWOHyTNKRUpc8wH96qU1LwlKl8WVG4Jl73sOUwAJVHM_z4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43qUEeuBR0JLe6WJRgXVnGoah5KjTf4cPc1dBMvqdKGQqN6jMZ3LqStZipaFM-fvOIoNO-1oyBzw97qi84pfkVDKcLoqPNs7UA=s1600-w300
+https://lh3.googleusercontent.com/places/AJDFj42gi7-pYEpAa2pllllJQidUKRKGFOnehVj47d00ZErhJ_Eldx3H6EchSwHdurC5koL_qwk8ypucaV-9Do-3PTFLq_fQfQ28P3U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40S1xdgsHKlBUkpN7bBOo6OXkqI6-o8cuhkWGsh14PHh3Ybtb9T4dWVfTT1VG8mOF5dpl0ZUUfBQxaCRB_wLwk1RonLaYNvGDk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj418yJLCBqfJpDQj-eSlD2hq2RQidymV7zN_RRxa3rUDdoMnwXKK-6nfJsDBj70n5LvH9vnautW2Ud0twkXu9mzL834Mrf2DIDI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43dJNY828a6QiokUXHaJXpMDuLHUrH4anPA_D_j-AIagYG2RjuYso9WMk84L-IKfb_KCW76Wtb6IGWLUd7LbxzcV30_sEeuMNQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42YEM5jorMUBGN_stejIUDWpn9c2BLPeOc3L5ou0TGfv7034Y4lO_eDMOOuJ6ueybDOk_PnWNLXeN5qYptFwgmNvELeSphpcwo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43n45USBPLTtPl0Oqh-F5AgvGapruIMNF8KLAc6gV4m2FCaSlKRUaED7H2CmR_8asCCwFvjkfJnkfR-7KGpA8-bXoKuxT8UYA=s1600-w1000
+---restaurant---
+name: BJ's Restaurant & Brewhouse
+type: American
+phone_number: (734) 357-8530
+address: 19470 Haggerty Rd, Livonia, MI 48152, USA
+rating: 4
+capacity: 20
+city: Livonia
+lat: 42.4278121
+lng: -83.4324431
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42nZyZMTL828CY4yGufI70PXoaEv-6cxdOnY9A2d023WeI-bQPENAczSgHrFCejt_A4DGb7Z7iBKQNUvYuSvsqD6S1Xq4VXLyc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40lRGKM1j6m1CapER30apu_Ix1WFZuuuo7BezPomawpBn7jIdhV7sV80uUZnu6bediTEh7v2vDpqtJFt3-RCjZYWZ6F889hJB0=s1600-w764
+https://lh3.googleusercontent.com/places/AJDFj43k3EYuo4kAjX7Y69ndxrYaBLjvLs4Y_G4bc4ffT9f37k4yR4NjGgYnlcGkE1MfQJU4WrpFPvRg-dQU7DKsFxbu_QCEc7CabZI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42eUiQgspEkwxkJ1nMobsQAxFzwETdhGYctaYtLa1qqr2uf3l2KQHAC3EZtDlJUQk4D3ywPn3_Fd64ianIgIUI06sjogBF943U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42q8zO-g_XEk34BKwpMeKt1fTqnDTV028YEbhOU5WCsZMubRA2P-DwPtrtyxUyAbS_n1yNa3LLG8MYdyB7Vl488yX9KtkMnM8Q=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41JsULqg3a8ofziESrui-2eW-nmcVwUt_fRSBIM7ZoMZKlacyWfgzaKRJvJuLns59arxShHLNM6JOTyVJe9TgUFMsniJvYTiiY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42uGUjOEjL1olau7QgAYOFouBE8MsUBn3rIeyyx-7BRHvz7JlISAoI7SrBHaDapmcP5Ug5gXmHntHmRPRThso5dYDwQ3PtxOHo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40w6ZnB_0BMHfYgHgSkpXb7j1AmaHS8pt1kH3kbgS2vCl60GcZAZDOZIANsmQrAlW1XM3qY85Socy2Ii6i91d8LhjdMOugAfQk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41dTiRbIvhrPxgnJFE089Tes6UHZmRzIWeGALZ1uEQzI7JxIeEg4a3wqkDwoxxwKFYhCiQ8iTxUQX_6iigpEcENpcu6E3gcEUg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40wbIlEBhReV-F5JfaJdtKtO3ofokUxqAdesJzRuVYFYKMIejUMxD7PwBFwdyqTTt4xaKMkTct3r3EIS_OInEs3qoxaTZt0NDA=s1600-w1000
+---restaurant---
+name: P.F. Chang's
+type: Asian
+phone_number: (586) 263-0860
+address: 17390 Hall Rd Unit R-103, Clinton Twp, MI 48038, USA
+rating: 4.2
+capacity: 20
+city: Clinton Twp
+lat: 42.6265339
+lng: -82.94633520000001
+photos:
+https://lh3.googleusercontent.com/places/AJDFj416DB2bmCiD0rk3kXZO9FCZsxJ85jLYWMi-UhazH08pzXMCPc-8MnTOsi6f2KK3qmFJxIrWQMROoxGKVXnS4fatRBY4-2Rf5UM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41LeJc0UpN1jACtjXQgCnuqVVB7P6-un1v2MpiP5wI_j5jHI52Fttk4pYzViu8xV55og9zyLT2lB8DDvAg0APUub1r0rtPe95w=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43fC9TYux234LlZ8EhXzM2r8DO3lvd6UEGTlJYNIux3PGBojGtH6JVbhwHSVoI9BdueZpavKHVuZnXDeR-VnAEevF497zeoztg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40RC3WG2FDMYtThxYfR_WtXrVckquYjNJX9qErKaN23dpLVpAGj7Tivc-ovNWBj8dXQyFZ30lfJxPEzxoYwSNV6-Qi2T-AJ4Z0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42nyVDMuYHUU9_HuDYuDfoFzmznZzcwBEDW-bCjR7zMt7kz1NcW370tsSUU8Jvf6OVL0GlG0IcCnq-31y46SCcRpGMDpLndflQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40TOtXTt0qkr6UMH1Gn5d4bxrrc_LlSoUeKkqT6qn_C0Up02EZjGcnvdx5km01iYisOTsIiW21UU-cslUnPVLEQzEh4OvnSj54=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41u2s1t4OJ4GeyCOivn9CwsX5y7R8f_NvBmy6RVQaj7BqxI6A-wjC2Rvf_A0JyjRE2WFiWUCVrxt8xKLnXKjRgUwRu0PIkG1wg=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43k5eij89muXba-MSxjAekA1w2H7xDEpQdPRkromOp7XHRL9xXiAo-vV8BMvOfnHfWSs9PgOSRdRlLfNAdZAKfBvKGze9-YTGs=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43tcd4i1wVUTzRrWTVdDOy-LTsExhvZW0ZnnGk1m9zRoXFolN9l_xCxPqSXwxDEs16Rm9KDp5qlXVJoeQ7tDFlSLDAMPkwQLwQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42VGA0g2fwP8nR75rb3pdJoNdenLxcGYyCERBQuMYS5vcOWy52kJQLtweYX8IPSMwuxkIZ58lUIICcjoANC4p6-uYnnyHtrvjY=s1600-w1000
+---restaurant---
+name: Harbor House Restaurant
+type: Seafood
+phone_number: (586) 791-6070
+address: 34250 Groesbeck Hwy, Clinton Twp, MI 48035, USA
+rating: 3.9
+capacity: 20
+city: Clinton Twp
+lat: 42.5486179
+lng: -82.9272337
+photos:
+https://lh3.googleusercontent.com/places/AJDFj41_8xVMytPEGhNtGv7sKn6leP_JXY58bf_nFuHEXgXIxVcBrsEpzZHVeLa6PJ6HtL8P6DkqjY6qjC-ju5B_zH0-9pSjvMSOn7Q=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40I08GFxSl_axfK6GcZyC-0k2SrEUhxwy8FcyZlJCr92HEDtCkwOZrxOJyxw-rJIAUs5o-nmHW_fZr5iMpGOwG-wjW1SvXaHWE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43l1yHh4kOJjZnKl2mravkXj7LbXQS_Ob3ob_JYOuIKfvCHi8tZIQWVKmpRt92UlIMT5hJjdEIvlFzidFXUSTz0LtX7tf8W2eQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43VtxYXD0r0Me2nvqx3woM-afGLaj98gJ0HY3A7P1AyWUnG3v9miAvAUja4aaaCHbuntN8OjXw_g5l5FrYYESQ_xC_BLooaq2U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40gNW4qd0ZvIeTvJgI1MXjh-GvAs_ytqwHy7fo-FUo5fDnLxHlgxC8HJiLmvKsRpYWrFFdDYlpW7xCxzoziIIhC_HAIpJmDT9w=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43A9hArRU7FO4LU_e2wbHePqyTtwme7ttTdLVmuhHUnDw9QXR_HYJXcvKWRONgXphkVaT0SVXtQS8_5hjmgSXS3P0WDM11XRdY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40KZ91VX0-5EC28uFKDiNhtYCmlzU5t4xbKBhwasn5Yiv4RP-eF0TFApGrwcMt2-pjf_5H7875MRU8D4jMSuEwbEI2D9Wwyg-U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41GQo85sUQ7ttQt0okAN7-JxaG0ighV3oaI5PqFnAhHYoNKawA-ehwXj1DI-IZkSdvV9VfB3jHojBUqizdqn29_vS04ujeG5sI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42SnPt3v5gZtKwuiSYEK9vDqeiqOpg7CUQvtHVaAXU_4xckrf4wG9U1QO91kdNRND0SIp4It4XeCkEHjAs3Jx3W8uUTRe-MdtI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40UruDhTN9yRxcPAsinJDcclU87StD57XjJ5H2M_ANRMbJXzPhfoEz5Quc2wQlJIvEKB7yaGcbxn2DglCYRn5dxpkCkctqGaDU=s1600-w1000
+---restaurant---
+name: Famous Dave's Bar-B-Que
+type: Barbecue
+phone_number: (586) 293-2900
+address: 20300 E Thirteen Mile Rd, Roseville, MI 48066, USA
+rating: 4.2
+capacity: 20
+city: Roseville
+lat: 42.524419
+lng: -82.9143155
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40ss9AKCUCEbvQeLpqj1zuD4rjE0w_GIDTrcju5ohKCleMKZOTvCadfUaj4ZlcmPJBVU76mHOsx_Z3PXXp8-snnzlTzKBhWaEo=s1600-w315
+https://lh3.googleusercontent.com/places/AJDFj40H9V2druxW0vfHPjJSTXFmyJ5mzQV0XJ0s_fCKZ8lfnAtsYuSIUyOKTbT3sC9LO1sXO73ZXMC7c_orPC35sZXuIAgJKEgt3to=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40fOaZr_Tp0EmLK5dbnEPATJag-kll7c9hABtCAzSaX9LT3So_utV4HSZ3ftzEBuFMIOQRuk5qYolqB2lZ5z-CA5PGCVqM1shc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41IDGkS9IJboj58KYS1GbrmZZf3RWPusJsfIEJuo2C-OI3i1R2Suyar5dBzbyHnrSaPTsfWehJfASHrYQXExYAlKRZGn5OeowE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43XlQEx66fLdyMedv35ZoTKANcEeoyfD8GgikJFH-N5qGzxwob1KiAwgQ72q8YaHtJ9BcPn7sq6ntpta2E4zSywhdAWvNGVLCg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj438Jqw73aeg8QjMH4eM9WV9V0cB3dH76jxeAyzziZtQ77LoQ8KGzaT3NeC-JsWM1w_sSwGHKG13OMmPosr5VV-C4C9hMP6y8ws=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj419g0PEJKs9glA4_-fZk0_pP3nn23m94XLTCNiCqerb9DiND4PhqUtMWaz7CUv5AX0Yb5eFYrAu-0fan3gQAw4RXmJ_plXfO8c=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43-w7C9GoPp2lE9bG_TO_5dAfY_qUZDLNXgQmw5uECO8mYZXldIQT8XP5OzAGlmcwNwAlj2GmZwFRIuf12WimkyuoCQtZ8rgtI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40r5bmFCmhUcZ_1GhMAcT8AZv9esWRW9a7LzAJxw5UhZXcH3-OuO-c5eUMEewL0jZeEn8vCSmr_YjZtHCVcI3yQsqRKnU8Um3o=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41pBO379huj9QNOOh4FA6n2DId7tDsNQTc0IHRgStAC0w07pMQvxlYg4c5y6xbmRHkFKhGilQrTY9RYiBgY2FT1nzMHn1js5B8=s1600-w1000
+---restaurant---
+name: Buffalo Wild Wings
+type: American
+phone_number: (586) 469-0725
+address: 48 Market St, Mt Clemens, MI 48043, USA
+rating: 3.8
+capacity: 20
+city: Mt Clemens
+lat: 42.5990802
+lng: -82.8757133
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42LpwLbZZ92fznGad75OheqafbSwO40oab3KmWCnMQiGyy8XDrg2_i2pNxm7WrTBvhYRLm79O-2-sLcXbhe9O2WUvaVHVXyHf0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ScvbZJnPrpRmU6E0BHDltVf1D5-jO8zKGwO6lhS1tIpSqHUsR9lmyDhUS95HEhmCWj7nBmfUBDuvgHjMtRwbab9Cc25soLU4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42JfBQUsYHL_NrMoPPOyjGVMmmh0WYYLHYnPZ6L3lCpJFhHoDmp0CtWXB-bUrsEwH_ubf9Ys2CvAPe1zAiFev7szXuErzZLdFg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj415C7CeyxE74ITZEo9xvLIAaUyRgVVEBiGSHZPgQUoeeFcP73cRUYQz7R1xDJsWpyflqiTNwUlgQOBuIztsgS8FPZO6RH5hP6I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43tEKPKhI6yeRubcFiiOBsuq5Q3gkY6zbuVhnu2smFaWSDuROQH6lS4tzz0VCmE5s8G2HHtTbBoX7kTT1_wCWfS36lLHogmk4I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Q1kkMA9wZL-3TMg0_EAkRKgrzrmVnkLi45FFrqPdJlmvE7m15QFp8fUmrBuLHQ_UEnA2tFqISjFTuCbktlvO55mp7GCTnUgk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj410cFcY3ojl6RkcIi6LiKhwx69C1vSsr7mx0Ll_P4aonAOLBScNR8NDBnZOdqTMaY0-eMoLtnzUk3zGIeut96pWRsJ8BwvuuB0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42HLnmFtYNm5_kyE2CqsBKEKBAP9iDLIjlDoOS5IoBR9aMWp7PeGY8IeqjhTYTzYcSppk9KgKJs4hS6aCzzlm5InasrqGJ63xw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4065R9sCJ05o8RxeSam52CwlmSrhphmFkdSSPA2AZ6toFXYrAbOlxT9CZ9E2Tsl9x8Eg0F3P7oHTtNsJ5YeK3j6zDH20xO9UVQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40WYGrptxeuoerKk9x0Vf4bzTxZsxuVz5zINmW8uzmI7jWnKU_JQLf2_izV3BPuQMqMGZscMDNC0BEA14KEd6pZZ5Me-Q5Md_s=s1600-w1000
+---restaurant---
+name: Buffalo Wild Wings
+type: American
+phone_number: (586) 293-9500
+address: 15745 15 Mile Rd, Clinton Twp, MI 48035, USA
+rating: 3.8
+capacity: 20
+city: Clinton Twp
+lat: 42.5537207
+lng: -82.9636486
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43qLVZOTREXeJBndKc4dituc71bZv8s2u-RPmMA2AIrILNU4sGirAIUPsYykmljp4EOLys2i0ROenQW6IXW3F4QVBY6hIHEpCQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40CPapCIuy4V8OYJeYjM3hC1lMexTSagZ_vsCwJHuYKpWaN6Fd1XwchRXrXb8fXuBPjMirJ6vtjhS8O09muzgOvA6RKmU4R4Zs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43jg2CngNxYVauRwjmeTkR5W7KLlYWx6wiBBCpF9ZIAUfbzk9oYeXSHn9Fx_tiI1lSuDUPXKvcdVbBlJprnTONG3LYU8DC9eso=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43MhDnKUjc7JDFzJHzajLEEJbj3pZb0r8zSKPy22PMfrDkRe9N49SEf7Cu5IeoORX5P_VODCMRJgDeF1n7gPrJ6-dHa8SjO4fs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42TFXftlOLtQXfqEBcc4JgGOC7zuwNd2nMw3yBbU-fQ6G5vVcOx_9ekWGUwm0DwlVJkNPrW78tZKMJlphwwQBS-JmVRTOihmV0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42zoqAcPhWo_AMDjIcKaS6VFXYW57yrlavyJ93zyHQOUnit6q9wCGopZjF_PJTy9Tkyg7X6iGuCORznOk0hlh9cMjPcwx0E1xA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ZBzoGoIbR-pgqBgZBC7uYXoWuDI-D0NpzfudHpkQnqjASbNG37f-eDlQGhudDM1I8C8SYt5hOWyrPkDWS5SLpUqJ4hZztgn0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Ju3M5J2xtp6Y4No5uN_qFTTKULovk2cIT1eBVK9_Nkj6jClgUblpycN2ULE-glVXofrQKq7cWSnek6pXOxuwAXZLeEq39Kys=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj400sfljH1EeuOjTcbKmSodLXhZXtWHG_N3bGpseTbNG91zepuYIFXJVXOE589dGJf1uKLFN1j_WDzWl2Imq9ofd35Cz3Tlcm-0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj430QJowaRqFV6duWjE7C3_b06dwUXuPWau9yoW6D4n_ulYZKVU_qUaz-msNsbTq1aJEzfRPUo0ImvdJtI2SIk55-LWOvzW7zuM=s1600-w1000
+---restaurant---
+name: Gnocchi Italian Restaurant
+type: Italian
+phone_number: (586) 741-8443
+address: 46120 Garfield Rd, Clinton Twp, MI 48038, USA
+rating: 4.4
+capacity: 20
+city: Clinton Twp
+lat: 42.60276229999999
+lng: -82.9518143
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40mqhpL1v_5mN3RbzA30ra9yeDBwiPLwfGOK3N5ir52dHKgc3X04wlqXdp5N-7EbGJo6F1bZvXX5CKfFLPOqtBJydpfa0s4IUk=s1600-w640
+https://lh3.googleusercontent.com/places/AJDFj4093xT0g6vCV6jr3xTeUhU1kaeUX_Rm7MKjeN5pFpT1yf4Y8-1mu7DEDN-9Qo5vHseq3Z9uSmNz_yq7tsreyAUUApruE49tuo0=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj43XtaWDOQHJgRguuuDt7DoxePmUIcb9q_K_n2CHA1gwnCbB0JtcSFsBOcraPNiR3O1Z0lpaSvylChjTjlL3Xt-GRB1MwlOpKkU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40oBqS9dfzQ5yvasLIR2GiY_3z05chWVKirtp-mc3iay47_mw91xuvyIn-u6IAPg1sWehOo-nn5VjeIkDK6Vq0vwfVKnQMINs0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40-g1xqIV_UybP1Hf95ewYBVq3P8cUI3WXYJXRH7UitkDI63q7YsgpFocgCbBGlI_K1TEm-IX5aM4CmiaUMp0M93BDGRnX47IA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43WEW8p1De0h3N1MgCALA7C4yc3gCsHZj0Usm0b60GlCFYdYTOnsi7jDjI1yEffK1irjKJxfqZIrl12ftzu7eGrsisk1pOY6CA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42e5aW3RLcp9oIYZiP5wYzJnskxiYK2bWTVtjl3YYdYJoPbzVDPrsKyrXVJpDZlsiukOKlY0p1g_rrAHnJN79E-ZkSTOpK3wLw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40YkcuVXfuEwwRfzgbjmydYZAgDlZ5CkoH26QzIQF5ARGYgu4rhbkLqXu3-rYObmXPvcHWf6QspLBjZzJvLPNwRfcqkgKPxnwQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42wepPrnq0VvO4AByfBPDo6jjZb4ieEEaUqW8PsEKpv8UUqdunSLh7rzESFUikEziU0JoIL05FPPCSAVChVFxXB_R3fsvYjUNA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41gIGffnmdhyPGoyxFGzvL-xMXw0OfZTDhf2YFUkzX4O5piNw-YTMf1mgnylrk8Xl0gOZrw_pHOTo8FS1pn87w1WeZKn1RPXsk=s1600-w1000
+---restaurant---
+name: China 1
+type: Chinese
+phone_number: (586) 783-1174
+address: 424 Cass Ave, Mt Clemens, MI 48043, USA
+rating: 3.4
+capacity: 20
+city: Mt Clemens
+lat: 42.5991264
+lng: -82.8985046
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42liPBk9FlSOCAFpibypQCMdvTPFqNNDxE48_zcAGnJ7sZJDeZN3gofZEdsrJ2BH0Aj9vVSFM-F9QlmKq21WXczKjMYXzVDxoA=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj41yxWuI4qoJ-HGULgLY76b3lx8Bgk_ULm6-qH19k_otEFfuixWGY81j9DUAzv0V0raF4S3nyIxhxWhT896zY9H4hnpz95tQ1y0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40phoN8AL72RD5_5MbzvEuuBfzctaFTxjo4hs_W4G0xTKHn8l4OddAZXLutTkkOAka9rsEuUilikcQsc199o8ljjmApXa24DqU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40bd7TvEviYzb0ML6Wbhiwc4ZmQYigCKteoOxdO2-AG_TTj9iXaomWcYvBmGV2dk-wjyqqm6p53mvzJ0ptvAQNxClX90URKxyI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4271GkELLAeis54L6D68VHmmbP9v8bHBROCsPMMtutxNOtJGxSdPpaioWnf8DR7zt6LgXI8FOohUtPZtg7spDjsAhQXf4IeXew=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40isaJWJeuQ-Uhn8k0sZXgZxxI9yB9lmJhgp2bZkb9-3eKq04_lgEUNro01S-hWY3xjE0IVtGEs5pwtL2OzzzFxq5DlTls3biE=s1600-w694
+https://lh3.googleusercontent.com/places/AJDFj41SyhjgW9aK2KYZNjmS8NjzUjq1NC_Gk92v4N92iCR6QMeiHP3tBrSJMVttZ_g0qbSzeb-vy_oMdcXp3GdS7MeIi-9VzVNo0Xc=s1600-w622
+https://lh3.googleusercontent.com/places/AJDFj40fLLogxas7YjgdOXiHjT_JmsMAQPa2SUEIpYC442KpR6921PjslxzHpJj1aqSmCcBVeCf-xWroBndorp4Je6YqxYyJR-Pbtpw=s1600-w620
+https://lh3.googleusercontent.com/places/AJDFj41tWnCallgW4l_Fyoajbk4nXgtyHM3A174s5zmzHO15SlFS52jc5YGcd6w-Umw5oA4RkSIVePTFP_AtiJdMkI47ij-ETIpb79U=s1600-w776
+https://lh3.googleusercontent.com/places/AJDFj43kHQ3q3waySZMHBRPtJatyWbXunpFaC7MTGNOGa3Mb2nyVoIhKIktASS4nrTt-JOBS4Aakmll9DEo7DavVfYAstevqtI3CzOw=s1600-w1000
+---restaurant---
+name: Naked Burger
+type: Burgers
+phone_number: (586) 649-7007
+address: 43203 Garfield Rd, Clinton Twp, MI 48038, USA
+rating: 4.5
+capacity: 20
+city: Clinton Twp
+lat: 42.6142315
+lng: -82.95399119999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42AYkWZRkJ3VRVgE2iGzmp60xwX_WxyaSEtbOr_CKOZnhvHf3919Deg1QsICpoofmuS9rP0VdkArGefkWXX26zh7mlx9-IZkUE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41dJBS9xi_9AYfW7s2FO8R-vJtKNOyF_9xFu7b-P5-CxJVQ22L6HAhZPskcY7vTTIhV9-p3GKaHrjceQPgyKWUMU0oqdDFnCls=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43NvRyd3jqEt07_5RPDmZPGcsVr9BvyXVdrtObuLbkSMm4BdxT8IWjP1l--06Blp1Ujd_NVzp6hs-lpseMfRhckI1ykpZi1aYM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42hIgBz_LejtxiCL_rjTleIYnutOn3aOEinImhy0nX11RCUpxwAfAp-4ZaqQ1-9KLXZpYSOSlXy3DACsG-NcM25juXF7Hh-8-4=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj42GVwXHKDL2jfG6UNKpS4vPem29OQ7ityWRR9LLEKS4ViZLJ5xa48SLsmeg-Wu2hueEcQbzg0qUTlsmc25X2-cGUp2x5K8NxIY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42ycC0QgarHgqeaqeVK8ostqlvn9xb6dBleIrjX_F8dogJsCc55liUG9zxSTtqmjXZDoh1wxh7h16JyQSfvxeuGnacP8OKU8Ls=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Qk3Ug1kZGd_4PLI4pCs2MY9HGFhtzj6XvOYY8dYCzYYtt1oi9VbjHQsM46NbfjeedCh97Y4zfgBXObUFcYKo7RFTksvd9I5E=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4091HPVdj9mByLQGu_gTS3VUVqtmj--BWhfUjuN8aLLkSQYybGTbOfA273oUNuOMXOR89aQLr0Gla_Wv6w7WbARlnrX1Ob94ms=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43JSCnFiEqvCLjeZwJnjT76DpTVWYuISCUo_dlBRE77gWPz1pVbMJuz65jWdQU7ry4uSetdLWbFFtYm4TAqLCF3oXz__RPHiu4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj403yJH3pIBx-bjXR1KPRYVQUQMVhpRdPBEIOggI8BSEo-GiTmc3oIDmH3o4KU4p4ljECcuGfc3p2npMlT93dVEbRaswTI9nP3I=s1600-w1000
+---restaurant---
+name: Sajos of Clinton
+type: American
+phone_number: (586) 792-7256
+address: 36470 Moravian Dr, Clinton Twp, MI 48035, USA
+rating: 4.5
+capacity: 20
+city: Clinton Twp
+lat: 42.5641822
+lng: -82.9522094
+photos:
+https://lh3.googleusercontent.com/places/AJDFj424pRZNesss5ED2nKGWL-pTmzqd-uaMVf1iHpaUP4AiusXVWYtuvKqv0w1tVy6cNdfER6pL5WbKAo0ucpMIRwDXKwpw6IHDBiE=s1600-w640
+https://lh3.googleusercontent.com/places/AJDFj42tMkFWniQDOUYfIPhA56b4VajKBFZRw6ibRrLg-Fd-zS6Htw5JK45mFjdyPRQFtzL-REPfgPw2FatAdgNiwcUra-qWj6dvZqE=s1600-w500
+https://lh3.googleusercontent.com/places/AJDFj42rY9jJblUjV0yvaTxNYc2Z51fsYUta1Net9C_FsbV3eJ-f-jiPOOGpA2iyh6jpN3r-QMvUw16ITb05YUOiYwAWvYxr12QirEs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42M7us3Rr115SCOOuVbUKaIYfIfUDRWku_OsO7x0InMyRy-enuUJP6bgLhNBo_5WUCBt2jzT2FbVI_TWx58enbO7-AGnPX2Vv4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42lSwCFUVywh5yqSII7WZmkyYWJZiZLBxi-VFEZQwPQs9Nt0ibhX7g6SIWrPy3-TvH6mRjbetAMkBZiMXC4fGwXAQCA6uTjWyA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43r6aRhC0RNWvZQdxef5mJJUkPEGzvMNgD1CP9Tal7-ofc1F7eslkMMAzt-xQ9iDY6N9gwp1s9ziC235BHxSynYt2PqULEfMCI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41hfNMfFywPa0JrYOSOi9AZGfrF5RiBt5rTkUfY-2HKlSW-2WRAAFzPHx6epKCtg8NvdYAKCtMj1hFYZU6FJeRy1inbvmr-Gmk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Q4mM6hOMSO7NX8TnHxHnp-1MsgHDpUtwkUF0cZylJro9Kz8WIPTtu_AO8JPbXxOUVwpx8WR_B3m5Ye3BmRgYEZz7E6fnGIrM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43opuCobH6Pp_uC3yAr3njg6fFzxTkc1KU0HZwAADDvyQ7kgOSP2wsL3kc7qQ0QdK0UWvdi-8wbGQIElkYaqnTrtye_xsLXj8k=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj434GO8odgTYPObQQRETMUM0R3UCbO_pRtcEWQNHElZefh2fICddCKBO-KlunTKswCFwxtRcaPGVfow7sgosbX_QFQkatgi1EzQ=s1600-w1000
+---restaurant---
+name: Bar Louie - The Mall at Partridge Creek
+type: American
+phone_number: (586) 464-3000
+address: 17460 Hall Road The Mall at, Partridge Creek Blvd, Clinton Twp, MI 48038, USA
+rating: 4.1
+capacity: 20
+city: Clinton Twp
+lat: 42.6256007
+lng: -82.9441951
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43VfApP1VaFTrW450Y56Z3g9qcg6iLu6RipitsVgCDZIPAxV3bJQV1lQsYXBJN6aTLVElN3H382HovbEXjAh7u36xvE6RgSntY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40sUyR49gazIpqL1ZAk1ch8ihnbqxodZXi0G5iy1jf8-WOYWHm6XocmKcdWd2mb0h38026cdPwiSvQoPOGTEd8B9TDALPKQx2U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42OsxV5isXrASOvibvqty5QWldRtZL3TmI0ab1y82sNgounSBdFVzyM6v0v-cEgjZnRr1talE8aohFtkOB0lg8qqrjBH13wPJI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40yRUKEIOOraz8Coe6ClcsLCXf8Pm32uHMpHJj6liATgtWucg1X9dZL0TQM5UUf6TMn33jKPPhVL8bFDCEmGsC_yI-MWTsNgGA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40aLAR_rlpwmQfGz9orhz5lUeOngPkbp94XZcA2_HSLu8M0gG3wkPPLnRsAy5G9HJ8CaL5HViMaW1Eo6_SbtvmqP9le9Om41Fc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43Bjiou4CK-fvXvbdqGTjhe-djNn06Age01W0zeqyRoHrn3TsKA7Z_N79nacPpe6-nfDVLCAvwyUUdnp30SmABh4vFsqjlfE6I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40wYxkRA-MD073Uy-38f8SHCYcZpU7xQNZGO0B63rUUjL8-DCc-lOeVALqAvaCLZX9jFGbIeHlCjxRiJyaoDC0rJ1nNFbtaMxE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40qN1kXsAyMN7Yba-bbSHDtCR_IyasHUs0rv-2B6mUw4NOGTNQv78SRDYe2q4o3LENiGTRqAUy0WjdEGh0-62dUCD3uUwUXigI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42iOzqg8_zQH1UiqkSfRgX9a8vUPZAGMO7CS2p12CwGnI8qZPNCiTSTPSrWhuWu4PRkfPbmbZMiufkjqWwrPqxvKHCAOd3BaA8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41rQ1e-gSHwH7XhAzyEDt0ado69HWXMv3BxPbAmnSz6ow4IK7V1YAIkpnE1s-ZoQuTrryyQScoto4liTld9LejIfNeTTV627zQ=s1600-w1000
+---restaurant---
+name: Hooters
+type: American
+phone_number: (586) 415-9870
+address: 32976 Gratiot Ave, Roseville, MI 48066, USA
+rating: 3.9
+capacity: 20
+city: Roseville
+lat: 42.5393342
+lng: -82.9085873
+photos:
+https://lh3.googleusercontent.com/places/AJDFj41tjUekPmXjXB3uDMmmS4BRKnL6hJPUUddR2r6MIwMsPhWUyoDSwHQOdKDMClxo6vPxD0MBwykS9kDFT7xcB-9XCV1VMqz8rgU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj411YRVYZOxExjipXh2p98MQV71i0994qSrg761wXo5gAu8oaCJKkWzk3M3sq5aZLftel4Dm-Dt0SYYgHJ8uA3GbySpbucvSZ10=s1600-w480
+https://lh3.googleusercontent.com/places/AJDFj41ut6-oKzIj8VXKWXVzyDzBLOBnBaDySxno2UbraF2ZtkAF72agRhmJak_pKshQeYykN73Gdpi3bP8P9xHVKx4kW1KCCgvX888=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42yZmtopc-_ljAEaA17CfVOzB-KU6sCVYrcR61_74qF2T9Mq6nP74Xi1MYM9wgyr_s6i3XERvpI8fm2_yfTbWX5_FbjOJL_seA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43IpDiVGs6QSSXFEOnaSxUXVDufvY9avW9R0VpPLcQZDH-T6LnQsZsOw8S_NmoqIsZlQtktE4thWFS_1hFvRoDY8twAoKAKULU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42ekA9WQvAuZd2oGtQF_5yJYjqLFoXLrKi4vuBY5F4x3SN6G98PamwMhSGn1EJRsHvwC2Pj5azbotT4NytqTquA8SW3xjmIiuI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41r6rh4Cpeduf6BPOLtbfR6Iel3QRe4VqtvUzuFiqcDthFiZTzj7YGtP1428un89BwitQrTUnmCkPaJzojiOZQ1QNvTHM9Wan0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40S4lkGUhl8yzhoFpRQC66JlUITatI30C_e10N5Pr5faAxaB4mkaz_jtRyrUThd5PGaCs7YeBGjAattElzmSNTtKCAUMC1XWNk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41I4L5_QtqfNz6xDRzLkP32RWGX5eh-KGcbr8wq1XT0-QJ6S4y3Oc4jGQPy3dl5sBjDFPNfuK_40wCf8k96O8yAaSxyZMHvcqQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43rKV0I_z6PNQS49SeQlUaw6c1gVIiM7ndDRiQGtvJx_L28Jx_0HRzLr1PJkFPP6h4U-LNhAK2EomGq0DkwRrTnaXOQX6rYeqw=s1600-w1000
+---restaurant---
+name: La Marsa Troy
+type: Mediterranean
+phone_number: (248) 524-0300
+address: 3720 Rochester Rd, Troy, MI 48083, USA
+rating: 4.3
+capacity: 20
+city: Troy
+lat: 42.5727111
+lng: -83.1272448
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40DNjObilDp-WBjxolif-oECY3D-kRihjuGMQrGp44r3v1TK60RMNdLXLljFRMaHOGZ5ng6kI5qu2ElVo0ckyDADIqL-QDhDi8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43QoJShRVQG6R2hVgtrMVmYdLsR3oVprlKPQIr52gVeKlTqixd7X7lvgqUXyDkgAPLkwjRrw5XB6RlIHdrRLIIxUcBABTlNdFY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40QvYOm452Yx_snEwosRoJGnoJORTfqwR4Gk8PF7Ipsw20NWQLMzbsMIdVJ3v6bFI32QZJIH2RK1GEWSs2F2oLaASWAZV6Dvf0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43QmIMgqj6drKKrYXG5vtgZadxBfHuUkorFFMzVUT-tUXTGUmZ--Ch3eVQEiDPHddeKjfsHloAT0jJ__2UnPv7itMXDCw3qe7c=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41aSL7cMqK6glX7OiE6YHo-udGUy0IjTdtFHIHKxBcgnyWyHGaf8E368UTps-KwWbvSIxbATDigtjJAatAQl-6MwJmQIKqncvA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42sehxiaEMcFqWGvz5-7hPkwvydubjT94NRA7zVucwfWlzV_x54Xy1U__o-t1IluldA7cixq3XMl5YkYrkTCfC6zWCilHnCNcw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj418RIgRxRnKGNoON-bmdIoEiUFRLW4KhhSsZAwtlhWB3LHgluJmORSGOCi_eNkEaPBrNAHfaJ60I5F_uPprboUdmKQDQfBWyJo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4271Q2RLlO3dne8mzZkLNfwUSDEia_P55smskEfDT5fOZi6itziY_c_hySgduK_BcTMcuaeyf-9ONCPwVBI0ZlnACaSMrtzWSM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42cD7MntiKfcNmIMbkz_PDg9mXWf4Rcg3LVKI5BmQGUk5SfmzIN88cplw2ufkyeFXZ0PzYQwEYcT9tRmt-FtyP3znRNv2PfybI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4362FPBoQZLAXt0Qbeuwg7auQbFOb95Y8SA9HHC2Dwz6_8wnP2Yxgy6OBxDL79wSC0cNmDG537mpDyUMfpXQQthtZbPBKQnvUs=s1600-w1000
+---restaurant---
+name: Ram's Horn Fraser
+type: American
+phone_number: (586) 296-1744
+address: 31917 Utica Rd, Fraser, MI 48026, USA
+rating: 4.2
+capacity: 20
+city: Fraser
+lat: 42.5311533
+lng: -82.94926079999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj428WlK3LhqGdZjWNk3Hp3Eo84QY0YWFAjb9GeeVZpXLdm2ze5-qNcrx2GnBde0EuXdBZniwVRju6JRarI96dXzkp9gGJaMokkc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4065Df0SuFqm3MA5RHgEClAaW4B4NWhodcc6w3D7RdrsaSsmxmH-L2Zel3VvxJcqTkOmpRYAsiF2IeyWwDC_aShs_hQ2Dp2SGI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj428j5AwkkVlGZFNFik6uabdiohgHPul6sp422VTo8tU1a3WWG1rAVux2dpoPn0pzWu7-3he-QbRycSZDEtyquWzo9_X7Mjc1nU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj408qjsGlQsfjPHn8gUIJ3cfEhNHeW0FCMZgKVXeRh6IWRKOdNAk-82tDfNOUFvr_Zp5RWmNiZ14FRltgHaO5M8OsHqeA40k5HA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj433dzuoeRgijDq59nCKcmjZ5VdzfY0xgmiUf0qwj0rOUnD8NnUNbQuHJsFSwMSq3lGOTR58iJGnyfSE0yoKTvx4RY_NUmqUHN8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41yib9KSBKwDE4fPktYp8WdtrPJVzMJJ0owPpCqeBNihV9ce5XHYZBuUfKghz2Wfw4vZOgZduheNa3SomM64tyJqhv9GOUH5Qg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42g26uwgCNAuLVLAYtJLJT3v9H08mNDE7nZ94uqND2yW10ym0BL8GvMPQ4uUgOx8V1Gg4VHkf9TEyE1864w0gwOcBtS4nXek7o=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj409CKVpE6iw3o88B0oEcllo2i8sySHk6jtohxEG8elPU1FjE4hgocJIYT9EMO_edVQgrSpjo87cPyDOOAOMfQpf7FqY5pXkDRM=s1600-w800
+https://lh3.googleusercontent.com/places/AJDFj42I3MBCp2E2JYTg6uGtgAyWcmuAEvNrhCkmZd4Egs-KM-XYmCx5hxuYtiIBfld0bd3HlDT97D2kmY4FzuUOU7zDFlBg4C462iw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42hNqw6LXZUBQMuw9f80Pvgq7KqYI5m0iqK0mgWujuu46lsur9Ryy-ieoTsu3439tZivr_pd0RHrNFch1sA18V3Og2zzgUvoQc=s1600-w1000
+---restaurant---
+name: Da Francesco's Ristorante & Bar
+type: Italian
+phone_number: (586) 731-7544
+address: 49521 Van Dyke Ave, Shelby Township, MI 48317, USA
+rating: 4.6
+capacity: 20
+city: Shelby Twp
+lat: 42.65900389999999
+lng: -83.0343753
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40H_RF8ck6WQh8pcCoIqAwW9Hjxw_cnjJ2jCqAS7UOLEGP2yp0Ewjo2ppNQ03crBhHuLt3fqZKkjlR3JWZxaIPc193M92VGBPs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Ak93VsUP9tSmnEW1OnFe-N8eTz9uDXimmRt2_pvB60JDyNNDSKCe6Rw__MBKmUTgapUl3oSE666jGSRy8ojktj4xmKd7FIbs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43InHfAyg4Mf56B0cXIctSQPsm-1vG7CvRfwB3PWvqGjquJOSlViRNx6J67nMJ9E4GcKbknqPuVsBHB215nz56cCTrcVnHyxpo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42pcZf-IGOiSpjBjRyIsq6-aLQtWVDwnoxdrdctNN_OWJxmxFCW04Sz_H8gQhZEWz-HY4FodqBaxj04TQRSyPa5MTmKHYXMSH0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40f1-Ha2ZYo-rw-NGU1-snttc70KGrsma4_-ZFW5nQq414g9RNRwRSpkGDsaspY8_OJIeErCl2Pf5aOvdQ8miXVYubhVjWiaYk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43ZqBOiTNPfW6_f4JL7tNCj48ig2pToXDJqPACOXvNbisxMoDfL9N_oKpjqZ3Y2VqgKh6a3o5OjzWCSHPUq76t5AxNA3AIoqcU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41GzTyfMLd3A9u31_61AmUpjPzIFBckbSSUMJzXeCeEI69qmdjs_xaZDy4p1YQ1BN5I6m19jZ0ov3npIi-iqDqdRN9GqP3om6g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41sw2IYcn05KvSctx3KPHHJCx-PxIOm02EhZ9y6kv-CXimNdnVOUeO_myYZH0eVdBkUxqlO_y7el2Syrb-YgG88aGgUPLd4ZDw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43vzNqXclQ6z1z6jLJDVYN07bQcYhMfRUmvOYeEjglsZnZAec8dmqDBV17OHl48pE7lk2-g5FM5r10DOaOvcoI60033ztIclY4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42cai_JxesiTo6vlkwyBp_cI0idb0F4YXn-b9CnmbjAV-bUUihtkJRDCNLt6HFPDq04LKDk35S6BI7bnQq4YEdMxNW0MN0YyTA=s1600-w1000
+---restaurant---
+name: Ocean Prime Detroit
+type: Seafood
+phone_number: (248) 458-0500
+address: 2915 Coolidge Hwy, Troy, MI 48084, USA
+rating: 4.6
+capacity: 20
+city: Troy
+lat: 42.56048969999999
+lng: -83.1874242
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40WT2U8RwvxAVn8WSB6sXsI96y646UnasYnR9Mu_ewyhRVZE2s6VNzNcg-G8JeVdalW1l8dLabxQMJPpN86IekusTgKUhzffOc=s1600-w845
+https://lh3.googleusercontent.com/places/AJDFj40xWFbvd47K8n-UqPDinX5mjApo3bnEQhl8XR60LAokKeBUd4o7lPJaDWebi8tPViIY976BVDXJc5d9Id6Iik42suAUq_-VQ_k=s1600-w690
+https://lh3.googleusercontent.com/places/AJDFj42G0WzeIdIYkhlFLJCJVeitLRXNPm61jS6LtxqGlUm0or3QkeH-1fg9CtIj7jZJn4lA8B7XnEw82tOQI4CQ2RAduZqeqyHOweI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43eYFh8J3SvnbY6z4v-bRjwKIK-_t6jNVSfYU0t0wDKsiCfNx5VNGBjfNRI5Mr-xQint3WpI18-X7aghbGoj-hY-Wu_4pVE8nQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41cUyPsX36u_gOwzANhGqbcnry_BJ-x4EQCIpxaBKTSgOl5ymg438mNA21E9sILnkcOR67_Uhm4UlwS8ztb7K1MsLm5wmPzwv4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42WvpLQBuYqYVR1udgr2etD4OYfSwjh917kan0_hLVUGIyenIBz6c2UmSv89IQ5nMLKEnS4JZKMAgB-xCFkNn2NwnYjS9ZNNgc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41-f1WJBEuXtZWo_HbvgExb4g7rTPq-81bLKnbjfZ5GRqYlGu0nUuhCFXsPUgPjLT-3gMVklXyJafUo6NSypKsOkQZg9RhT2p8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41FcYBYGzSJPt75fzuBB79hyylN9gqbZdoItu0sLUn-75hri1QsdOAKWlHIxegPREA-KAhUkfOqrwmsmddiECzqgiAPXfbh2J4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43HUl8tR7EG7oeYhkdQ7Y0r_zSU7vly8eh8lBO9IEG_Yv-03hte8AsnrCgXRrG6h6mKGsKHc9aj-XSeGL_n2Iyl7yP20d1lBPA=s1600-w845
+https://lh3.googleusercontent.com/places/AJDFj42CKFAi3h-APW5UW2frTMfEeo8AqG2Td9wStYWFa8HyHBVwaYYQZAS8cK4CLorn98byTaVG6L8rMG4Q3qi_QbqWW7H3Pw7lu70=s1600-w1000
+---restaurant---
+name: Cooper’s Hawk Winery & Restaurant
+type: Contemporary American
+phone_number: (586) 464-9463
+address: 17440 Hall Rd, Clinton Twp, MI 48038, USA
+rating: 4.4
+capacity: 20
+city: Clinton Twp
+lat: 42.62592609999999
+lng: -82.9444754
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40mFjXgA0In8-1M852xXU9UXzoh5rtCKAhzRIK5vVWYcSPJKvMpuxbGev63zZ9GoAAxMpZJcn_LhZmBlVZanrWIPEXcNJoG42U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40vDybM0_FH5DWwy4y4RcvBryz2TJrPOgRFQyg8IJYPBVUHkQqHN7eENACh5dGzrmUkcp72T3_Jd_pNw7b6INmoMkS2p2MW8oE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42oq4Kz3Dm7JB3LWOqkC5dgkhv7G7gNvINzDAIf_762KMXZypxOrc0Iy-3h-7XqNCmDxzc2PLx1ru8gC3V7fitMM8uWcpchcVQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40UMBBY8eCwyebFtEXzWs0goskKbH-m1AWuCWN8Ua1ei9l4Mr0j8VQe1D4HBarEGuvW0-wPZAnubeaLAdukj9V7drDMc8m3LsM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj425uBa9KBNZY3SVZjOetcJhHFt_4BLUDkGu69gvx7A0mH9hFQdalawtzp0eCMOSdFUSkvN6G7jcPAkxYbjIOyUnUPjFsNeoke8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42VnP2snSzzH4r9Bgzra-GTYdaDj01_WNar1yADjmIBhGyZ-3SaSBNZEr3LpEy57PgTYvrdClYADOfwBfjoHwPTGzeS-aO7FBM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40MwEl07GSsVSDh0_04vIAgQx2Q7E-tW-vBQ0T0ALrl5-4narWxISlrhaJk4zng6A5_WobgTI27TkNG7lZxTphTbYesBUIGQRs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43zdWufGrG-kd-yWlxiYEkeIAIobmD7iGgHVFSP0KNmeGsVyXZgcpV-bXSKD7Zgtad2olS1LqZRvXr6XDP1CuJjBMYguEAm_l0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40c-LqUDn3c4kONe4PsdJidKLzGjxSB_tU8y5Tu7Imn4KxSeVVJIWxqBOmzdHUXg0BblryRTocRbNYx8ad_4wodnmotRHLOgxU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4396sidirS-teMDTKprh5nnCIho04UPuEcp80sH2Mwt_ozidEBd2puQKP3KPMpBmFmaj4nTueWwS6uIx-aXPdX0OlAfwKCg7-M=s1600-w1000
+---restaurant---
+name: Cooper's Hawk Winery & Restaurant
+type: Contemporary American
+phone_number: (248) 781-8811
+address: 151 E Big Beaver Rd, Troy, MI 48083, USA
+rating: 4.5
+capacity: 20
+city: Troy
+lat: 42.56292550000001
+lng: -83.1447013
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42Rg4E7F4reWH4CAgwWMD4_y4tfd-5x5gwaI-FJCX8-Hp2KzbzcI0TUjS_xqosE3Z59_x49_AMKfHhRrox0nSD4L0n2D6ab6HM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43qvzhro8nLbLJu_ig8bvArRXPMRAf230-ZMyfWdZLSZdyR6MxnDDVMyQYmQRP4a671wpTjrd2g6Ndvm_jGLCrr0UmXv8wzHyA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42_70vD12moOFbP_diwrnaHoqksN5oY6aleJbrki0fmCND-vhYjqVrvYKQZoxMJcw_fTK4VZy8p_BflFaf4Yc_jdRPlIOMoHJA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj406EwqcVV7UDoOwScCAr3WT-wVweZRILLQHPbQz6wAAmUK6p2l6R695I31AxNfKM22Hp1d16dv0E6czg_volPcHVln6bBUfijY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41YQC8YAHdlACWhyOeVGxOusCy83ThgGuKAQ76sUvfTgeTR4j3X-qlQMZw2Y-DDgFQkZn3Wdbo05enN0FeS8efOBcBozGE34xU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40wgm0J04xymTUh9yQZRq4WixPRm1ADEr2I9Cw8jxn_ZDC0JUBC1r9uzhKTAkVliuqSqI2EdS6ll93c21IurfWE7dgdT2LFHxY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Fu0jF6PVdYoP1QjaZApxiLE4IDGuJmyKcSmpi4gyKSH3wJ_DjEDIIHJj9_2UDfxeARjZ2CNw62CnaAha5nlGw04-VAiT3sZo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43JTTYp4P_T-aYzWIFNb753VQac8EUzKg84qoY7ym2dZA3ZSOfErLXJtCF-SwqU87uziXqbzTZ8GdVF9NQxPmbZvIDEwPh6deY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43euwCLAFgFrGx743urWvd1dYOjyl56-iT71Wfxt6LhEJ5YpzUSaNjMxXiFlLFTCVhRFa1iC7aHd-p9soxUKj1i9rjIBQB9QS0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40k0WHjvHd6uDr0u7LqoJDdRq9vcxwujXQ9ZZ5-FHYoFRsCecujNNV9HrlJDxUIz5JN5gwxla-Arc5dWWX-zPgLv9L7vX2_CyE=s1600-w1000
+---restaurant---
+name: BJ's Restaurant & Brewhouse
+type: American
+phone_number: (586) 519-6250
+address: 14455 Lakeside Cir, Sterling Heights, MI 48313, USA
+rating: 3.6
+capacity: 20
+city: Sterling Heights
+lat: 42.6263892
+lng: -82.9839666
+photos:
+https://lh3.googleusercontent.com/places/AJDFj41y4DV1c70bcpRsLlNmV53aC4fb3RlaGLw744FxKbykC_TGzAbJ1IMeZqUkUuRrhITFjDCNvJq-2Cmn6HGQVug8WtftjzQ_hTA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40mOrK33oRboHBYMZzgGuye69_ZKAiL_OreQFVywuLj5-zjLpBJMUhOyqCT3cj8JlClrqR06dRLow2jls3GSrkDsNG2axYlRHk=s1600-w764
+https://lh3.googleusercontent.com/places/AJDFj404K17XPnYaL9bppyWtAEChNwHs53cDUN1mlFGMzQOymCJb8fhzYGWOHyTNKRUpc8wH96qU1LwlKl8WVG4Jl73sOUwAJVHM_z4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43qUEeuBR0JLe6WJRgXVnGoah5KjTf4cPc1dBMvqdKGQqN6jMZ3LqStZipaFM-fvOIoNO-1oyBzw97qi84pfkVDKcLoqPNs7UA=s1600-w300
+https://lh3.googleusercontent.com/places/AJDFj42gi7-pYEpAa2pllllJQidUKRKGFOnehVj47d00ZErhJ_Eldx3H6EchSwHdurC5koL_qwk8ypucaV-9Do-3PTFLq_fQfQ28P3U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40S1xdgsHKlBUkpN7bBOo6OXkqI6-o8cuhkWGsh14PHh3Ybtb9T4dWVfTT1VG8mOF5dpl0ZUUfBQxaCRB_wLwk1RonLaYNvGDk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj418yJLCBqfJpDQj-eSlD2hq2RQidymV7zN_RRxa3rUDdoMnwXKK-6nfJsDBj70n5LvH9vnautW2Ud0twkXu9mzL834Mrf2DIDI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43dJNY828a6QiokUXHaJXpMDuLHUrH4anPA_D_j-AIagYG2RjuYso9WMk84L-IKfb_KCW76Wtb6IGWLUd7LbxzcV30_sEeuMNQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42YEM5jorMUBGN_stejIUDWpn9c2BLPeOc3L5ou0TGfv7034Y4lO_eDMOOuJ6ueybDOk_PnWNLXeN5qYptFwgmNvELeSphpcwo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43n45USBPLTtPl0Oqh-F5AgvGapruIMNF8KLAc6gV4m2FCaSlKRUaED7H2CmR_8asCCwFvjkfJnkfR-7KGpA8-bXoKuxT8UYA=s1600-w1000
+---restaurant---
+name: BJ's Restaurant & Brewhouse
+type: American
+phone_number: (734) 357-8530
+address: 19470 Haggerty Rd, Livonia, MI 48152, USA
+rating: 4
+capacity: 20
+city: Livonia
+lat: 42.4278121
+lng: -83.4324431
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42nZyZMTL828CY4yGufI70PXoaEv-6cxdOnY9A2d023WeI-bQPENAczSgHrFCejt_A4DGb7Z7iBKQNUvYuSvsqD6S1Xq4VXLyc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40lRGKM1j6m1CapER30apu_Ix1WFZuuuo7BezPomawpBn7jIdhV7sV80uUZnu6bediTEh7v2vDpqtJFt3-RCjZYWZ6F889hJB0=s1600-w764
+https://lh3.googleusercontent.com/places/AJDFj43k3EYuo4kAjX7Y69ndxrYaBLjvLs4Y_G4bc4ffT9f37k4yR4NjGgYnlcGkE1MfQJU4WrpFPvRg-dQU7DKsFxbu_QCEc7CabZI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42eUiQgspEkwxkJ1nMobsQAxFzwETdhGYctaYtLa1qqr2uf3l2KQHAC3EZtDlJUQk4D3ywPn3_Fd64ianIgIUI06sjogBF943U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42q8zO-g_XEk34BKwpMeKt1fTqnDTV028YEbhOU5WCsZMubRA2P-DwPtrtyxUyAbS_n1yNa3LLG8MYdyB7Vl488yX9KtkMnM8Q=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41JsULqg3a8ofziESrui-2eW-nmcVwUt_fRSBIM7ZoMZKlacyWfgzaKRJvJuLns59arxShHLNM6JOTyVJe9TgUFMsniJvYTiiY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42uGUjOEjL1olau7QgAYOFouBE8MsUBn3rIeyyx-7BRHvz7JlISAoI7SrBHaDapmcP5Ug5gXmHntHmRPRThso5dYDwQ3PtxOHo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40w6ZnB_0BMHfYgHgSkpXb7j1AmaHS8pt1kH3kbgS2vCl60GcZAZDOZIANsmQrAlW1XM3qY85Socy2Ii6i91d8LhjdMOugAfQk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41dTiRbIvhrPxgnJFE089Tes6UHZmRzIWeGALZ1uEQzI7JxIeEg4a3wqkDwoxxwKFYhCiQ8iTxUQX_6iigpEcENpcu6E3gcEUg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40wbIlEBhReV-F5JfaJdtKtO3ofokUxqAdesJzRuVYFYKMIejUMxD7PwBFwdyqTTt4xaKMkTct3r3EIS_OInEs3qoxaTZt0NDA=s1600-w1000
+---restaurant---
+name: Brio Italian Grille
+type: Italian
+phone_number: (586) 263-7310
+address: 17430 Hall Rd, Sterling Heights, MI 48038, USA
+rating: 4
+capacity: 20
+city: Sterling Heights
+lat: 42.62655900000001
+lng: -82.9456857
+photos:
+https://lh3.googleusercontent.com/places/AJDFj405vNeu-fXkUhei91QxjhTSSoD7h61NlBjE_j9zPBgtWhhQVh_abN6Y61gZ9hhboTWTGZvY19urF7P7Pt1ttQCApprKg-GUGNI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42AgTFabUMZ6NYR87XyUsZZ89iTrfC9OMJBi5eaLt99HDiKkLmRl29qIqRCGNVMk6Cue4RdE7fHIsDAdktKhZg0oaIWB6ZHXug=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj424Qs6Wd3NYJWG7t7f_nXMrxfwphOy1wUp09ErMtlIjBv7ZRvbxwsNAD0Vp4oTHFq4INBdoWnRUnqTUUiPfM3AGv2WXyGafnac=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42t3zS-l7HqYadmIbNB62JjulF3nHeDhGmzxTjgOMgd8u4wp9WhLNRQqgOlFPdW0GWf2T7eMq0pXJeWp5gBJg6cZ9Hh7v5RqJY=s1600-w640
+https://lh3.googleusercontent.com/places/AJDFj42xko2Zra3c1EnPaHEL4IX0Cb535E6rd49vH5pVPbhX9fDxDajWxE-XSu0dJTm-WCYjubwOD1K_lBYOU5r_hFtlSHcKU4XE8v8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42dzNsvUr55Z__6q0zAsRSAoCz8v6cdFIGK6Kubjm97OoZLAzVTb3PH861JQQD2Cb5Pi7S4FzLq8kFJgWdzMhFLze4AnLg9wIw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj401u3TCMAgJ4E6FVzkp5JtvNqClTDhEIAWbvjvajwVlAYVGxIAjh3-BgcSY7PKg0mlmGY60pry1jtPuohKHX1mz5UV7y-MuBmc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4225k-C5sqwtJw0dkPd5QR5IhC0Uc1zJetBWvFa7MAJwbqeRSHCdUVmbJskMKvH5JlJ9FSAO1VwWNFKvLOScCzl7Ri9_irAPts=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42OcmKJuaWon75hoAKafLqXotrrRE4Grx0VCM6RYGI2VzHeJLthUDoWfOn2UTpod84WarQmFP3dmnOM60fLtKbCgU9HA-D6Src=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43xPNVsq4lQkwVOnkNofNV4pdpT3autS0AgIqu7cgkgAaTwm8BOkjET4shcAVPARSStYVnltyDT6L1i9px0MTyTPpxJbtiC3A=s1600-w1000
+---restaurant---
+name: Terry's Terrace
+type: American
+phone_number: (586) 463-2671
+address: 36470 Jefferson Ave, Harrison Twp, MI 48045, USA
+rating: 4.2
+capacity: 20
+city: Harrison Twp
+lat: 42.5661392
+lng: -82.8422851
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43HdvlU2_NX6MjFjo0zNnFAMZ9yIR7xNlNnYrRo1OFEUDnLMuZdIKcCtGyCUzAIO_L3FwMoaeaYdr15LfBjEsYfxzPBrxWI4Vo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj400Fam6-5Bd0lsIc-GmIN-1EAU2h4KjSSsf-8p8Qh5YZDeATnC7KR7fhiBL1Tol9FUED_WZJZUdq7US2rfxbSt5aRG-29pvpx0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42QwQdLY3XalpzBDMkyCktvwcYA4glW_SX4i7oTBWAtCs5k6ynFNstODRvJVeg55CAko6ChREv5nhiMKBdl8_t9silYwq3zVpI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40xepo2dP17Oh8l8Qcg1zwsIOU_pRKH8VNGpWFeTQj6KQ_KX0-3TwyqKZEIPLOMRocwne0M-ccSxjBMIa0VRzGVrGpMf63xcDE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40hYDOE9esoqoo7g8VIJXLuYbKO9OBifw-oi-OBxA8N76GzI4Q5ThclDXy2DgcCcldU-BFJjkORkJBsDHu5SpCWN5JXwiLcPCk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj428jjM_KZ4Td4GZ0__U4e-VyFm1UoMDkej8_NEl-FCkvKMtGx6S9iW8LeUbPui5SPiGlx2GnFj7OkGVWiBaF_DQlqjWwkCKMaI=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj43Ik741w2NplE6eqxV1JWmGTZgsgneZyH-XrpzMBaImV-Nj_Rvtd_2m62QZL_KTzEiuDXWvDiJ5jkJ-mcZASt1FBVY0XmO_UHo=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40LnS4ztG2oYgEPz4zqCh-qNpXeex2JHdZb3Hc-jLTC2ZICGgX3eDBXOST8SgJw1z3wsDp92P4q33xmdNLDRK2ato1z7gFnv7I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40I0CntLr_yDV4wgXSbz0qXSfig2WO9XY-qO9Mglxiy6aIUI099mYWntKToTwzTmXkjvt4KHeHNWrBLtAxxd-jYKIYhIXeeDDY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43l5g4Yrw02ucLTU4XErXgAGZsdpl3i6uUjLAQuOiNaRIBxch8bRO5_hEh0bpw6BA2kgWzpDGx7snnRIu3YSONr3F3g5sZyvBY=s1600-w1000
+---restaurant---
+name: Harbor House Restaurant
+type: Seafood
+phone_number: (586) 791-6070
+address: 34250 Groesbeck Hwy, Clinton Twp, MI 48035, USA
+rating: 3.9
+capacity: 20
+city: Clinton Twp
+lat: 42.5486179
+lng: -82.9272337
+photos:
+https://lh3.googleusercontent.com/places/AJDFj41_8xVMytPEGhNtGv7sKn6leP_JXY58bf_nFuHEXgXIxVcBrsEpzZHVeLa6PJ6HtL8P6DkqjY6qjC-ju5B_zH0-9pSjvMSOn7Q=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40I08GFxSl_axfK6GcZyC-0k2SrEUhxwy8FcyZlJCr92HEDtCkwOZrxOJyxw-rJIAUs5o-nmHW_fZr5iMpGOwG-wjW1SvXaHWE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43l1yHh4kOJjZnKl2mravkXj7LbXQS_Ob3ob_JYOuIKfvCHi8tZIQWVKmpRt92UlIMT5hJjdEIvlFzidFXUSTz0LtX7tf8W2eQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43VtxYXD0r0Me2nvqx3woM-afGLaj98gJ0HY3A7P1AyWUnG3v9miAvAUja4aaaCHbuntN8OjXw_g5l5FrYYESQ_xC_BLooaq2U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40gNW4qd0ZvIeTvJgI1MXjh-GvAs_ytqwHy7fo-FUo5fDnLxHlgxC8HJiLmvKsRpYWrFFdDYlpW7xCxzoziIIhC_HAIpJmDT9w=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43A9hArRU7FO4LU_e2wbHePqyTtwme7ttTdLVmuhHUnDw9QXR_HYJXcvKWRONgXphkVaT0SVXtQS8_5hjmgSXS3P0WDM11XRdY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40KZ91VX0-5EC28uFKDiNhtYCmlzU5t4xbKBhwasn5Yiv4RP-eF0TFApGrwcMt2-pjf_5H7875MRU8D4jMSuEwbEI2D9Wwyg-U=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41GQo85sUQ7ttQt0okAN7-JxaG0ighV3oaI5PqFnAhHYoNKawA-ehwXj1DI-IZkSdvV9VfB3jHojBUqizdqn29_vS04ujeG5sI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42SnPt3v5gZtKwuiSYEK9vDqeiqOpg7CUQvtHVaAXU_4xckrf4wG9U1QO91kdNRND0SIp4It4XeCkEHjAs3Jx3W8uUTRe-MdtI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40UruDhTN9yRxcPAsinJDcclU87StD57XjJ5H2M_ANRMbJXzPhfoEz5Quc2wQlJIvEKB7yaGcbxn2DglCYRn5dxpkCkctqGaDU=s1600-w1000
+---restaurant---
+name: Bath City Bistro
+type: American
+phone_number: (586) 469-0917
+address: 75 Macomb Pl, Mt Clemens, MI 48043, USA
+rating: 4.3
+capacity: 20
+city: Mt Clemens
+lat: 42.5985573
+lng: -82.87908829999999
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42L2YZmKAwFG0A3mdEaojpD2i4-oZOMYfZQ4ZwlWyARHpDUXthvHWKEWhb5Tq8Ghi85x1GGkhxvWPs9w9MU2f6VbHXMi_gNikE=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj43kFYM-qBu7rlg0NTemqfB3hRKsdCPSqkN7DLOabsnjhXsYABRcSvkHUGdwZkDpDhm2tGkAlmq0nuwGIV7GuSluMLzvvf9V44M=s1600-w960
+https://lh3.googleusercontent.com/places/AJDFj41XlwiWmJOBWQZlmhrYSerXTa0DAQjOpXmbC8V89UtvYC-wpaqnI5XpGyBfEykAxCu-xf9CP7znk6OOhTaayC0RLUlc0sys2No=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41515ANsSFK-Uvy6szciskGOQF-59aHky4iFpHdhfV6UObFBApmNKzBL-IM61FY40NRzekg2LGYia7DGxfD2lcvowNU-8kekGI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41dWlXhuu4Rg7emmbSiLUrC8mE9aBIBY8LlA1oG7EV-h8pVydKILpVQVah-Bvbkb7Xjl-0BAFPvQ3qXvprsB9giKYj08JGiVjI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42KsxqMwLxqzmkZDCaLRvRYQ8dk_m6k15Nfx1wtilrWEzya26SSw-CKyVNKhKpxoVuABufggH6ze-4v4Kuq9cgYbR2TwRA5rjw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40HafnbNT9PIDzIFHzJNKb1Aen-YrZpmhfxYh2KYPdk1KZzuweSfXQi-Lj3kOs_xvfJ0FMtj6GtqkBa03D0B8VQ0dzwnfu-PRQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42xesl1FJowVaASsZH_Qd4w0d1yyOdDtCeHBwOGDAwZNiwvP0-aVd5uLTbrfMZ0QDWHcW0i6Dzfj-gv2kgOquqjUuitzd30J3w=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41xw8y2REyd2_PIyRa8tBjihAvGNKHW0CM9DoSghD6Az-Rxjvogr7FMI_gjuPPvZOgOoGA9aTE1BPr04bUAewpVclu_yHPADGU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4165gBeXL7Wl6jumzPYBJXezKKGEy4HjkzULzHVEFBSjZn7rGJG7lKD4iSmJz809W4c_5ZXy3eZxoCdplQ5oXfLFC5eXiXR3rM=s1600-w1000
+---restaurant---
+name: BurgerFin Partridge Creek
+type: American
+phone_number: (586) 422-0085
+address: 17380 Hall Rd, Clinton Twp, MI 48038, USA
+rating: 4.2
+capacity: 20
+city: Clinton Twp
+lat: 42.625928
+lng: -82.9475927
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40mvmtwpcBHF_jXO19RGpB6pZAJ06cKWnmVT_cMFfbiHHmhS1gthA7IoZICcEkzWf0rME5ywJJHhC1xgt2HN5PvgZY9t7F_3tA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43d2z1PGNC3rw65QyJcle7hsixQQkmLWMvGsDhZiqgQxvhqE2LHWbau15sD13G1qUNzC66za8-bd7VXYgFd7zT5_5euzjyCMiw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj438Drb5zAySPTpZ4xaICjyatRT1vSFq_TyzNqNJ-GM-bX780nElJhuSI31Xzd_Qrvujgaqqr9KqXjIz22MUm5X6cT39DdDa6vg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40jlkRnmjGzRz95HGVmslMGN-GIUD48oN13SLHf_X_uPbRADg7djgiSafj8hMAaNcUwf3Gj0kfP80ofIWPzJZGzpAWHLR38b_M=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40Q4xR2h4hrqzwHC8emlqIS1ckktBqBdTxbSHwTH4M_djNxrvx8LYhuzSO8EzKCWTEvcxnxiHgfMJc2anLWWBD_YtIAAhQPcgI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj413d8zjJbV5p2G6uVJVLAPNZV4mrsZyScaOjg7csWEtW9OUNJ7WpcupAceJxa-lb7aqrtch7FB_PZJT94RltxHqN8ZINzuV75I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43fqzDnqxiLt_amOUoO_Or9XaSnNmtSF42CJl9sKzVgpiZAz02FRAGCp3hoxquflTbYN0EsXPc-WE_2N-pWmzrxE6_Z56iXV5g=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ln_vpxrqQ3UDu-nZV6pERQQiq6R1rPsGjADO3FHdSaz35MPjALgVupPZ9eqU4-RYeaJTexAeS7N6x15HAgXuxlECHZpxxIk4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj404wHQntdxCMRRzQ79Kqyoie5yxt0hjD0eXhJrlaF5tpcuOYwWhC3GJaza9Sa9uylRepBQTMx-ebAO7wtAkuKeMUyT9XJygKUc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ArOh1sAD0SPkV3IedFo1oMoSpwWuQiNe1ZdulwzkigsTJcV1j0WJ0zajhxIg5DVf8YSsflLmIGqsMdxAcYY6UEVz_o2BYJMI=s1600-w1000
+---restaurant---
+name: P.F. Chang's
+type: Asian
+phone_number: (586) 263-0860
+address: 17390 Hall Rd Unit R-103, Clinton Twp, MI 48038, USA
+rating: 4.2
+capacity: 20
+city: Clinton Twp
+lat: 42.6265339
+lng: -82.94633520000001
+photos:
+https://lh3.googleusercontent.com/places/AJDFj416DB2bmCiD0rk3kXZO9FCZsxJ85jLYWMi-UhazH08pzXMCPc-8MnTOsi6f2KK3qmFJxIrWQMROoxGKVXnS4fatRBY4-2Rf5UM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41LeJc0UpN1jACtjXQgCnuqVVB7P6-un1v2MpiP5wI_j5jHI52Fttk4pYzViu8xV55og9zyLT2lB8DDvAg0APUub1r0rtPe95w=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43fC9TYux234LlZ8EhXzM2r8DO3lvd6UEGTlJYNIux3PGBojGtH6JVbhwHSVoI9BdueZpavKHVuZnXDeR-VnAEevF497zeoztg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40RC3WG2FDMYtThxYfR_WtXrVckquYjNJX9qErKaN23dpLVpAGj7Tivc-ovNWBj8dXQyFZ30lfJxPEzxoYwSNV6-Qi2T-AJ4Z0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42nyVDMuYHUU9_HuDYuDfoFzmznZzcwBEDW-bCjR7zMt7kz1NcW370tsSUU8Jvf6OVL0GlG0IcCnq-31y46SCcRpGMDpLndflQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40TOtXTt0qkr6UMH1Gn5d4bxrrc_LlSoUeKkqT6qn_C0Up02EZjGcnvdx5km01iYisOTsIiW21UU-cslUnPVLEQzEh4OvnSj54=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41u2s1t4OJ4GeyCOivn9CwsX5y7R8f_NvBmy6RVQaj7BqxI6A-wjC2Rvf_A0JyjRE2WFiWUCVrxt8xKLnXKjRgUwRu0PIkG1wg=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43k5eij89muXba-MSxjAekA1w2H7xDEpQdPRkromOp7XHRL9xXiAo-vV8BMvOfnHfWSs9PgOSRdRlLfNAdZAKfBvKGze9-YTGs=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj43tcd4i1wVUTzRrWTVdDOy-LTsExhvZW0ZnnGk1m9zRoXFolN9l_xCxPqSXwxDEs16Rm9KDp5qlXVJoeQ7tDFlSLDAMPkwQLwQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42VGA0g2fwP8nR75rb3pdJoNdenLxcGYyCERBQuMYS5vcOWy52kJQLtweYX8IPSMwuxkIZ58lUIICcjoANC4p6-uYnnyHtrvjY=s1600-w1000
+---restaurant---
+name: Buffalo Wild Wings
+type: American
+phone_number: (586) 469-0725
+address: 48 Market St, Mt Clemens, MI 48043, USA
+rating: 3.8
+capacity: 20
+city: Mt Clemens
+lat: 42.5990802
+lng: -82.8757133
+photos:
+https://lh3.googleusercontent.com/places/AJDFj42LpwLbZZ92fznGad75OheqafbSwO40oab3KmWCnMQiGyy8XDrg2_i2pNxm7WrTBvhYRLm79O-2-sLcXbhe9O2WUvaVHVXyHf0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ScvbZJnPrpRmU6E0BHDltVf1D5-jO8zKGwO6lhS1tIpSqHUsR9lmyDhUS95HEhmCWj7nBmfUBDuvgHjMtRwbab9Cc25soLU4=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42JfBQUsYHL_NrMoPPOyjGVMmmh0WYYLHYnPZ6L3lCpJFhHoDmp0CtWXB-bUrsEwH_ubf9Ys2CvAPe1zAiFev7szXuErzZLdFg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj415C7CeyxE74ITZEo9xvLIAaUyRgVVEBiGSHZPgQUoeeFcP73cRUYQz7R1xDJsWpyflqiTNwUlgQOBuIztsgS8FPZO6RH5hP6I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43tEKPKhI6yeRubcFiiOBsuq5Q3gkY6zbuVhnu2smFaWSDuROQH6lS4tzz0VCmE5s8G2HHtTbBoX7kTT1_wCWfS36lLHogmk4I=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Q1kkMA9wZL-3TMg0_EAkRKgrzrmVnkLi45FFrqPdJlmvE7m15QFp8fUmrBuLHQ_UEnA2tFqISjFTuCbktlvO55mp7GCTnUgk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj410cFcY3ojl6RkcIi6LiKhwx69C1vSsr7mx0Ll_P4aonAOLBScNR8NDBnZOdqTMaY0-eMoLtnzUk3zGIeut96pWRsJ8BwvuuB0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42HLnmFtYNm5_kyE2CqsBKEKBAP9iDLIjlDoOS5IoBR9aMWp7PeGY8IeqjhTYTzYcSppk9KgKJs4hS6aCzzlm5InasrqGJ63xw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4065R9sCJ05o8RxeSam52CwlmSrhphmFkdSSPA2AZ6toFXYrAbOlxT9CZ9E2Tsl9x8Eg0F3P7oHTtNsJ5YeK3j6zDH20xO9UVQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40WYGrptxeuoerKk9x0Vf4bzTxZsxuVz5zINmW8uzmI7jWnKU_JQLf2_izV3BPuQMqMGZscMDNC0BEA14KEd6pZZ5Me-Q5Md_s=s1600-w1000
+---restaurant---
+name: Buffalo Wild Wings
+type: American
+phone_number: (586) 293-9500
+address: 15745 15 Mile Rd, Clinton Twp, MI 48035, USA
+rating: 3.8
+capacity: 20
+city: Clinton Twp
+lat: 42.5537207
+lng: -82.9636486
+photos:
+https://lh3.googleusercontent.com/places/AJDFj43qLVZOTREXeJBndKc4dituc71bZv8s2u-RPmMA2AIrILNU4sGirAIUPsYykmljp4EOLys2i0ROenQW6IXW3F4QVBY6hIHEpCQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40CPapCIuy4V8OYJeYjM3hC1lMexTSagZ_vsCwJHuYKpWaN6Fd1XwchRXrXb8fXuBPjMirJ6vtjhS8O09muzgOvA6RKmU4R4Zs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43jg2CngNxYVauRwjmeTkR5W7KLlYWx6wiBBCpF9ZIAUfbzk9oYeXSHn9Fx_tiI1lSuDUPXKvcdVbBlJprnTONG3LYU8DC9eso=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43MhDnKUjc7JDFzJHzajLEEJbj3pZb0r8zSKPy22PMfrDkRe9N49SEf7Cu5IeoORX5P_VODCMRJgDeF1n7gPrJ6-dHa8SjO4fs=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42TFXftlOLtQXfqEBcc4JgGOC7zuwNd2nMw3yBbU-fQ6G5vVcOx_9ekWGUwm0DwlVJkNPrW78tZKMJlphwwQBS-JmVRTOihmV0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42zoqAcPhWo_AMDjIcKaS6VFXYW57yrlavyJ93zyHQOUnit6q9wCGopZjF_PJTy9Tkyg7X6iGuCORznOk0hlh9cMjPcwx0E1xA=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41ZBzoGoIbR-pgqBgZBC7uYXoWuDI-D0NpzfudHpkQnqjASbNG37f-eDlQGhudDM1I8C8SYt5hOWyrPkDWS5SLpUqJ4hZztgn0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41Ju3M5J2xtp6Y4No5uN_qFTTKULovk2cIT1eBVK9_Nkj6jClgUblpycN2ULE-glVXofrQKq7cWSnek6pXOxuwAXZLeEq39Kys=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj400sfljH1EeuOjTcbKmSodLXhZXtWHG_N3bGpseTbNG91zepuYIFXJVXOE589dGJf1uKLFN1j_WDzWl2Imq9ofd35Cz3Tlcm-0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj430QJowaRqFV6duWjE7C3_b06dwUXuPWau9yoW6D4n_ulYZKVU_qUaz-msNsbTq1aJEzfRPUo0ImvdJtI2SIk55-LWOvzW7zuM=s1600-w1000
+---restaurant---
+name: Cloverleaf Pizza
+type: 1 review
+phone_number: (586) 264-9700
+address: 13411 15 Mile Rd, Sterling Heights, MI 48312, USA
+rating: 4.4
+capacity: 20
+city: Sterling Heights
+lat: 42.5534819
+lng: -82.9905473
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40vKy7rEfSAorKuuJ6_4zWzFpP5ispy3erfVlKxXZntN5h2b_Ir2Td-BZT82lgkaSTVPBL3GXvh0gf5OpE1XccwxZPOpi7w7fw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42Sd75l9BkUm9Fc6emA1Wqq9d_kdG41tOTyQLiKQSDZXkZL6NVs5ygJjz8tepvdQmLvDbR3OrxiTBvj3nwbyYVykVS63USKYkY=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40BY8eLcDQKC2iuQE7dLY2CjZd4j_DG8DMA1vTxIgVHWoFabX0q6ekipcD2CFMjoaxcWcykKhHFSTyYjcQ-7GrMqNrJfht29BQ=s1600-w768
+https://lh3.googleusercontent.com/places/AJDFj41LF9RMfhOofV1ND6yonqG47dP38vL7xXjv0jMZ49eky4I6iH9nP5NXZMOJ_-4_IeYCplk7H5X4nH-msD9vwGubtgWQ_mYIv30=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42vmIW50nxY19J6oc-5Us3ret9VUmoEzX8pqaL5PjIg1fFN0FIZks4UFYLSB8RHXsvZche3WLK9eotpKX1oyNPvI-9af2ZqdLU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40ymLMob6L-yLcvXsQkL4Eg-O6uMtx69itXHolDpc3UQG_mf90PaE3Csa7p1Stk0_hycIIVHZgsrliBOiQKH2JZGT1zJvQICdQ=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40QqhQf3I8uIe_WQ0xEOkW1tFF1sVCoiTcwAGFGiaKA-4JWi8syJq0hCWVWJmsx0X1tqsm02uxhuG46x0O-ndfwc9HVu753vYg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42NZRndHEpmEjLjxtWSZIQ8xR0DHpl4Xy8P7LH8T2FRuCa9MA90Wri-OuSwkzuNcyW2hb1UmKjYnvWOqsQAtQe1YtcH1145dt0=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj4311Fr3qpsyCDHS683D9qv8a6CdHjim7d7fodjhDmBvpeNqg7OqC7CN-hfixShT42UmgeYWG8hlJB4dp1NyJNwHiFxWoXJY-Wk=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40SGXJc75xwKheZQE2HWac52hyOtRY_5hWcO78xplt6eWr7c038drL1cRvZseGOCOvtTeJ8SUY39fsqXop1Aaxk23VrrLnxkQ=s1600-w1000
+---restaurant---
+name: Famous Dave's Bar-B-Que
+type: Barbecue
+phone_number: (586) 293-2900
+address: 20300 E Thirteen Mile Rd, Roseville, MI 48066, USA
+rating: 4.2
+capacity: 20
+city: Roseville
+lat: 42.524419
+lng: -82.9143155
+photos:
+https://lh3.googleusercontent.com/places/AJDFj40ss9AKCUCEbvQeLpqj1zuD4rjE0w_GIDTrcju5ohKCleMKZOTvCadfUaj4ZlcmPJBVU76mHOsx_Z3PXXp8-snnzlTzKBhWaEo=s1600-w315
+https://lh3.googleusercontent.com/places/AJDFj40H9V2druxW0vfHPjJSTXFmyJ5mzQV0XJ0s_fCKZ8lfnAtsYuSIUyOKTbT3sC9LO1sXO73ZXMC7c_orPC35sZXuIAgJKEgt3to=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40fOaZr_Tp0EmLK5dbnEPATJag-kll7c9hABtCAzSaX9LT3So_utV4HSZ3ftzEBuFMIOQRuk5qYolqB2lZ5z-CA5PGCVqM1shc=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41IDGkS9IJboj58KYS1GbrmZZf3RWPusJsfIEJuo2C-OI3i1R2Suyar5dBzbyHnrSaPTsfWehJfASHrYQXExYAlKRZGn5OeowE=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43XlQEx66fLdyMedv35ZoTKANcEeoyfD8GgikJFH-N5qGzxwob1KiAwgQ72q8YaHtJ9BcPn7sq6ntpta2E4zSywhdAWvNGVLCg=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj438Jqw73aeg8QjMH4eM9WV9V0cB3dH76jxeAyzziZtQ77LoQ8KGzaT3NeC-JsWM1w_sSwGHKG13OMmPosr5VV-C4C9hMP6y8ws=s1600-w720
+https://lh3.googleusercontent.com/places/AJDFj419g0PEJKs9glA4_-fZk0_pP3nn23m94XLTCNiCqerb9DiND4PhqUtMWaz7CUv5AX0Yb5eFYrAu-0fan3gQAw4RXmJ_plXfO8c=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43-w7C9GoPp2lE9bG_TO_5dAfY_qUZDLNXgQmw5uECO8mYZXldIQT8XP5OzAGlmcwNwAlj2GmZwFRIuf12WimkyuoCQtZ8rgtI=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40r5bmFCmhUcZ_1GhMAcT8AZv9esWRW9a7LzAJxw5UhZXcH3-OuO-c5eUMEewL0jZeEn8vCSmr_YjZtHCVcI3yQsqRKnU8Um3o=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj41pBO379huj9QNOOh4FA6n2DId7tDsNQTc0IHRgStAC0w07pMQvxlYg4c5y6xbmRHkFKhGilQrTY9RYiBgY2FT1nzMHn1js5B8=s1600-w1000
+---restaurant---
+name: Red Lobster
+type: Seafood
+phone_number: (586) 247-6250
+address: LAKESIDE MALL, 13800 Hall Rd, Sterling Heights, MI 48313, USA
+rating: 4.2
+capacity: 20
+city: Sterling Heights
+lat: 42.626157
+lng: -82.9898
+photos:
+https://lh3.googleusercontent.com/places/AJDFj4013V6SNa_ydtWcqIxUhP-Y6RM7IEjJE7yyd28e9WNEyuU48p3W_WwC5EnCEFrkLBy_G1zW6TOHewW-mTjkuuQGc9HpP08Qbl8=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43jz3YRemWInoLdKCAzwHhkH2gh7a9_U_WXYS1TuNt_rYZgcO8PVMsIuWB5WfLkYpz-wIur5QT7YjPgmTg9hAMvvLh3HHMzYLw=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42yLbLtAf6CJAdXDtjlejcQzdR3m7u6kbtDTwbkITjxOp9rR0n0m0nuxCvKMFD-pTJ8xb-j2tNwjEK9PEXfQxlpWQDro0fLb_k=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40-WbgvCDZQwXtpDIuJ-CLVP6D3bzEjmi3pjnDjS9iDHgfJCjuF9RpLsLk9G8T7-iw8l6LDwflLhlptmRnJMejciXGfKKS0j2c=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj43tnRNFPabPAEIVMy_5NNpazg3YD_MABZWThh_qc6DuGqDMYbCR4jQyMa8oTL4kXbKd_HueNc_XS95i3BNI1tVr8x9Mp1T1BtM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42-LWRatt5O-EIwZljYQy6_CYnX5QVjb8nHhIpX0Y7O9q-_1XRjtChmuujrmwyTbwxrg-Z7kQV9CSZYetp3CD7gm11Ce5SEs5k=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj412JUb13_EL2Hx4UPY7CckiO2duKNH77aPbDwf-eaqSW-62arnrAY3p19UWhVvpGARtemYhjhtGZaynuxno-KLI-dCf4QYKZKM=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj433p0OZzEB9p2sCAjommskuBf1gtaIlG2C59xbysx4HhcPH6jIsFZWxKXYpvyyNCTMpbumHVz8vtsxEifP9YJjQgpghfhrK7DU=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj42gkcDr3v9M4JKBrX9VJbCIaU13HmfR7x4SL8L9zDr34GaIXzvnh39PZGi9VGVKTYor6PNXVlHcmW6BqqCeFjw71vKQrP3Gj64=s1600-w1000
+https://lh3.googleusercontent.com/places/AJDFj40J0-6E42jmMZSAZUhT1-EB7lmy8nysiS5_gE0TM-Y_myHVa7QEQG4zbXHwoV_4VuyKiYdAG0z1rlqB52O2RKG5OnoTJdcQUNM=s1600-w1000

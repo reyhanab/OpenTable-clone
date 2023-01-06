@@ -33,7 +33,6 @@ def edit_reservation(reservation_id):
         .filter(Reservation.id != reservation.id)\
         .group_by(Reservation.date).first()
 
-    print("reserved **************",reserved)
 
     restaurant = Restaurant.query.get_or_404(reservation.restaurant_id)
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
@@ -43,12 +42,8 @@ def edit_reservation(reservation_id):
         if reservation.user_id == current_user.id:
             if valid_reserveation:
                 reservation.count = count
-                print("countttttt", count)
                 reservation.date = date
-                print("dateeeee", date)
                 reservation.time = time
-                print("timeeee", time)
-                print("**********************", reservation_id)
                 db.session.commit()
                 return reservation.to_dict()
             return {"message": "No capacity at this time"}, 401

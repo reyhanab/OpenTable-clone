@@ -7,6 +7,8 @@ from .menu_items import seed_menu_items, undo_menu_items
 from .menus import seed_menus, undo_menus
 from .images import seed_images, undo_images
 from .saved import seed_saved, undo_saved
+from .extra_restaurants import seed_extra_restaurants, undo_extra_restaurants
+
 
 
 
@@ -33,6 +35,7 @@ def seed():
     seed_menus()
     seed_reviews()
     seed_images()
+    seed_extra_restaurants()
     seed_saved()
     # Add other seed functions here
 
@@ -40,12 +43,13 @@ def seed():
 # Creates the `flask seed undo` command
 @seed_commands.command('undo')
 def undo():
-    undo_users()
+    undo_saved()
+    undo_extra_restaurants()
+    undo_images()
+    undo_reviews()
+    undo_menus()
+    undo_menu_items()
     undo_reservations()
     undo_restaurants()
-    undo_menu_items()
-    undo_images()
-    undo_menus()
-    undo_saved()
-    undo_reviews()
+    undo_users()
     # Add other undo functions here
