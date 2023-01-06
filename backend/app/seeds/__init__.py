@@ -8,6 +8,7 @@ from .menus import seed_menus, undo_menus
 from .images import seed_images, undo_images
 from .saved import seed_saved, undo_saved
 from .extra_restaurants import seed_extra_restaurants, undo_extra_restaurants
+from app.models.db import db, environment, SCHEMA
 
 
 
@@ -27,6 +28,8 @@ def seed():
         # command, which will  truncate all tables prefixed with
         # the schema name (see comment in users.py undo_users function).
         # Make sure to add all your other model's undo functions below
+        db.session.execute(f"TRUNCATE table {SCHEMA}.users RESTART IDENTITY CASCADE;")
+        db.session.commit()
         undo_users()
     seed_users()
     seed_restaurants()
