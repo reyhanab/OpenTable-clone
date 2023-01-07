@@ -12,6 +12,7 @@ const ReserveModal = ({restaurant, date, time, people, onClose, type = "create",
 
     const handleSubmit = async (e) =>{
         setError("")
+        setConfirmation(false)
         e.preventDefault();
         let data;
         if(type == "edit"){

@@ -11,10 +11,16 @@ const UserReservations = () =>{
     const allReservations = useSelector(state => Object.values(state.reservations))
     const userReservations = allReservations.filter(res =>
         {
-            let newDate = new Date((res?.date).replace("00:00:00", (res?.time).slice(0,9)))
+            console.log(res.date, "old date")
+            let newDate = new Date((res?.date).replace("05:00:00", res?.time))
+            console.log(newDate, "new Date")
             let reservationDate = new Date(newDate.getTime() + (newDate.getTimezoneOffset() * 60000))
+
+            console.log(reservationDate, "Reservation Date")
+            // let reservationDate = new Date(newDate)
             let currentDate = new Date(Date.now())
-            return (res.user_id == user?.id) && (reservationDate >= currentDate )
+            console.log(currentDate, "current Date")
+            return (res.user_id == user?.id) && (reservationDate >= currentDate)
         })
 
     const [optionsModal, setOptionsModal] = useState({})

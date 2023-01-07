@@ -109,7 +109,7 @@ def add_reservation(restaurant_id):
             db.session.add(reservation)
             db.session.commit()
             return reservation.to_dict()
-        return {"errors": "No capacity at this time"}, 404
+        return {"errors": "Not enough capacity at this time"}, 404
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 

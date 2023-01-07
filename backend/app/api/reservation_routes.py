@@ -46,7 +46,7 @@ def edit_reservation(reservation_id):
                 reservation.time = time
                 db.session.commit()
                 return reservation.to_dict()
-            return {"errors": "No capacity at this time"}, 404
+            return {"errors": "Not enough capacity at this time"}, 404
         return redirect(url_for("auth.unauthorized"))
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
