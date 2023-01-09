@@ -6,10 +6,11 @@ import { getAllRestaurants } from "../../store/restaurants";
 import Reservation from "./Reservation";
 import { loadAllReservations } from "../../store/reservations";
 import { loadReviews } from "../../store/reviews";
-import { loadAllUsers } from "../../store/users";
-import {Modal} from "../../context/Modal"
+import { Modal } from "../../context/Modal"
 import ReviewModal from "./ReviewModal";
 import Review from "./Review";
+// import { getUrl } from "../../store/googleApi";
+
 
 const RestaurantPage = () =>{
 
@@ -25,6 +26,9 @@ const RestaurantPage = () =>{
     const reviews = useSelector(state => Object.values(state.reviews))
     const userReview = reviews.filter(review => (review?.user_id == user?.id &&
                                                 review?.restaurant_id == restaurant?.id ))
+    const [googleMap, setGoogleMap] = useState()
+    const API_KEY = process.env.REACT_APP_API_KEY;
+
 
     useEffect(()=> {
         async function inner(){
@@ -34,6 +38,7 @@ const RestaurantPage = () =>{
         if(!restaurant) inner()
         else {
             dispatch(loadReviews(restaurant?.id))
+
         }
     },[dispatch, restaurant?.id])
 
@@ -71,13 +76,13 @@ const RestaurantPage = () =>{
     return (
         <div className="flex flex-col w-full max-w-screen-2xl m-auto bg-white h-full
                         justify-center font-outfit">
-            <div className="">
-                <img className="w-full h-[460px] object-cover relative"
+            <div className="flex relative">
+                <img className="w-full h-[460px] object-cover"
                 src={restaurant?.preview_image}/>
-            </div>
-            <div className="flex">
+
+
                 <div className="w-[640px] bg-white absolute z-2
-                                top-[480px] left-auto right-[800px] rounded-t p-8">
+                                top-[410px] left-auto right-[630px] rounded-t p-8">
                     <p className="text-5xl font-semibold border-b border-gray-200 pb-10 text-black"
                     >{restaurant?.name} - {restaurant?.city}</p>
                     <div className="flex space-x-5 mt-5 mb-8">
@@ -132,42 +137,57 @@ const RestaurantPage = () =>{
                             })
                             }
                         </div>
-                    </div>
-                    <div>
-                        <div className="mt-8 flex justify-center">
-                            <button
-                            disabled={userReview.length > 0 ? true : false}
-                            className="w-full h-[48px] border bg-red-600 text-white rounded"
-                            onClick={toggleReviewModal}
-                            >
-                                Leave a review
-                            </button>
+                        <div>
+                            <div className="mt-8 flex justify-center">
+                                <button
+                                disabled={userReview.length > 0 ? true : false}
+                                className="w-full h-[48px] border bg-red-600 text-white rounded"
+                                onClick={toggleReviewModal}
+                                >
+                                {userReview.length > 0 ? "You have already reviewed this restaurant":"Leave a review"}
+                                </button>
+                            </div>
+                            {reviewModal && (
+                                <Modal onClose={toggleReviewModal}>
+                                    <ReviewModal
+                                    restaurant={restaurant}
+                                    onClose={toggleReviewModal}
+                                    type="create"
+                                    />
+                                </Modal>
+                            )}
                         </div>
-                        {reviewModal && (
-                            <Modal onClose={toggleReviewModal}>
-                                <ReviewModal
-                                restaurant={restaurant}
-                                onClose={toggleReviewModal}
-                                type="create"
-                                />
-                            </Modal>
-                        )}
                     </div>
                 </div>
-                <div
-                ref = {reservationDiv}
-                className="w-[320px] h-[330px] z-2 bg-white absolute
-                                top-[480px] left-auto right-[440px] rounded-t">
-                    <Reservation
-                    reservationRef = {reservationDiv}
-                    restaurant = {restaurant}
-                     />
+                <div>
+                    <div
+                    ref = {reservationDiv}
+                    className="w-[320px] h-[330px] z-2 bg-white absolute
+                                    top-[410px] left-auto right-[280px] rounded-t">
+                        <Reservation
+                        reservationRef = {reservationDiv}
+                        restaurant = {restaurant}
+                        />
+                    </div>
+                    <div
+                    className="w-[320px] h-[320px] z-2 bg-white absolute
+                    top-[780px] left-auto right-[280px] rounded-t border flex items-center justify-center">
+                        <img
+                        src={`https://maps.googleapis.com/maps/api/staticmap?center=
+                        ${restaurant?.lat},${restaurant?.lng}&zoom=17&size=300x300&markers=color:
+                        red%7Clabel:%7C${restaurant?.lat},${restaurant?.lng}&key=${API_KEY}`}
+                         />
+
+
+{/* https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
+{/* https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&format=png&&zoom=14&size=400x400&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
+{/* https://maps.googleapis.com/maps/api/staticmap?center=Williamsburg,Brooklyn,NY&zoom=13&size=400x400&
+markers=color:blue%7Clabel:S%7C11211%7C11206%7C11222&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
+                    </div>
 
                 </div>
-
 
             </div>
-
         </div>
     )
 

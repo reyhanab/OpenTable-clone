@@ -10,6 +10,7 @@ const SigninModal = ({onClose}) => {
     const [password, setPassword] = useState("")
     const [emailPl, setEmailPl] = useState("Email")
     const [passwordPl, setPasswordPl] = useState("Password")
+    const [showPassword, setShowPassword] = useState(false);
     const [errors, setErrors] = useState([])
 
     const onSubmit = async (e) => {
@@ -51,18 +52,28 @@ const SigninModal = ({onClose}) => {
                     onBlur={e => setEmailPl("Email")}
                     value={email}
                     onChange={e => setEmail(e.target.value)}
-                    >
-                    </input>
+                    />
                     <input
                     className="w-full h-12 border border-gray-300 rounded-md pl-3
                      placeholder:text-gray-500 hover:border-1 hover:border-black"
                     placeholder={passwordPl}
                     onClick={e => setPasswordPl("")}
                     onBlur={e => setPasswordPl("Password")}
+                    type={showPassword ? "text" : "password"}
                     value={password}
                     onChange={e => setPassword(e.target.value)}
+                    />
+                    <span
+                    className="absolute top-[185px] right-[45px] text-[14px]"
+                    onClick={()=> setShowPassword(state => !state)}
                     >
-                    </input>
+                    {showPassword ?
+                     <img src="https://img.icons8.com/material-outlined/24/null/hide.png"/>
+                     :
+                     <img src="https://img.icons8.com/material-outlined/24/null/visible--v1.png"/>
+                    }
+                    </span>
+
                     <button
                     type="submit"
                     className="w-full h-12 bg-red-500 text-white rounded-md"

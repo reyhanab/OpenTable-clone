@@ -35,10 +35,18 @@ export const createReview = (review, restaurant_id) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(review),
     });
-    const newReview = await response.json();
     if (response.ok) {
+      const newReview = await response.json();
       dispatch(addReview(newReview));
       return newReview;
+    }
+    else if (response.status < 500) {
+        const data = await response.json();
+        if (data.errors) {
+        return data;
+        }
+    } else {
+        return ['An error occurred. Please try again.']
     }
 };
 
@@ -60,10 +68,18 @@ export const editReview = (review, review_id) => async (dispatch) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(review),
     });
-    const editedReview = await response.json();
     if (response.ok) {
+      const editedReview = await response.json();
       dispatch(updateReview(editedReview));
       return editedReview;
+    }
+    else if (response.status < 500) {
+        const data = await response.json();
+        if (data.errors) {
+        return data;
+        }
+    } else {
+        return ['An error occurred. Please try again.']
     }
 };
 

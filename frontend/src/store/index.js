@@ -5,13 +5,15 @@ import users from './users'
 import restaurants from './restaurants'
 import reviews from './reviews'
 import reservations from './reservations'
+// import googleApi from './googleApi';
 
 const rootReducer = combineReducers({
   session,
   users,
   restaurants,
   reviews,
-  reservations
+  reservations,
+  // googleApi
 });
 
 

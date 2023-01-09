@@ -17,6 +17,8 @@ const SignupModal = ({onClose}) => {
     const [emailPl, setEmailPl] = useState("Email")
     const [passwordPl, setPasswordPl] = useState("Password")
     const [confirmPasswordPl, setConfirmPasswordPl] = useState("Confirm password")
+    const [showPassword, setShowPassword] = useState(false);
+    const [showPasswordC, setShowPasswordC] = useState(false);
 
     const onSubmit = async (e) => {
         setErrors([])
@@ -94,9 +96,20 @@ const SignupModal = ({onClose}) => {
                     onClick={e => setPasswordPl("")}
                     onBlur={e => setPasswordPl("Password")}
                     value={password}
+                    type={showPassword ? "text" : "password"}
                     onChange={e => setPassword(e.target.value)}
+                    />
+                    <span
+                    className="absolute top-[325px] right-[45px] text-[14px]"
+                    onClick={()=> setShowPassword(state => !state)}
                     >
-                    </input>
+                    {showPassword ?
+                    <img src="https://img.icons8.com/material-outlined/24/null/hide.png"/>
+                    :
+                    <img src="https://img.icons8.com/material-outlined/24/null/visible--v1.png"/>
+                    }
+                    </span>
+
                     <input
                     className="w-full h-12 border border-gray-300 rounded-md pl-3
                      placeholder:text-gray-500 hover:border-1 hover:border-black"
@@ -104,9 +117,19 @@ const SignupModal = ({onClose}) => {
                     onClick={e => setConfirmPasswordPl("")}
                     onBlur={e => setConfirmPasswordPl("Confirm password")}
                     value={confirmPassword}
+                    type={showPasswordC ? "text" : "password"}
                     onChange={e => setConfirmPassword(e.target.value)}
+                    />
+                    <span
+                    className="absolute top-[405px] right-[45px] text-[14px]"
+                    onClick={()=> setShowPasswordC(state => !state)}
                     >
-                    </input>
+                    {showPasswordC ?
+                     <img src="https://img.icons8.com/material-outlined/24/null/hide.png"/>
+                    :
+                    <img src="https://img.icons8.com/material-outlined/24/null/visible--v1.png"/>
+                     }
+                    </span>
                     <button
                     type="submit"
                     className="w-full h-12 bg-red-500 text-white rounded-md"

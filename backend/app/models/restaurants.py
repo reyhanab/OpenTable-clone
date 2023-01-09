@@ -39,6 +39,8 @@ class Restaurant(db.Model):
             'id': self.id,
             'name': self.name,
             'type': self.type,
+            'lat': float(self.lat),
+            'lng': float(self.lng),
             'phone_number': self.phone_number,
             'description': self.description,
             'city': self.city,

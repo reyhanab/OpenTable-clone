@@ -147,7 +147,6 @@ const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = fa
 			iter = 3
 		}
 		for (let i = 0; i < iter; i++){
-			console.log('hello', i)
 			current_hour += i
 			while(current_hour < 23){
 				if (parseInt(timeFrames[current_hour]) >= parseInt(restaurant?.capacity)){

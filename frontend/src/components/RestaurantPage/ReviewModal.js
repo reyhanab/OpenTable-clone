@@ -7,24 +7,29 @@ const ReviewModal = ({preReview ={}, restaurant, onClose, type}) =>{
     const dispatch = useDispatch()
     const [review, setReview] = useState(type =="create"? '' : preReview?.review)
     const [rating, setRating] = useState(type =="create"? '' : preReview?.rating)
+    const [error, setError] = useState("")
 
-
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const payload = {review, rating}
+        let data;
         if (type == "create"){
-            dispatch(createReview(payload, restaurant?.id))
+            data = await dispatch(createReview(payload, restaurant?.id))
         }else{
-            dispatch(editReview(payload, preReview?.id))
+            data = await dispatch(editReview(payload, preReview?.id))
         }
-        setReview('')
-        setRating('')
-        onClose()
+        if (data.errors){
+            setError(data.errors);
+        }else{
+            setReview('')
+            setRating('')
+            onClose()
+        }
     }
 
     return (
             <form
-            className="flex flex-col space-y-4 w-[500px] h-[350px] p-8"
+            className="flex flex-col space-y-4 w-[500px] h-[370px] p-8"
             onSubmit={handleSubmit}>
                 <div className="flex">
                     <p className=" w-full pb-5 border-b text-2xl font-semibold"
@@ -78,6 +83,13 @@ const ReviewModal = ({preReview ={}, restaurant, onClose, type}) =>{
                     Submit
                     </button>
                 </div>
+                {
+                    error.length > 0 && (
+                        <div className="text-red-500 text-center">
+                            <p>{error}</p>
+                        </div>
+                    )
+                    }
             </form>
     )
 }

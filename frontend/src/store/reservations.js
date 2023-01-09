@@ -84,8 +84,8 @@ export const editReservation = (reservation, reservation_id) => async (dispatch)
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(reservation),
     });
-    const editedReservation = await response.json();
     if (response.ok) {
+      const editedReservation = await response.json();
       dispatch(updateReservation(editedReservation));
       return editedReservation;
     }

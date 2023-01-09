@@ -16,7 +16,7 @@ const ReserveModal = ({restaurant, date, time, people, onClose, type = "create",
         e.preventDefault();
         let data;
         if(type == "edit"){
-          data = await dispatch(editReservation(payload, reservation?.id))
+            data = await dispatch(editReservation(payload, reservation?.id))
         }
         else{
             data = await dispatch(createReservation(payload, restaurant?.id))
