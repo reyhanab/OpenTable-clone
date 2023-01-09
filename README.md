@@ -1,6 +1,6 @@
-# Flask React Project
+# OpenTable clone
 
-This is the starter for the Flask React project.
+This is the starter for the OpenTable clone project.
 
 ## Getting started
 1. Clone this repository (only this branch)
