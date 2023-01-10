@@ -94,11 +94,7 @@ export const signUp = (firstName , lastName, email, password) => async (dispatch
   }
 }
 
-export const editProfile =
-  (data) =>
-
-  async (dispatch) => {
-    console.log(data)
+export const editProfile = (data) => async (dispatch) => {
     const res = await fetch(`/api/users/profile`, {
       method: "PUT",
       body: data,
@@ -107,11 +103,12 @@ export const editProfile =
     if (res.ok) {
       const data = await res.json();
       dispatch(setUser(data));
-      return data;
+      return res;
     } else if (res.status < 500) {
       const data = await res.json();
       if (data.errors) {
-        return data.errors;
+        console.log(data.errors, "data.errors")
+        return data;
       }
     } else {
       return ["An error occurred. Please try again."];

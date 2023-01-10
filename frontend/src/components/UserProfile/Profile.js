@@ -10,14 +10,15 @@ const Profile = () =>{
     const [lastName, setLastName] = useState(user?.last_name)
     const [email, setEmail] = useState(user?.email)
     const [phoneNumber, setPhoneNumber] = useState(user?.phone_number)
-    const [city, setCity] = useState(user?.city)
-    const [address, setAddress] = useState(user?.address)
+    const [city, setCity] = useState(user?.city != "null"? user?.city : "")
+    const [address, setAddress] = useState(user?.address != "null" ? user?.address : "")
     const [profilePicture, setProfilePicture] = useState(null)
     const [imageLoading, setImageLoading] = useState(false)
+    const [errors, setErrors] = useState([])
 
     const onSubmit = async (e) =>{
         e.preventDefault();
-
+        setErrors([])
         const data = new FormData()
         data.append('first_name', firstName)
         data.append('last_name', lastName)
@@ -30,9 +31,11 @@ const Profile = () =>{
         const res = await dispatch(editProfile(data))
 
         if (res.ok) {
-            await res.json()
+            // await res.json()
             setImageLoading(false)
         }else{
+
+            setErrors(res.errors)
             setImageLoading(false)
         }
     }
@@ -45,7 +48,7 @@ const Profile = () =>{
     return (
         <form onSubmit={onSubmit}>
             <div className="flex flex-col w-[750px] h-[950px] bg-white rounded-md
-                            m-auto mt-12 p-5 space-y-8">
+                            m-auto mt-12 p-5 space-y-6">
             <div className="text-2xl font-medium">
                 About me
             </div>
@@ -138,7 +141,18 @@ const Profile = () =>{
                     className="w-full h-12 bg-red-500 text-white rounded-md"
                     >
                     Save Changes
-                </button>
+            </button>
+            {
+                errors.length > 0 && (
+                    <div className="text-red-500 text-center">
+                        <ul>
+                            {errors.map((value, key) =>{
+                            return   <li key={key}>{value}</li>
+                            })}
+                        </ul>
+                    </div>
+                )
+            }
             </div>
         </form>
     )

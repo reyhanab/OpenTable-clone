@@ -9,6 +9,8 @@ import { loadReviews } from "../../store/reviews";
 import { Modal } from "../../context/Modal"
 import ReviewModal from "./ReviewModal";
 import Review from "./Review";
+import { loadImages } from "../../store/images";
+import Images from "./Images";
 // import { getUrl } from "../../store/googleApi";
 
 
@@ -26,7 +28,6 @@ const RestaurantPage = () =>{
     const reviews = useSelector(state => Object.values(state.reviews))
     const userReview = reviews.filter(review => (review?.user_id == user?.id &&
                                                 review?.restaurant_id == restaurant?.id ))
-    const [googleMap, setGoogleMap] = useState()
     const API_KEY = process.env.REACT_APP_API_KEY;
 
 
@@ -38,7 +39,7 @@ const RestaurantPage = () =>{
         if(!restaurant) inner()
         else {
             dispatch(loadReviews(restaurant?.id))
-
+            dispatch(loadImages(restaurant?.id))
         }
     },[dispatch, restaurant?.id])
 
@@ -119,6 +120,9 @@ const RestaurantPage = () =>{
                     onClick={handleShowMore}
                     className="text-red-400"
                     >{readMore ?"+ Read more" : "- Read less"}</button>
+                    <div>
+                        <Images />
+                    </div>
                     <div className="mt-16">
                         {reviews.length == 1 &&
                             <p className="pb-5 border-b text-2xl font-semibold"

@@ -38,10 +38,10 @@ const DropDown = ({user, setDropDown}) =>{
             >
                 <NavLink
                 onClick={()=> setDropDown(state => !state)}
-                to='/users/saved'
+                to='/about'
                 exact={true}
                 activeClassName='active'
-                >My Saved Restaurants
+                >About
                 </NavLink>
             </div>
             <LogoutButton setDropDown={setDropDown} />

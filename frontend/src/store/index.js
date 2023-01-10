@@ -5,6 +5,7 @@ import users from './users'
 import restaurants from './restaurants'
 import reviews from './reviews'
 import reservations from './reservations'
+import images from './images'
 // import googleApi from './googleApi';
 
 const rootReducer = combineReducers({
@@ -13,6 +14,7 @@ const rootReducer = combineReducers({
   restaurants,
   reviews,
   reservations,
+  images,
   // googleApi
 });
 

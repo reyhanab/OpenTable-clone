@@ -21,7 +21,15 @@ const SigninModal = ({onClose}) => {
         }else{
             onClose()
         }
-      };
+    };
+
+    const demoLogin = async (e) => {
+        e.preventDefault();
+        const demoEmail = 'demo@aa.io'
+        const demoPassword = 'password'
+        await dispatch(login(demoEmail, demoPassword));
+        onClose()
+    };
 
     return (
         <form onSubmit={onSubmit}>
@@ -79,6 +87,13 @@ const SigninModal = ({onClose}) => {
                     className="w-full h-12 bg-red-500 text-white rounded-md"
                     >
                     Sign In
+                    </button>
+                    <button
+                    type="submit"
+                    className="w-full h-12 bg-red-500 text-white rounded-md"
+                    onClick={demoLogin}
+                    >
+                    Demo Sign In
                     </button>
 
                     {
