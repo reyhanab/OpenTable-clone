@@ -60,17 +60,22 @@ def edit_user_profile():
     form = EditProfileForm()
     form['csrf_token'].data = request.cookies['csrf_token']
 
-    if not allow_file(image.filename):
-        return {"errors": "file type not permitted"}
+    if(image):
+        if not allow_file(image.filename):
+            return {"errors": "file type not permitted"}, 400
 
-    image.filename = get_unique_filename(image.filename)
+        image.filename = get_unique_filename(image.filename)
 
-    upload = upload_file_to_s3(image)
+        upload = upload_file_to_s3(image)
 
-    if "url" not in upload:
-        return {"errors": "failed to upload into s3"}
+        if "url" not in upload:
+            return {"errors": "failed to upload into s3"}, 400
 
-    url = upload['url']
+        url = upload['url']
+    else:
+        url = current_user.profile_picture
+
+
     if form.validate_on_submit():
         for key, val in form.data.items():
             if val != "undefined":

@@ -32,13 +32,13 @@ def seed():
         db.session.commit()
         undo_users()
     seed_users()
-    seed_restaurants()
+    # seed_restaurants()
+    seed_extra_restaurants()
     seed_reservations()
     seed_menu_items()
     seed_menus()
     seed_reviews()
-    seed_images()
-    seed_extra_restaurants()
+    # seed_images()
     seed_saved()
     # Add other seed functions here
 
@@ -47,12 +47,12 @@ def seed():
 @seed_commands.command('undo')
 def undo():
     undo_saved()
-    undo_extra_restaurants()
-    undo_images()
+    # undo_images()
     undo_reviews()
     undo_menus()
     undo_menu_items()
     undo_reservations()
-    undo_restaurants()
+    undo_extra_restaurants()
+    # undo_restaurants()
     undo_users()
     # Add other undo functions here

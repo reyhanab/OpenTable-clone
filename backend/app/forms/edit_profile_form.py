@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, FormField, FieldList
-from wtforms.validators import DataRequired, Email, ValidationError, StopValidation, Length
+from wtforms.validators import DataRequired, Email, ValidationError, StopValidation, Length, Optional
 from app.models import User
 from flask_login import current_user
 
@@ -18,13 +18,15 @@ def optional(form, field):
         raise StopValidation()
 
 class EditProfileForm(FlaskForm):
-    first_name = StringField('first_name', validators=[DataRequired()])
-    last_name = StringField('last_name', validators=[DataRequired()])
+    first_name = StringField('first_name', validators=[DataRequired(),
+                            Length(min=2, max=20, message="First name must be between 2 to 20 characters long." )
+                            ])
+    last_name = StringField('last_name', validators=[DataRequired(),
+                            Length(min=2, max=20, message="Last name must be between 2 to 20 characters long." )
+                            ])
     email = StringField('email', validators=[optional, Email(), email_exists])
-    phone_number = StringField('phone_number', validators=[
-                               optional
-                            #    , Length(min=10, message="Invalid phone number.")
-                               ])
+    phone_number = StringField('phone_number', validators=[ Optional(),
+                        Length(min=10, message="invalid phone number")])
     city = StringField('city', validators=[optional])
     address = StringField('address', validators=[optional])
     profile_picture = FieldList(FormField('profile_picture'), validators=[optional])
