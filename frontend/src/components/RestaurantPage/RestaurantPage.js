@@ -31,7 +31,7 @@ const RestaurantPage = () =>{
     const API_KEY = process.env.REACT_APP_API_KEY;
 
     const splittedName = restaurant?.name.split(" ").join("+")
-    console.log(splittedName)
+
     useEffect(()=> {
         async function inner(){
             const data = await dispatch(getAllRestaurants())
@@ -179,8 +179,7 @@ const RestaurantPage = () =>{
                         className="w-[320px] h-[320px] z-2 bg-white
                         rounded-t border flex flex-col items-center justify-center">
                             <a href=
-                            {`https://www.google.com/maps/place/${splittedName}/?q=${restaurant?.lat},${restaurant?.lng}`  }
-                            // {`https://maps.google.com/?q=${restaurant?.lat},${restaurant?.lng}`}
+                            {`https://www.google.com/maps/place/?q=${splittedName}/?q=${restaurant?.lat},${restaurant?.lng}`}
                              target="_blank">
                                 <img
                                 src={`https://maps.googleapis.com/maps/api/staticmap?center=

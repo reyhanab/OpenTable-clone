@@ -97,18 +97,31 @@ def add_reservation(restaurant_id):
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
 
+    today = date.today()
+    now = datetime.datetime.now()
+
+    valid_time = True
+    if(date == today):
+        if now.hour == time.hour:
+            if now.minute > time.minute:
+                valid_time = False
+        elif now.hour > time.hour:
+            valid_time = False
+
     if form.validate_on_submit():
         if valid_reserveation:
-            reservation = Reservation(
-                user_id = current_user.id,
-                restaurant_id = restaurant_id,
-                count = count,
-                date = date,
-                time = time
-            )
-            db.session.add(reservation)
-            db.session.commit()
-            return reservation.to_dict()
+            if valid_time:
+                reservation = Reservation(
+                    user_id = current_user.id,
+                    restaurant_id = restaurant_id,
+                    count = count,
+                    date = date,
+                    time = time
+                )
+                db.session.add(reservation)
+                db.session.commit()
+                return reservation.to_dict()
+            return {"errors": "Reserve time has passed, Sorry!"}, 404
         return {"errors": "Not enough capacity at this time"}, 404
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 

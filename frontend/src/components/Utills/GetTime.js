@@ -246,7 +246,7 @@ const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = fa
 		if (res) iter = 5
 		if (minutes > 30) { hours += 1; minutes = 0}
 		if (minutes < 30 && minutes !== 0) minutes = 30
-		if (res) {hours -= 1}
+		if (res && hours > 9) {hours -= 1}
 		const current_hour_minutes = [hours, minutes]
 
 		for (let i = 0; i < iter; i++){
@@ -260,7 +260,7 @@ const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = fa
 				}
 				else {
 					// add the time to the available time slots
-					availableSlots.push(`${current_hour_minutes[0]}:${current_hour_minutes[1] === 0 ? '00' : current_hour_minutes[1]} `)
+					availableSlots.push(`${current_hour_minutes[0]}:${current_hour_minutes[1] === 0 ? '00' : current_hour_minutes[1]}`)
 					// increase the time by 30 minutes each time
 					if (current_hour_minutes[1] === 30) {
 						addTime(current_hour_minutes, 60)
