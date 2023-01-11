@@ -29,6 +29,7 @@ const deleteReservation = (reservation_id) => {
 }
 
 export const createReservation= (reservation, restaurant_id) => async (dispatch) => {
+    console.log(reservation)
     const response = await fetch(`/api/restaurants/${restaurant_id}/reservations`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

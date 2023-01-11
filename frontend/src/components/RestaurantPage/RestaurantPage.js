@@ -30,7 +30,8 @@ const RestaurantPage = () =>{
                                                 review?.restaurant_id == restaurant?.id ))
     const API_KEY = process.env.REACT_APP_API_KEY;
 
-
+    const splittedName = restaurant?.name.split(" ").join("+")
+    console.log(splittedName)
     useEffect(()=> {
         async function inner(){
             const data = await dispatch(getAllRestaurants())
@@ -164,29 +165,37 @@ const RestaurantPage = () =>{
                     </div>
                 </div>
                 <div>
-                    <div
-                    ref = {reservationDiv}
-                    className="w-[320px] h-[330px] z-2 bg-white absolute
-                                    top-[410px] left-auto right-[280px] rounded-t">
-                        <Reservation
-                        reservationRef = {reservationDiv}
-                        restaurant = {restaurant}
-                        />
-                    </div>
-                    <div
-                    className="w-[320px] h-[320px] z-2 bg-white absolute
-                    top-[780px] left-auto right-[280px] rounded-t border flex items-center justify-center">
-                        <img
-                        src={`https://maps.googleapis.com/maps/api/staticmap?center=
-                        ${restaurant?.lat},${restaurant?.lng}&zoom=17&size=300x300&markers=color:
-                        red%7Clabel:%7C${restaurant?.lat},${restaurant?.lng}&key=${API_KEY}`}
-                         />
+                    <div className="flex flex-col absolute left-auto right-[280px]
+                                    top-[410px] space-y-10">
+                        <div
+                        ref = {reservationDiv}
+                        className="w-[320px] h-[330px] z-2 bg-white rounded-t">
+                            <Reservation
+                            reservationRef = {reservationDiv}
+                            restaurant = {restaurant}
+                            />
+                        </div>
+                        <div
+                        className="w-[320px] h-[320px] z-2 bg-white
+                        rounded-t border flex flex-col items-center justify-center">
+                            <a href=
+                            {`https://www.google.com/maps/place/${splittedName}/?q=${restaurant?.lat},${restaurant?.lng}`  }
+                            // {`https://maps.google.com/?q=${restaurant?.lat},${restaurant?.lng}`}
+                             target="_blank">
+                                <img
+                                src={`https://maps.googleapis.com/maps/api/staticmap?center=
+                                ${restaurant?.lat},${restaurant?.lng}&zoom=17&size=300x300&markers=color:
+                                red%7Clabel:%7C${restaurant?.lat},${restaurant?.lng}&key=${API_KEY}`}
+                                />
+                            </a>
 
 
-{/* https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
-{/* https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&format=png&&zoom=14&size=400x400&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
-{/* https://maps.googleapis.com/maps/api/staticmap?center=Williamsburg,Brooklyn,NY&zoom=13&size=400x400&
-markers=color:blue%7Clabel:S%7C11211%7C11206%7C11222&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
+    {/* https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
+    {/* https://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&format=png&&zoom=14&size=400x400&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
+    {/* https://maps.googleapis.com/maps/api/staticmap?center=Williamsburg,Brooklyn,NY&zoom=13&size=400x400&
+    markers=color:blue%7Clabel:S%7C11211%7C11206%7C11222&key=YOUR_API_KEY&signature=YOUR_SIGNATURE */}
+                        </div>
+
                     </div>
 
                 </div>

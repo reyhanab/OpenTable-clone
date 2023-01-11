@@ -125,6 +125,100 @@
 
 // export default GetTime;
 
+// import { useEffect } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import { loadReservations } from "../../store/reservations";
+
+
+// const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = false}) =>{
+
+// 	let result = []
+//     let hour = time.getHours();
+//     let minutes = time.getMinutes();
+
+// 	const availableSlots = []
+
+//     const checkAvailableHours = (timeFrames, hour, minutes, res) =>{
+//         let offset;
+// 		let current_hour = hour
+// 		let iter = 2
+// 		if (res){
+// 			current_hour -= 1
+// 			iter = 3
+// 		}
+// 		for (let i = 0; i < iter; i++){
+// 			current_hour += i
+// 			while(current_hour < 23){
+// 				if (parseInt(timeFrames[current_hour]) >= parseInt(restaurant?.capacity)){
+// 					current_hour += 1
+// 					offset = true
+// 				} else if (i === 2 || (iter === 2 && i === 1)){
+// 					if (offset){
+// 						availableSlots.push(`${current_hour}:00`)
+// 					} else {
+// 						availableSlots.push(`${current_hour}:30`)
+// 					}
+// 					break
+// 				}
+
+// 				else{
+// 					//  return [hour, offset]
+// 					// `${timeSlot1[0]}:00`, `${timeSlot1[0]}:30`, `${timeSlot2[0]}:00`, `${timeSlot2[0]}:30`, `${timeSlot3[0]}:00`
+// 					if (minutes < 30){
+// 						if (offset){
+// 							availableSlots.push(`${current_hour}:00`)
+// 							availableSlots.push(`${current_hour}:30`)
+// 						} else {
+// 							availableSlots.push(`${current_hour}:30`)
+// 							availableSlots.push(`${current_hour + 1}:00`)
+// 						}
+// 					} else {
+// 						availableSlots.push(`${current_hour}:30`)
+// 						availableSlots.push(`${current_hour + 1}:00`)
+// 					}
+// 					break
+// 				}
+// 			}
+// 			offset = false
+// 		}
+//     }
+
+//     const reservations = useSelector((state)=> Object.values(state.reservations))
+
+//     const filteredRes = reservations.filter((res)=>
+//                     {   let resDate = new Date(res.date)
+//                         resDate = new Date(resDate.getTime() + resDate.getTimezoneOffset() * 60000)
+
+//                         return (res.restaurant_id === restaurant?.id &&
+//                         (resDate.getDate() === date.getDate()) &&
+//                         (resDate.getMonth() === date.getMonth()) &&
+//                         (resDate.getFullYear() === date.getFullYear()))
+//                     })
+
+//     const timeFrames = {}
+//     filteredRes.forEach((e)=> {
+//         let timeKey = (new Date("1970-01-01T" + e.time)).getHours()
+//         if (timeFrames[timeKey]){
+//             timeFrames[timeKey] += e.count
+//         }else{
+//             timeFrames[timeKey] = e.count
+//         }
+//     })
+
+//             if(resPage){
+// 				checkAvailableHours(timeFrames, hour, minutes, true)
+// 				console.log(availableSlots, 'get available slots')
+// 				result = availableSlots
+
+//             } else {
+// 				checkAvailableHours(timeFrames, hour, minutes, false)
+// 				result = availableSlots
+// 			}
+//     return result
+// }
+
+// export default GetTime;
+
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loadReservations } from "../../store/reservations";
@@ -138,48 +232,44 @@ const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = fa
 
 	const availableSlots = []
 
-    const checkAvailableHours = (timeFrames, hour, minutes, res) =>{
-        let offset;
-		let current_hour = hour
-		let iter = 2
-		if (res){
-			current_hour -= 1
-			iter = 3
-		}
-		for (let i = 0; i < iter; i++){
-			current_hour += i
-			while(current_hour < 23){
-				if (parseInt(timeFrames[current_hour]) >= parseInt(restaurant?.capacity)){
-					current_hour += 1
-					offset = true
-				} else if (i === 2 || (iter === 2 && i === 1)){
-					if (offset){
-						availableSlots.push(`${current_hour}:00`)
-					} else {
-						availableSlots.push(`${current_hour}:30`)
-					}
-					break
-				}
+	const addTime = (current_hour_minutes, condition) => {
+		let new_time = new Date(0,0,0, current_hour_minutes[0], current_hour_minutes[1])
+		// turn the 30 minutes to an hour
+		new_time = new_time.setMinutes(condition)
+		new_time = new Date(new_time)
+		current_hour_minutes[0] = new_time.getHours()
+		current_hour_minutes[1] = new_time.getMinutes()
+	}
 
-				else{
-					//  return [hour, offset]
-					// `${timeSlot1[0]}:00`, `${timeSlot1[0]}:30`, `${timeSlot2[0]}:00`, `${timeSlot2[0]}:30`, `${timeSlot3[0]}:00`
-					if (minutes < 30){
-						if (offset){
-							availableSlots.push(`${current_hour}:00`)
-							availableSlots.push(`${current_hour}:30`)
-						} else {
-							availableSlots.push(`${current_hour}:30`)
-							availableSlots.push(`${current_hour + 1}:00`)
-						}
+    const checkAvailableHours = (timeFrames, hours, minutes, res) =>{
+		let iter = 3
+		if (res) iter = 5
+		if (minutes > 30) { hours += 1; minutes = 0}
+		if (minutes < 30 && minutes !== 0) minutes = 30
+		if (res) {hours -= 1}
+		const current_hour_minutes = [hours, minutes]
+
+		for (let i = 0; i < iter; i++){
+			while (current_hour_minutes[0] < 23){
+				if (parseInt(timeFrames[current_hour_minutes[0]]) >= parseInt(restaurant?.capacity)){
+					if (current_hour_minutes[1] === 30) {
+						addTime(current_hour_minutes, 60)
 					} else {
-						availableSlots.push(`${current_hour}:30`)
-						availableSlots.push(`${current_hour + 1}:00`)
+						addTime(current_hour_minutes, 30)
+					}
+				}
+				else {
+					// add the time to the available time slots
+					availableSlots.push(`${current_hour_minutes[0]}:${current_hour_minutes[1] === 0 ? '00' : current_hour_minutes[1]} `)
+					// increase the time by 30 minutes each time
+					if (current_hour_minutes[1] === 30) {
+						addTime(current_hour_minutes, 60)
+					} else {
+						addTime(current_hour_minutes, 30)
 					}
 					break
 				}
 			}
-			offset = false
 		}
     }
 
@@ -207,7 +297,6 @@ const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = fa
 
             if(resPage){
 				checkAvailableHours(timeFrames, hour, minutes, true)
-				console.log(availableSlots, 'get available slots')
 				result = availableSlots
 
             } else {
