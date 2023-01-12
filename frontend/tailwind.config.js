@@ -19,7 +19,9 @@ module.exports = {
         'gdblue': '#142149',
         'glblue': '#72788e',
         'signup_blue': '#257f9f',
-        'black':'#2d333f'
+        'black':'#2d333f',
+        'name_blue':'#247F9E',
+        'star_yellow':"#FDAF08"
       }
     }
   },

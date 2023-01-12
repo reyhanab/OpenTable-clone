@@ -6,23 +6,23 @@ const About = () =>{
             <div className="text-2xl font-medium border-b pb-5">
                 About
             </div>
-            <div className="flex items-center space-x-5">
-                <img className="w-10 h-10"
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+            <div className="">
                 <a
-                className="text-xl"
+                className="flex items-center space-x-5 text-xl"
                 target="_blank"
                 href="https://github.com/reyhanab">
+                <img className="w-10 h-10 mr-4"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
                     Github
                 </a>
             </div>
-            <div className="flex items-center space-x-5">
-                <img className="w-10 h-10"
-                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/>
+            <div className="">
                 <a
-                className="text-xl"
+                className="flex items-center space-x-5 text-xl"
                 target="_blank"
                 href="https://www.linkedin.com/in/reyhaneh-abdollahi-408895110/">
+                <img className="w-10 h-10 mr-4"
+                src="https://cdn-icons-png.flaticon.com/512/174/174857.png"/>
                     LinkedIn
                 </a>
             </div>

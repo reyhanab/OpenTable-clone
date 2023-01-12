@@ -2,6 +2,7 @@ import { useState } from "react";
 import GetTime from "../Utills/GetTime";
 import { Modal } from "../../context/Modal";
 import ReserveModal from "./ReserveModal";
+import { Link } from "react-router-dom";
 
 const ShowTimes = ({restaurant, date=new Date(), time=new Date(), people="2 people", resPage = false}) =>{
 
@@ -47,7 +48,14 @@ const ShowTimes = ({restaurant, date=new Date(), time=new Date(), people="2 peop
             )}
             {!resPage &&(
                 <div className="flex space-x-2 mb-4 justify-center">
-                    {timeRange[0] && <button
+                {timeRange[0].length > 5 ?
+                    <Link to={`/restaurants/${restaurant?.id}`}>
+                        <button className="bg-red-600 h-8 w-[200px] text-white rounded"
+                        >Check availability</button>
+                    </Link>
+                    :
+                    <p className="flex space-x-2 mb-4 justify-center">
+                        {timeRange[0] && <button
                         onClick={(e)=> toggleReserveModal(timeRange[0])}
                         className="time-btn"> {timeRange[0]}</button>}
                         {timeRange[1] && <button
@@ -56,6 +64,8 @@ const ShowTimes = ({restaurant, date=new Date(), time=new Date(), people="2 peop
                         {timeRange[2] && <button
                         onClick={(e)=> toggleReserveModal(timeRange[2])}
                         className="time-btn"> {timeRange[2]}</button>}
+                    </p>
+                    }
                 </div>
             )}
 

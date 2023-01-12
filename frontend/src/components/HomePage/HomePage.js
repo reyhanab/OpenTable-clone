@@ -4,6 +4,7 @@ import { getAllRestaurants } from "../../store/restaurants";
 import FindTableBar from "./FindTableBar";
 import RestaurantPreview from "./RestaurantPreview";
 import { loadAllReservations } from "../../store/reservations";
+import { Link } from "react-router-dom";
 
 const HomePage = ()=> {
 
@@ -27,9 +28,11 @@ const HomePage = ()=> {
                 >Find your table for any occasion</h1>
                 <div className="flex space-x-5">
                     <FindTableBar tyep ="edit"/>
-                    <button className="bg-red-600 w-36 h-10 border
-                                     border-red-600 rounded text-sm mt-7"
-                    >Let's go</button>
+                    <Link to="/nearest">
+                        <button className="bg-red-600 w-36 h-10 border
+                                        border-red-600 rounded text-sm mt-7"
+                        >Let's go</button>
+                    </Link>
                 </div>
 
             </div>

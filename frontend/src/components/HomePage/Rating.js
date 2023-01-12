@@ -1,6 +1,6 @@
 
 
-const Rating = ({rate, size}) =>{
+const Rating = ({rate, size, color="red"}) =>{
 
     return (
         <>
@@ -19,11 +19,11 @@ const Rating = ({rate, size}) =>{
           {
             size == "medium" && (
                 <span>
-                    <span className={rate >= 1 ? "fa fa-star pr-1 text-lg text-red-600" : "fa fa-star pr-1 text-lg text-gray-200"}></span>
-                    <span className={rate >= 2 ? "fa fa-star pr-1 text-lg text-red-600" : "fa fa-star pr-1 text-lg text-gray-200"}></span>
-                    <span className={rate >= 3 ? "fa fa-star pr-1 text-lg text-red-600" : "fa fa-star pr-1 text-lg text-gray-200"}></span>
-                    <span className={rate >= 4 ? "fa fa-star pr-1 text-lg text-red-600" : "fa fa-star pr-1 text-lg text-gray-200"}></span>
-                    <span className={rate >= 5 ? "fa fa-star pr-1 text-lg text-red-600" : "fa fa-star pr-1 text-lg text-gray-200"}></span>
+                    <span className={rate >= 1 ? `fa fa-star pr-1 text-lg ${color == "red"?" text-red-600": "text-star_yellow"}`: "fa fa-star pr-1 text-lg text-gray-200"}></span>
+                    <span className={rate >= 2 ? `fa fa-star pr-1 text-lg ${color == "red"?" text-red-600": "text-star_yellow"}`: "fa fa-star pr-1 text-lg text-gray-200"}></span>
+                    <span className={rate >= 3 ? `fa fa-star pr-1 text-lg ${color == "red"?" text-red-600": "text-star_yellow"}`: "fa fa-star pr-1 text-lg text-gray-200"}></span>
+                    <span className={rate >= 4 ? `fa fa-star pr-1 text-lg ${color == "red"?" text-red-600": "text-star_yellow"}`: "fa fa-star pr-1 text-lg text-gray-200"}></span>
+                    <span className={rate >= 5 ? `fa fa-star pr-1 text-lg ${color == "red"?" text-red-600": "text-star_yellow"}`: "fa fa-star pr-1 text-lg text-gray-200"}></span>
                 </span>
 
             )

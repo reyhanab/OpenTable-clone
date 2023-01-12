@@ -8,6 +8,7 @@ import { HomePage } from './components/HomePage';
 import Profile from './components/UserProfile/Profile';
 import RestaurantPage from './components/RestaurantPage/RestaurantPage';
 import UserReservations from './components/UserReservations/UserReservations';
+import NearestRestos from './components/NearestRestosPage/NearestRestosPage';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -30,9 +31,9 @@ function App() {
           <NavBar dropDown={dropDown} setDropDown={setDropDown} />
       <div onClick={()=> setDropDown(false)}>
           <Switch>
-            {/* <Route path='/login' exact={true}>
-              <LoginForm />
-            </Route> */}
+            <Route path='/nearest' exact={true}>
+              <NearestRestos />
+            </Route>
             <Route path='/about' exact={true}>
               <About />
             </Route>

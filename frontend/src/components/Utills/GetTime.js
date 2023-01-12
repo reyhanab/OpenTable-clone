@@ -303,6 +303,7 @@ const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = fa
 				checkAvailableHours(timeFrames, hour, minutes, false)
 				result = availableSlots
 			}
+	if (result.length == 0) result = ["No available time"]
     return result
 }
 
