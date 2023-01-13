@@ -1,8 +1,16 @@
+import { useState } from "react";
 import { useSelector } from "react-redux";
+import { Modal } from "../../context/Modal"
+import ImagesModal from "./ImagesModal";
 
 const Images = () => {
 
     const images = useSelector(state => Object.values(state.images))
+    const [imagesModal, setImagesModal] = useState(false)
+
+    const toggleImageModal = () =>{
+        setImagesModal(state => !state)
+    }
 
     return (
         <div className="mt-5">
@@ -21,9 +29,22 @@ const Images = () => {
                     <img className="w-[131px] h-[160px] rounded object-cover" src={images[4]?.url}/>
                     <img className="w-[131px] h-[160px] rounded object-cover brightness-50" src={images[5]?.url}/>
 
-                    <p className="absolute top-[230px] right-[40px] text-white text-lg
+                    <p
+                    onClick={toggleImageModal}
+                    className="absolute top-[230px] right-[40px] text-white text-lg
                                   hover:cursor-pointer"
                     >+{images.length - 5} More </p>
+                    {
+                        imagesModal && (
+                            <Modal onClose={toggleImageModal}>
+                                <ImagesModal
+                                onClose={toggleImageModal}
+                                images={images}
+                                 />
+
+                            </Modal>
+                        )
+                    }
 
                 </div>
 
