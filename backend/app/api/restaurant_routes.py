@@ -57,6 +57,9 @@ def load_reviews(restaurant_id):
 @login_required
 def add_review(restaurant_id):
 
+    restaurant = Restaurant.query.get_or_404(restaurant_id)
+    totalRating = 0
+
     form = ReviewForm()
     form["csrf_token"].data = request.cookies["csrf_token"]
     if form.validate_on_submit():
@@ -67,6 +70,11 @@ def add_review(restaurant_id):
             rating = form.data["rating"]
         )
         db.session.add(review)
+        db.session.commit()
+        reviewsRatings = [review.rating for review in restaurant.reviews]
+        for rating in reviewsRatings:
+            totalRating += rating
+        restaurant.rating = totalRating / (len(reviewsRatings))
         db.session.commit()
         return review.to_dict()
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401

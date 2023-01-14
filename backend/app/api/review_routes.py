@@ -1,5 +1,5 @@
 from flask import Blueprint, request, redirect, url_for, jsonify
-from app.models import Review, db
+from app.models import Review, db, Restaurant
 from app.forms import ReviewForm
 from flask_login import current_user, login_required
 from .auth_routes import validation_errors_to_error_messages
@@ -12,6 +12,8 @@ review_routes = Blueprint("reviews", __name__)
 def edit_review(review_id):
 
     review = Review.query.get_or_404(review_id)
+    restaurant = Restaurant.query.get_or_404(review.restaurant_id)
+    totalRating = 0
 
     form = ReviewForm()
     form['csrf_token'].data = request.cookies['csrf_token']
@@ -22,6 +24,10 @@ def edit_review(review_id):
             review.rating = form.data["rating"]
             review.edited = True
             db.session.commit()
+            reviewsRatings = [review.rating for review in restaurant.reviews]
+            for rating in reviewsRatings:
+                totalRating += rating
+            restaurant.rating = totalRating / (len(reviewsRatings))
             return review.to_dict()
         return redirect(url_for("auth.unauthorized"))
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401

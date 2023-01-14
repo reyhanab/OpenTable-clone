@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Rating from "../HomePage/Rating";
-import { getAllRestaurants } from "../../store/restaurants";
+import { getAllRestaurants, getRestDetails } from "../../store/restaurants";
 import Reservation from "./Reservation";
 import { loadAllReservations } from "../../store/reservations";
 import { loadReviews } from "../../store/reviews";
@@ -39,6 +39,7 @@ const RestaurantPage = () =>{
         }
         if(!restaurant) inner()
         else {
+            // dispatch(getRestDetails(restaurant?.id))
             dispatch(loadReviews(restaurant?.id))
             dispatch(loadImages(restaurant?.id))
         }
