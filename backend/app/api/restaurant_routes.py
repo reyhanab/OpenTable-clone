@@ -153,3 +153,11 @@ def get_images(restaurant_id):
     images = Image.query.filter(Image.restaurant_id == restaurant_id).all()
     return {"Images":[image.to_dict()
                            for image in images]}
+
+
+@restaurant_routes.route('/test', methods=['GET'])
+def get_restos():
+
+    restaurants = Restaurant.query.order_by(func.ST_DISTANCE(Restaurant.loc, func.ST_MakePoint(42.622612624561626, -82.90960318800383))).all()
+    return {"Restaurants":[restaurant.to_dict()
+                           for restaurant in restaurants]}

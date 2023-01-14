@@ -1,4 +1,6 @@
 from .db import db,  environment, SCHEMA
+from geoalchemy2 import Geometry
+
 
 class Restaurant(db.Model):
     __tablename__ = 'restaurants'
@@ -18,6 +20,7 @@ class Restaurant(db.Model):
     lat = db.Column(db.DECIMAL)
     lng = db.Column(db.DECIMAL)
     preview_image = db.Column(db.String)
+    loc = db.Column(Geometry(geometry_type='POINT'))
 
     menus = db.relationship("Menu", back_populates = "restaurant")
 
@@ -35,6 +38,7 @@ class Restaurant(db.Model):
 
 
     def to_dict(self):
+     #    print("loooooooooooooc",str(self.loc))
         return {
             'id': self.id,
             'name': self.name,
@@ -48,5 +52,6 @@ class Restaurant(db.Model):
             'address': self.address,
             'rating': float(self.rating),
             'preview_image': self.preview_image,
-            'num_of_reviews': len(self.reviews)
+            'num_of_reviews': len(self.reviews),
+
         }
