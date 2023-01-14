@@ -37,6 +37,7 @@ packaging = "==23.0"
 s3transfer = "==0.6.0"
 urllib3 = "==1.26.14"
 psycopg2 = "*"
+requests = "*"
 
 [dev-packages]
 

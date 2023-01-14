@@ -1,9 +1,16 @@
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getNearestRestaurants } from "../../store/nearRestaurants";
 import NearestRestaurant from "./NearestRestaurant";
 
 const NearestRestos = () =>{
 
-    const restaurants = useSelector((state) => Object.values(state.restaurants))
+    const dispatch = useDispatch()
+    const restaurants = useSelector((state) => Object.values(state.nearRestaurants))
+
+    useEffect(() =>{
+        dispatch(getNearestRestaurants())
+    },[dispatch])
 
     return (
         <div className="w-full max-w-screen-2xl m-auto bg-white">
@@ -12,7 +19,7 @@ const NearestRestos = () =>{
                     Restaurants near you
                 </p>
                 <div className="flex flex-col m-auto">
-                    {restaurants?.slice(1,6).map((restaurant, idx) =>{
+                    {restaurants?.slice(0,10).map((restaurant, idx) =>{
                         return <NearestRestaurant restaurant={restaurant} key={idx}/>
                     })
                     }

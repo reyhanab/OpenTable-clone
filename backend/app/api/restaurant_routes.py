@@ -3,8 +3,9 @@ from app.models import Restaurant, Menu, Review, Reservation,Image, db
 from flask_login import current_user, login_required
 from app.forms import ReviewForm, ReservationForm
 import datetime
-from sqlalchemy import func
+from sqlalchemy import func, distinct
 from .auth_routes import validation_errors_to_error_messages
+import requests
 
 
 restaurant_routes = Blueprint('restaurants', __name__)
@@ -57,6 +58,10 @@ def load_reviews(restaurant_id):
 @login_required
 def add_review(restaurant_id):
 
+    restaurant = Restaurant.query.get_or_404(restaurant_id)
+    totalRating = 0
+
+
     form = ReviewForm()
     form["csrf_token"].data = request.cookies["csrf_token"]
     if form.validate_on_submit():
@@ -67,6 +72,11 @@ def add_review(restaurant_id):
             rating = form.data["rating"]
         )
         db.session.add(review)
+        db.session.commit()
+        reviewsRatings = [review.rating for review in restaurant.reviews]
+        for rating in reviewsRatings:
+            totalRating += rating
+        restaurant.rating = totalRating / (len(reviewsRatings))
         db.session.commit()
         return review.to_dict()
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
@@ -155,9 +165,20 @@ def get_images(restaurant_id):
                            for image in images]}
 
 
-@restaurant_routes.route('/test', methods=['GET'])
+@restaurant_routes.route('/nearest', methods=['GET'])
 def get_restos():
 
-    restaurants = Restaurant.query.order_by(func.ST_DISTANCE(Restaurant.loc, func.ST_MakePoint(42.622612624561626, -82.90960318800383))).all()
+    ip = requests.get("https://geolocation-db.com/json/")
+    ip = ip.json()
+
+    response = requests.get(f'http://api.ipapi.com/api/{ip["IPv4"]}?access_key=ee90d22564172e030b9fdbdff5dc4b42')
+    data = response.json()
+    print("dataaaaaaaaaa", data)
+
+    # distinct_names = Restaurant.query.with_entities(distinct(Restaurant.name)).all()
+    # distinct_names = [r[0] for r in distinct_names]
+
+    restaurants = Restaurant.query.order_by(func.ST_DISTANCE\
+    (Restaurant.loc, func.ST_MakePoint(data['latitude'], data['longitude']))).distinct(Restaurant.name).all()
     return {"Restaurants":[restaurant.to_dict()
                            for restaurant in restaurants]}

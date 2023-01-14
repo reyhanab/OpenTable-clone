@@ -27,6 +27,7 @@ export const getAllRestaurants = () => async (dispatch) =>{
     return data;
 }
 
+
 export const getRestDetails = (restId) => async (dispatch) => {
     const response = await fetch(`/api/restaurants/${restId}`);
     const data = await response.json();
