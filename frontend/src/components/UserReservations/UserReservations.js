@@ -15,7 +15,7 @@ const UserReservations = () =>{
             console.log(new Date(res?.date), " new Date (res.date)")
 
             let reservationDate = new Date((res?.date).replace("00:00:00", res?.time))
-            reservationDate = new Date(newDate.getTime() + (newDate.getTimezoneOffset() * 60000))
+            reservationDate = new Date(reservationDate.getTime() + (reservationDate.getTimezoneOffset() * 60000))
             let currentDate = new Date(Date.now())
             console.log("current time", currentDate)
             console.log("reservation time", reservationDate)
