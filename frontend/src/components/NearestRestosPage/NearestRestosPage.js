@@ -9,10 +9,10 @@ const NearestRestos = () =>{
         <div className="w-full max-w-screen-2xl m-auto bg-white">
             <div className="">
                 <p className="p-5 border-b text-2xl font-semibold text-center">
-                    Restaurants near you
+                   All Restaurants
                 </p>
                 <div className="flex flex-col m-auto">
-                    {restaurants?.slice(1,6).map((restaurant, idx) =>{
+                    {restaurants?.map((restaurant, idx) =>{
                         return <NearestRestaurant restaurant={restaurant} key={idx}/>
                     })
                     }
