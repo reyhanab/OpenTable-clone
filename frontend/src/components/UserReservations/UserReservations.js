@@ -11,7 +11,9 @@ const UserReservations = () =>{
     const allReservations = useSelector(state => Object.values(state.reservations))
     const userReservations = allReservations.filter(res =>
         {
-            console.log(new Date((res?.date)))
+            console.log((res?.date), "res.date")
+            console.log(new Date(res?.date), " new Date (res.date)")
+            console.log(new Date([res?.date, "00:00"]), "I don;t know")
             let reservationDate = new Date((res?.date).replace("00:00:00", res?.time))
             // let reservationDate = new Date(newDate.getTime() + (newDate.getTimezoneOffset() * 60000))
             let currentDate = new Date(Date.now())
