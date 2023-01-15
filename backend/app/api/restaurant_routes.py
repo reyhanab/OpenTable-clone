@@ -94,6 +94,12 @@ def add_reservation(restaurant_id):
     start_hour = datetime.time(int(hour), 0)
     end_hour = datetime.time(int(hour), 59)
 
+    print(time, 'time --------------')
+    print(date, 'date --------------')
+    print(hour, 'hour --------------')
+    print(start_hour, 'start_hour --------------')
+    print(end_hour, 'end_hour --------------')
+
     reserved = db.session.query(Reservation.date, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour)\
         .filter(Reservation.time >= start_hour)\
@@ -107,6 +113,9 @@ def add_reservation(restaurant_id):
 
     today = date.today()
     now = datetime.datetime.now()
+
+    print(today, 'today --------------')
+    print(now, 'now --------------')
 
     valid_time = True
     if(date == today):
