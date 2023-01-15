@@ -2,10 +2,14 @@
 const getDate = (date) => {
 
     // newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
-    if(date.length == 10){
-      date += "T00:00:00-05:00"
+    if (!String(date).includes('-')){
+      date = new Date(date)
+    }else{
+      if(typeof date != 'object'){
+        date = new Date([date, "00:00"])
+      }
     }
-    let newDate = new Date(date);
+
     const months = [
       "Jan",
       "Feb",
@@ -20,9 +24,9 @@ const getDate = (date) => {
       "Nov",
       "Dec",
     ];
-    const month = newDate.getMonth();
-    const day = newDate.getDate();
-    const year = newDate.getFullYear();
+    const month = date.getMonth();
+    const day = date.getDate();
+    const year = date.getFullYear();
 
     let result = `${months[month]} ${day} ${year}`;
 

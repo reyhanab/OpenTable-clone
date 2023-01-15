@@ -11,7 +11,7 @@ const Reservation = ({reservationRef, restaurant}) =>{
     const partySize = PartySize()
     const loadingSvg = useRef(null)
     const datePicker = useRef(null)
-    const [date, setDate] = useState(getDate(new Date()));
+    const [date, setDate] = useState(getDate(Date.now()));
     const [time, setTime] = useState(times[0]);
     const [people, setPeople] = useState(partySize[1])
     const [showTimes, setShowTimes] = useState(false)
