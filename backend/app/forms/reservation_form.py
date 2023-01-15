@@ -6,3 +6,4 @@ class ReservationForm(FlaskForm):
     count = IntegerField('count', validators=[DataRequired()])
     date = DateField('date', validators=[DataRequired()])
     time = TimeField('time', validators=[DataRequired()])
+    offset = IntegerField('offset')

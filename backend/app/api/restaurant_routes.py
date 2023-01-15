@@ -90,15 +90,10 @@ def add_reservation(restaurant_id):
     count = form.data["count"]
     date = form.data["date"]
     time = form.data["time"]
+    offset = form.data["offset"]
     hour = time.strftime("%H")
     start_hour = datetime.time(int(hour), 0)
     end_hour = datetime.time(int(hour), 59)
-
-    print(time, 'time --------------')
-    print(date, 'date --------------')
-    print(hour, 'hour --------------')
-    print(start_hour, 'start_hour --------------')
-    print(end_hour, 'end_hour --------------')
 
     reserved = db.session.query(Reservation.date, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour)\
@@ -114,16 +109,12 @@ def add_reservation(restaurant_id):
     today = date.today()
     now = datetime.datetime.now()
 
-    print(today, 'today --------------')
-    print(now, 'now --------------')
-
-
     valid_time = True
     if(date == today):
-        if (now.hour-5) == time.hour:
+        if (now.hour-offset) == time.hour:
             if now.minute > time.minute:
                 valid_time = False
-        elif (now.hour-5) > time.hour:
+        elif (now.hour-offset) > time.hour:
             valid_time = False
 
     if form.validate_on_submit():
@@ -138,9 +129,6 @@ def add_reservation(restaurant_id):
                 )
                 db.session.add(reservation)
                 db.session.commit()
-                print(reservation, "reservation --------------")
-                print(reservation.date, "reservation.date --------------")
-                print(reservation.time, "reservation.time --------------")
                 return reservation.to_dict()
             return {"errors": "Reserve time has passed, Sorry!"}, 404
         return {"errors": "Not enough capacity at this time"}, 404

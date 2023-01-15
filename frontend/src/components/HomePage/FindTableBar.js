@@ -18,13 +18,17 @@ const FindTableBar = (
     const [peopleInput, setPeopleInput] = useState(people)
 	const currentDate = new Date().toISOString().slice(0, 10)
 
+	const date = new Date();
+	const offset = date.getTimezoneOffset();
+	const offsetInHours = offset / 60;
 
 	useEffect(()=>{
 		if(setPayload){
 			setPayload({
 				date: new Date(dateInput).toISOString().slice(0,10),
 				time: timeInput,
-				count: Number(peopleInput.split(" ")[0])
+				count: Number(peopleInput.split(" ")[0]),
+				offset: offsetInHours
 			})
 		}
 	},[peopleInput, dateInput, timeInput])
