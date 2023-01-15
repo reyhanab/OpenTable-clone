@@ -13,10 +13,12 @@ const UserReservations = () =>{
         {
             console.log((res?.date), "res.date")
             console.log(new Date(res?.date), " new Date (res.date)")
-            console.log(new Date([res?.date, "00:00"]), "I don;t know")
+
             let reservationDate = new Date((res?.date).replace("00:00:00", res?.time))
-            // let reservationDate = new Date(newDate.getTime() + (newDate.getTimezoneOffset() * 60000))
+            reservationDate = new Date(newDate.getTime() + (newDate.getTimezoneOffset() * 60000))
             let currentDate = new Date(Date.now())
+            console.log("current time", currentDate)
+            console.log("reservation time", reservationDate)
             return (res.user_id == user?.id) && (reservationDate >= currentDate)
         })
 
@@ -61,6 +63,7 @@ const UserReservations = () =>{
                 >Upcoming reservations</p>
                 <div className="flex flex-col place-items-center">
                     {userReservations.map((reservation, i)=>{
+                        console.log(reservation, "reservation in map")
                         return (<ReservationComponent
                                 key={i}
                                 reservation={reservation}
