@@ -18,8 +18,8 @@ const FindTableBar = (
     const [peopleInput, setPeopleInput] = useState(people)
 	const currentDate = new Date().toISOString().slice(0, 10)
 
-	const date = new Date();
-	const offset = date.getTimezoneOffset();
+	const offsetDate = new Date();
+	const offset = offsetDate.getTimezoneOffset();
 	const offsetInHours = offset / 60;
 
 	useEffect(()=>{
