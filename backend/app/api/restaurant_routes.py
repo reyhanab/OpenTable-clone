@@ -117,12 +117,13 @@ def add_reservation(restaurant_id):
     print(today, 'today --------------')
     print(now, 'now --------------')
 
+
     valid_time = True
     if(date == today):
-        if now.hour == time.hour:
+        if (now.hour-5) == time.hour:
             if now.minute > time.minute:
                 valid_time = False
-        elif now.hour > time.hour:
+        elif (now.hour-5) > time.hour:
             valid_time = False
 
     if form.validate_on_submit():
