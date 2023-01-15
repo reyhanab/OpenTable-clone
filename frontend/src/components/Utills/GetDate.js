@@ -4,8 +4,11 @@ const getDate = (date) => {
     // newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
     if (!String(date).includes('-')){
       date = new Date(date)
+      console.log("date in if", date)
     }else{
+      console.log("date in else", date)
       if(typeof date != 'object'){
+        console.log("date in type of", date)
         date = new Date([date, "00:00"])
       }
     }
