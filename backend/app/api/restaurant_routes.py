@@ -137,6 +137,9 @@ def add_reservation(restaurant_id):
                 )
                 db.session.add(reservation)
                 db.session.commit()
+                print(reservation, "reservation --------------")
+                print(reservation.date, "reservation.date --------------")
+                print(reservation.time, "reservation.time --------------")
                 return reservation.to_dict()
             return {"errors": "Reserve time has passed, Sorry!"}, 404
         return {"errors": "Not enough capacity at this time"}, 404
@@ -149,6 +152,9 @@ def add_reservation(restaurant_id):
 def get_reservations(restaurant_id):
 
     reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id).all()
+    test = [reservation.to_dict()
+                           for reservation in reservations]
+    print(test, "test-----------------")
     return {"Reservations":[reservation.to_dict()
                            for reservation in reservations]}
 

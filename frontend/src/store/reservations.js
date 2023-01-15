@@ -72,6 +72,7 @@ export const loadAllReservations = (restaurant_ids) => async (dispatch) => {
     );
 
     const data = await response.json();
+    console.log(data, "reservations data")
     const payload = {};
     for (let obj of data.Reservations) {
       payload[obj.id] = obj;
