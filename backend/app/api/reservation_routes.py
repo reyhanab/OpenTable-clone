@@ -26,7 +26,7 @@ def edit_reservation(reservation_id):
     start_hour = datetime.time(int(hour), 0)
     end_hour = datetime.time(int(hour), 59)
 
-    reserved = db.session.query(Reservation, func.sum(Reservation.count))\
+    reserved = db.session.query(Reservation.date, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour).filter(Reservation.time >= start_hour)\
         .filter(Reservation.date == date)\
         .filter(Reservation.restaurant_id == reservation.restaurant_id)\
