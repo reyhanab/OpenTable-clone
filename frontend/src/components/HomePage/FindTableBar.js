@@ -16,7 +16,14 @@ const FindTableBar = (
     const [dateInput, setDateInput] = useState(getDate(date));
     const [timeInput, setTimeInput] = useState(time);
     const [peopleInput, setPeopleInput] = useState(people)
-	const currentDate = new Date().toISOString().slice(0, 10)
+	let currentDate = new Date()
+	let month = currentDate.getMonth() +1
+	if (month<10) month = `0${month}`
+	const day = currentDate.getDate()
+	const year = currentDate.getFullYear()
+	currentDate = `${year}-${month}-${day}`
+	
+
 
 	const offsetDate = new Date();
 	const offset = offsetDate.getTimezoneOffset();
@@ -51,7 +58,7 @@ const FindTableBar = (
 						disabled={type=="create" ? true : false}
 						onChange={(e) => setDateInput(getDate(e.target.value))}
 						ref={datePicker}
-						min={currentDate}
+						min={`${year}-${month}-${day}`}
 					>
 					</input>
 					<div className='border border-r h-10

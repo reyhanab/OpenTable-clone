@@ -82,7 +82,7 @@ const ReservationComponent = ({reservation, toggleOptionsModal, optionsModal}) =
                         </svg>
 					</span>
                     <p  className=" text-gray-500"
-                    >{getDate(reservation?.date)} at {(reservation?.time).slice(0,5)}</p>
+                    >{getDate(reservation?.date, type=true)} at {(reservation?.time).slice(0,5)}</p>
                 </div>
             </div>
             <div

@@ -1,5 +1,5 @@
 
-const getDate = (date) => {
+const getDate = (date, type=false) => {
 
     // newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
     if (!String(date).includes('-')){
@@ -24,8 +24,13 @@ const getDate = (date) => {
       "Nov",
       "Dec",
     ];
+    let day;
     const month = date.getMonth();
-    const day = date.getUTCDate();
+    if ( type == true){
+       day = date.getUTCDate();
+    }else{
+       day = date.getDate();
+    }
     const year = date.getFullYear();
     console.log("month, day, year:", month, day, year)
 
