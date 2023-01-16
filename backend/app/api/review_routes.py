@@ -28,6 +28,7 @@ def edit_review(review_id):
             for rating in reviewsRatings:
                 totalRating += rating
             restaurant.rating = totalRating / (len(reviewsRatings))
+            db.session.commit()
             return review.to_dict()
         return redirect(url_for("auth.unauthorized"))
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
