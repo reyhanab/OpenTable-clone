@@ -143,7 +143,6 @@ def get_reservations(restaurant_id):
     reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id).all()
     test = [reservation.to_dict()
                            for reservation in reservations]
-    print(test, "test-----------------")
     return {"Reservations":[reservation.to_dict()
                            for reservation in reservations]}
 

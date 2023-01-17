@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { Modal } from "../../context/Modal"
 import { deleteReviewThunk } from "../../store/reviews"
 import ReviewModal from "./ReviewModal"
+import { getRestDetails } from "../../store/restaurants"
 
 
 const ReviewOptionsModal = ({review, onClose})=>{
@@ -11,9 +12,11 @@ const ReviewOptionsModal = ({review, onClose})=>{
     const [showReviewModal, setShowReviewModal] = useState(false)
     const restaurant = useSelector(state => state.restaurants[review?.restaurant_id])
 
-    const handleDelete = (e)=>{
+    const handleDelete = async (e)=>{
         e.preventDefault()
-        dispatch(deleteReviewThunk(review?.id))
+        await dispatch(deleteReviewThunk(review?.id))
+        console.log(restaurant)
+        dispatch(getRestDetails(restaurant?.id))
         onClose()
     }
 

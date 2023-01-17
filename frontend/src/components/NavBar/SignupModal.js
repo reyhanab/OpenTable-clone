@@ -25,7 +25,6 @@ const SignupModal = ({onClose}) => {
         e.preventDefault()
         if (password === confirmPassword){
             const data = await dispatch(signUp(firstName ,lastName, email, password))
-            console.log(data.errors)
             if (data.errors){
                 setErrors(data.errors)
             }

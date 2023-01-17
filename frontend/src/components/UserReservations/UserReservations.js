@@ -58,7 +58,6 @@ const UserReservations = () =>{
                 >Upcoming reservations</p>
                 <div className="flex flex-col place-items-center">
                     {userReservations.map((reservation, i)=>{
-                        console.log(reservation, "reservation in map")
                         return (<ReservationComponent
                                 key={i}
                                 reservation={reservation}

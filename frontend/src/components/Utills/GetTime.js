@@ -207,7 +207,6 @@
 
 //             if(resPage){
 // 				checkAvailableHours(timeFrames, hour, minutes, true)
-// 				console.log(availableSlots, 'get available slots')
 // 				result = availableSlots
 
 //             } else {
