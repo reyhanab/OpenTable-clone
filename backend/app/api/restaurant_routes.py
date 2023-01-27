@@ -103,6 +103,10 @@ def add_reservation(restaurant_id):
         .group_by(Reservation.date).first()
 
     restaurant = Restaurant.query.get_or_404(restaurant_id)
+    user_has_reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id,
+                                                    Reservation.user_id == current_user.id,
+                                                    Reservation.date == date).first()
+    print("user_has_reservations", user_has_reservations)
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
 
@@ -119,18 +123,20 @@ def add_reservation(restaurant_id):
 
     if form.validate_on_submit():
         if valid_reserveation:
-            if valid_time:
-                reservation = Reservation(
-                    user_id = current_user.id,
-                    restaurant_id = restaurant_id,
-                    count = count,
-                    date = date,
-                    time = time
-                )
-                db.session.add(reservation)
-                db.session.commit()
-                return reservation.to_dict()
-            return {"errors": "Reserve time has passed, Sorry!"}, 404
+            if not user_has_reservations:
+                if valid_time:
+                    reservation = Reservation(
+                        user_id = current_user.id,
+                        restaurant_id = restaurant_id,
+                        count = count,
+                        date = date,
+                        time = time
+                    )
+                    db.session.add(reservation)
+                    db.session.commit()
+                    return reservation.to_dict()
+                return {"errors": "Reserve time has passed, Sorry!"}, 404
+            return {"errors": "Reservation have already made on this Restaurant!"}, 404
         return {"errors": "Not enough capacity at this time"}, 404
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 

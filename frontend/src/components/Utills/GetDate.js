@@ -28,14 +28,13 @@ const getDate = (date, type=false) => {
     let month;
 
     if ( type == true){
-       day = date.getUTCDate();
-       month = date.getUTCMonth();
+      day = date.getUTCDate();
+      month = date.getUTCMonth();
     }else{
-       day = date.getDate();
-       month = date.getMonth();
+      day = date.getDate();
+      month = date.getMonth();
     }
     const year = date.getFullYear();
-
     let result = `${months[month]} ${day} ${year}`;
 
     return result

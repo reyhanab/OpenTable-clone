@@ -33,6 +33,11 @@ def edit_reservation(reservation_id):
         .filter(Reservation.id != reservation.id)\
         .group_by(Reservation.date).first()
 
+    user_has_reservations = False
+    if date != reservation.date:
+        user_has_reservations = Reservation.query.filter(Reservation.restaurant_id == reservation.restaurant_id,
+                                                Reservation.user_id == current_user.id,
+                                                Reservation.date == date).first()
 
     restaurant = Restaurant.query.get_or_404(reservation.restaurant_id)
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
@@ -51,15 +56,17 @@ def edit_reservation(reservation_id):
 
     if form.validate_on_submit():
         if reservation.user_id == current_user.id:
-            if valid_time:
-                if valid_reserveation:
-                    reservation.count = count
-                    reservation.date = date
-                    reservation.time = time
-                    db.session.commit()
-                    return reservation.to_dict()
-                return {"errors": "Not enough capacity at this time"}, 404
-            return {"errors": "Reserve time has passed, Sorry!"}, 404
+            if not user_has_reservations:
+                if valid_time:
+                    if valid_reserveation:
+                        reservation.count = count
+                        reservation.date = date
+                        reservation.time = time
+                        db.session.commit()
+                        return reservation.to_dict()
+                    return {"errors": "Not enough capacity at this time"}, 404
+                return {"errors": "Reserve time has passed, Sorry!"}, 404
+            return {"errors": "Reservation have already made on this Restaurant!"}, 404
         return redirect(url_for("auth.unauthorized"))
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
