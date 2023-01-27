@@ -45,7 +45,7 @@ const HomePage = ()=> {
                     >View all</p> */}
                 </div>
                 <div className="flex space-x-5 mt-5 m-auto mb-12 overflow-auto">
-                    {restaurants?.slice(4).map((restaurant, idx) =>{
+                    {restaurants?.slice(1).map((restaurant, idx) =>{
                         return <RestaurantPreview restaurant={restaurant} key={idx}/>
                     })
                     }
@@ -58,7 +58,7 @@ const HomePage = ()=> {
                     >View all</p> */}
                 </div>
                 <div className="flex space-x-5 mt-5 m-auto pb-20 overflow-auto">
-                    {restaurants?.slice(10).map((restaurant, idx) =>{
+                    {restaurants?.slice(7).map((restaurant, idx) =>{
                         return <RestaurantPreview restaurant={restaurant} takeout={true} key={idx}/>
                     })
                     }

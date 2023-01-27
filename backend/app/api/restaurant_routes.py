@@ -13,10 +13,21 @@ restaurant_routes = Blueprint('restaurants', __name__)
 @restaurant_routes.route('/', methods=['GET'])
 def load_restaurants():
 
-    restaurants = Restaurant.query.all()
+    restaurants = Restaurant.query.distinct(Restaurant.name).all()
     return {"Restaurants":[restaurant.to_dict()
                            for restaurant in restaurants]}
 
+# Get restaurants by page
+# /api/restaurants/page?page=0&page_size=5
+@restaurant_routes.route('/page', methods=['GET'])
+def load_restaurants_by_page():
+
+    page = request.args.get('page', default=0, type=int)
+    page_size = request.args.get('page_size', default=5, type=int)
+
+    restaurants = Restaurant.query.distinct(Restaurant.name).limit(page_size).offset(page * page_size)
+    return {"Restaurants":[restaurant.to_dict()
+                           for restaurant in restaurants]}
 
 #Get details of a restaurant
 @restaurant_routes.route('/<int:restaurant_id>', methods = ['GET'])
