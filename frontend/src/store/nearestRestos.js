@@ -12,13 +12,7 @@ export const getAllRestaurantsLimited = (page) => async (dispatch) =>{
     const response = await fetch(`/api/restaurants/page?page=${page}`);
     const data = await response.json();
 
-    const payload = {};
-
-    for (let obj of data.Restaurants) {
-    payload[obj.id] = obj;
-    }
-
-    dispatch(loadAllRestaurant(payload));
+    dispatch(loadAllRestaurant(data.Restaurants));
     return data;
 }
 

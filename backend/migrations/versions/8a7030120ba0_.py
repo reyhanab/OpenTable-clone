@@ -1,18 +1,17 @@
-"""creating models
+"""empty message
 
-Revision ID: 8491bae5f0ce
+Revision ID: 8a7030120ba0
 Revises:
-Create Date: 2022-12-25 17:34:30.894982
+Create Date: 2023-01-13 19:30:39.627996
 
 """
 from alembic import op
 import sqlalchemy as sa
-import os
-environment = os.getenv("FLASK_ENV")
-SCHEMA = os.environ.get("SCHEMA")
+import geoalchemy2
+
 
 # revision identifiers, used by Alembic.
-revision = '8491bae5f0ce'
+revision = '8a7030120ba0'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -25,11 +24,9 @@ def upgrade():
     sa.Column('name', sa.String(), nullable=False),
     sa.Column('description', sa.Text(), nullable=False),
     sa.Column('price', sa.DECIMAL(), nullable=True),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('id'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE menu_items SET SCHEMA {SCHEMA};")
-
     op.create_table('restaurants',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(length=40), nullable=False),
@@ -43,11 +40,11 @@ def upgrade():
     sa.Column('lat', sa.DECIMAL(), nullable=True),
     sa.Column('lng', sa.DECIMAL(), nullable=True),
     sa.Column('preview_image', sa.String(), nullable=True),
-    sa.PrimaryKeyConstraint('id')
+    sa.Column('loc', geoalchemy2.types.Geometry(geometry_type='POINT', from_text='ST_GeomFromEWKT', name='geometry'), nullable=True),
+    sa.PrimaryKeyConstraint('id'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE restaurants SET SCHEMA {SCHEMA};")
-
+    # op.create_index('idx_restaurants_loc', 'restaurants', ['loc'], unique=False, schema='public', postgresql_using='gist')
     op.create_table('users',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('first_name', sa.String(length=40), nullable=False),
@@ -59,33 +56,27 @@ def upgrade():
     sa.Column('address', sa.String(length=255), nullable=True),
     sa.Column('profile_picture', sa.String(), nullable=True),
     sa.PrimaryKeyConstraint('id'),
-    sa.UniqueConstraint('email')
+    sa.UniqueConstraint('email'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE users SET SCHEMA {SCHEMA};")
-
     op.create_table('images',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('restaurant_id', sa.Integer(), nullable=False),
     sa.Column('url', sa.String(), nullable=False),
-    sa.ForeignKeyConstraint(['restaurant_id'], ['restaurants.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.ForeignKeyConstraint(['restaurant_id'], ['public.restaurants.id'], ),
+    sa.PrimaryKeyConstraint('id'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE images SET SCHEMA {SCHEMA};")
-
     op.create_table('menus',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('type', sa.String(), nullable=False),
     sa.Column('restaurant_id', sa.Integer(), nullable=False),
     sa.Column('menu_item_id', sa.Integer(), nullable=False),
-    sa.ForeignKeyConstraint(['menu_item_id'], ['menu_items.id'], ),
-    sa.ForeignKeyConstraint(['restaurant_id'], ['restaurants.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.ForeignKeyConstraint(['menu_item_id'], ['public.menu_items.id'], ),
+    sa.ForeignKeyConstraint(['restaurant_id'], ['public.restaurants.id'], ),
+    sa.PrimaryKeyConstraint('id'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE menus SET SCHEMA {SCHEMA};")
-
     op.create_table('reservations',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('count', sa.Integer(), nullable=False),
@@ -93,13 +84,11 @@ def upgrade():
     sa.Column('time', sa.Time(), nullable=False),
     sa.Column('restaurant_id', sa.Integer(), nullable=False),
     sa.Column('user_id', sa.Integer(), nullable=False),
-    sa.ForeignKeyConstraint(['restaurant_id'], ['restaurants.id'], ),
-    sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.ForeignKeyConstraint(['restaurant_id'], ['public.restaurants.id'], ),
+    sa.ForeignKeyConstraint(['user_id'], ['public.users.id'], ),
+    sa.PrimaryKeyConstraint('id'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE reservations SET SCHEMA {SCHEMA};")
-
     op.create_table('reviews',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('rating', sa.DECIMAL(), nullable=False),
@@ -107,34 +96,42 @@ def upgrade():
     sa.Column('edited', sa.Boolean(), nullable=True),
     sa.Column('restaurant_id', sa.Integer(), nullable=False),
     sa.Column('user_id', sa.Integer(), nullable=False),
-    sa.ForeignKeyConstraint(['restaurant_id'], ['restaurants.id'], ),
-    sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.ForeignKeyConstraint(['restaurant_id'], ['public.restaurants.id'], ),
+    sa.ForeignKeyConstraint(['user_id'], ['public.users.id'], ),
+    sa.PrimaryKeyConstraint('id'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE reviews SET SCHEMA {SCHEMA};")
-
     op.create_table('saved',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('restaurant_id', sa.Integer(), nullable=False),
     sa.Column('user_id', sa.Integer(), nullable=False),
-    sa.ForeignKeyConstraint(['restaurant_id'], ['restaurants.id'], ),
-    sa.ForeignKeyConstraint(['user_id'], ['users.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.ForeignKeyConstraint(['restaurant_id'], ['public.restaurants.id'], ),
+    sa.ForeignKeyConstraint(['user_id'], ['public.users.id'], ),
+    sa.PrimaryKeyConstraint('id'),
+    schema='public'
     )
-    if environment == "production":
-        op.execute(f"ALTER TABLE saved SET SCHEMA {SCHEMA};")
+    # op.drop_table('spatial_ref_sys')
     # ### end Alembic commands ###
 
 
 def downgrade():
     # ### commands auto generated by Alembic - please adjust! ###
-    op.drop_table('saved')
-    op.drop_table('reviews')
-    op.drop_table('reservations')
-    op.drop_table('menus')
-    op.drop_table('images')
-    op.drop_table('users')
-    op.drop_table('restaurants')
-    op.drop_table('menu_items')
+    op.create_table('spatial_ref_sys',
+    sa.Column('srid', sa.INTEGER(), autoincrement=False, nullable=False),
+    sa.Column('auth_name', sa.VARCHAR(length=256), autoincrement=False, nullable=True),
+    sa.Column('auth_srid', sa.INTEGER(), autoincrement=False, nullable=True),
+    sa.Column('srtext', sa.VARCHAR(length=2048), autoincrement=False, nullable=True),
+    sa.Column('proj4text', sa.VARCHAR(length=2048), autoincrement=False, nullable=True),
+    sa.CheckConstraint('(srid > 0) AND (srid <= 998999)', name='spatial_ref_sys_srid_check'),
+    sa.PrimaryKeyConstraint('srid', name='spatial_ref_sys_pkey')
+    )
+    op.drop_table('saved', schema='public')
+    op.drop_table('reviews', schema='public')
+    op.drop_table('reservations', schema='public')
+    op.drop_table('menus', schema='public')
+    op.drop_table('images', schema='public')
+    op.drop_table('users', schema='public')
+    op.drop_index('idx_restaurants_loc', table_name='restaurants', schema='public', postgresql_using='gist')
+    op.drop_table('restaurants', schema='public')
+    op.drop_table('menu_items', schema='public')
     # ### end Alembic commands ###

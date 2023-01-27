@@ -3,9 +3,10 @@ from app.models import Restaurant, Menu, Review, Reservation,Image, db
 from flask_login import current_user, login_required
 from app.forms import ReviewForm, ReservationForm
 import datetime
-from sqlalchemy import func
+from sqlalchemy import func, distinct
 from .auth_routes import validation_errors_to_error_messages
-
+import requests
+import os
 
 restaurant_routes = Blueprint('restaurants', __name__)
 
@@ -19,15 +20,15 @@ def load_restaurants():
 
 # Get restaurants by page
 # /api/restaurants/page?page=0&page_size=5
-@restaurant_routes.route('/page', methods=['GET'])
-def load_restaurants_by_page():
+# @restaurant_routes.route('/page', methods=['GET'])
+# def load_restaurants_by_page():
 
-    page = request.args.get('page', default=0, type=int)
-    page_size = request.args.get('page_size', default=5, type=int)
+#     page = request.args.get('page', default=0, type=int)
+#     page_size = request.args.get('page_size', default=5, type=int)
 
-    restaurants = Restaurant.query.distinct(Restaurant.name).limit(page_size).offset(page * page_size)
-    return {"Restaurants":[restaurant.to_dict()
-                           for restaurant in restaurants]}
+#     restaurants = Restaurant.query.distinct(Restaurant.name).limit(page_size).offset(page * page_size)
+#     return {"Restaurants":[restaurant.to_dict()
+#                            for restaurant in restaurants]}
 
 #Get details of a restaurant
 @restaurant_routes.route('/<int:restaurant_id>', methods = ['GET'])
@@ -181,3 +182,26 @@ def get_images(restaurant_id):
     images = Image.query.filter(Image.restaurant_id == restaurant_id).all()
     return {"Images":[image.to_dict()
                            for image in images]}
+
+
+@restaurant_routes.route('/page', methods=['GET'])
+def get_restos():
+
+    ip = requests.get("https://geolocation-db.com/json/")
+    ip = ip.json()
+    key = os.environ.get('IP_API_KEY')
+    response = requests.get(f'http://api.ipapi.com/api/{ip["IPv4"]}?access_key={key}')
+    data = response.json()
+
+
+    page = request.args.get('page', default=0, type=int)
+    page_size = request.args.get('page_size', default=5, type=int)
+
+
+    restaurants = db.session.query(Restaurant).distinct(func.ST_DISTANCE\
+    (Restaurant.loc, func.ST_MakePoint(data['latitude'], data['longitude'])), Restaurant.name).order_by(func.ST_DISTANCE\
+    (Restaurant.loc, func.ST_MakePoint(data['latitude'], data['longitude']))).limit(page_size).offset(page * page_size)
+
+
+    return {"Restaurants":[restaurant.to_dict()
+                           for restaurant in restaurants]}

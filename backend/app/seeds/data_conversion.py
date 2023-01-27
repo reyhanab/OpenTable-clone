@@ -12,6 +12,8 @@ def convert_to_data_object():
 		for i, value in enumerate(data):
 			if value[0] == '---restaurant---':
 				if i != 0:
+					lat, lng = current_resto['lat'], current_resto['lng']
+					current_resto['loc'] = f'POINT({lat} {lng})'
 					restaurants.append(current_resto)
 				current_resto = {
 					'name' : '',
@@ -24,7 +26,8 @@ def convert_to_data_object():
 					'lat' : '',
 					'lng' : '',
 					'preview_image' : '',
-					'photos' : []
+					'photos' : [],
+					'loc' : ''
 				}
 				photo = False
 				preview_image = 0
@@ -55,7 +58,8 @@ def convert_to_data_object():
 					preview_image += 1
 			if value[0] == 'photos:':
 				photo = True
-
+		lat, lng = current_resto['lat'], current_resto['lng']
+		current_resto['loc'] = f'POINT({lat} {lng})'
 		restaurants.append(current_resto)
 	return restaurants
 	# 	print(current_resto)

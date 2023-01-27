@@ -36,6 +36,12 @@ app.register_blueprint(restaurant_routes, url_prefix='/api/restaurants')
 app.register_blueprint(review_routes, url_prefix='/api/reviews')
 app.register_blueprint(reservation_routes, url_prefix='/api/reservations')
 db.init_app(app)
+
+if os.environ.get("FLASK_ENV") == "production":
+    with app.app_context():
+        db.session.execute("CREATE EXTENSION IF NOT EXISTS postgis;")
+        db.session.commit()
+
 Migrate(app, db)
 
 # Application Security

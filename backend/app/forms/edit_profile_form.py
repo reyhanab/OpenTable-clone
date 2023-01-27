@@ -25,7 +25,7 @@ class EditProfileForm(FlaskForm):
                             Length(min=2, max=20, message="Last name must be between 2 to 20 characters long." )
                             ])
     email = StringField('email', validators=[optional, Email(), email_exists])
-    phone_number = StringField('phone_number', validators=[ Optional(),
+    phone_number = StringField('phone_number', validators=[Optional(),
                         Length(min=10, message="invalid phone number")])
     city = StringField('city', validators=[optional])
     address = StringField('address', validators=[optional])
