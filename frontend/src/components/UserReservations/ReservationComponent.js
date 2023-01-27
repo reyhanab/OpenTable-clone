@@ -7,7 +7,7 @@ import OptionsModal from "./OptionsModal"
 const ReservationComponent = ({reservation, toggleOptionsModal, optionsModal}) => {
 
     const restaurant = useSelector(state => state.restaurants[reservation?.restaurant_id])
-
+    let type = true
 
     return (
         <div className="flex w-[650px] h-[150px] shadow-lg justify-items-center
@@ -82,7 +82,7 @@ const ReservationComponent = ({reservation, toggleOptionsModal, optionsModal}) =
                         </svg>
 					</span>
                     <p  className=" text-gray-500"
-                    >{getDate(reservation?.date)} at {(reservation?.time).slice(0,5)}</p>
+                    >{getDate(reservation?.date, type)} at {(reservation?.time).slice(0,5)}</p>
                 </div>
             </div>
             <div

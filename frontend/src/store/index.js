@@ -6,8 +6,7 @@ import restaurants from './restaurants'
 import reviews from './reviews'
 import reservations from './reservations'
 import images from './images'
-// import googleApi from './googleApi';
-import nearRestaurants from './nearRestaurants'
+import nearestRestos from "./nearestRestos"
 
 const rootReducer = combineReducers({
   session,
@@ -16,7 +15,7 @@ const rootReducer = combineReducers({
   reviews,
   reservations,
   images,
-  nearRestaurants
+  nearestRestos
 });
 
 

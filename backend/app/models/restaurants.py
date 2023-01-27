@@ -28,7 +28,7 @@ class Restaurant(db.Model):
          cascade="all, delete-orphan")
 
     reviews = db.relationship("Review", back_populates="restaurant",
-         cascade="all, delete-orphan")
+         cascade="all, delete-orphan", lazy = 'joined')
 
     images = db.relationship("Image", back_populates="restaurant",
          cascade="all, delete-orphan")

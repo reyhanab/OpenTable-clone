@@ -9,7 +9,7 @@ const Profile = () =>{
     const [firstName, setFirstName] = useState(user?.first_name)
     const [lastName, setLastName] = useState(user?.last_name)
     const [email, setEmail] = useState(user?.email)
-    const [phoneNumber, setPhoneNumber] = useState(user?.phone_number)
+    const [phoneNumber, setPhoneNumber] = useState(user?.phone_number != undefined ? user?.phone_number : "" )
     const [city, setCity] = useState(user?.city != "null"? user?.city : "")
     const [address, setAddress] = useState(user?.address != "null" ? user?.address : "")
     const [profilePicture, setProfilePicture] = useState(null)

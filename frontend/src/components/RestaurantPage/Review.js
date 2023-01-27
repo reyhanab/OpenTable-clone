@@ -5,7 +5,8 @@ import { Modal } from '../../context/Modal'
 
 const Review = ({review, toggleReviewOptionsModal, reviewOptionsModal}) =>{
 
-    // const user = useSelector(state => state.users[review?.user_id])
+    const user = useSelector(state => state.session.user)
+    const allowOptions = review?.user_id == user?.id
 
     return (
         <div className="flex mt-5 space-x-8 border-b pb-5">
@@ -20,7 +21,8 @@ const Review = ({review, toggleReviewOptionsModal, reviewOptionsModal}) =>{
                 <p className="text-black font-extralight"
                 >{review?.review}</p>
             </div>
-            <div
+            {allowOptions &&
+                <div
             onClick={toggleReviewOptionsModal(review?.id)}
             className="ml-auto ">
                 <svg
@@ -38,6 +40,7 @@ const Review = ({review, toggleReviewOptionsModal, reviewOptionsModal}) =>{
                 <circle cx="18" cy="12" r="1.5"></circle>
                 </svg>
             </div>
+            }
             {
                 reviewOptionsModal[review?.id] && (
                     <Modal onClose={toggleReviewOptionsModal(review?.id)}>

@@ -44,7 +44,7 @@ def convert_to_data_object():
 			if value[0] == 'address:':
 				current_resto['address'] = ' '.join(value[1:])
 			if value[0] == 'rating:':
-				current_resto['rating'] = float(5)
+				current_resto['rating'] = float(5.0)
 			if value[0] == 'capacity:':
 				current_resto['capacity'] = int(value[1])
 			if value[0] == 'lat:':

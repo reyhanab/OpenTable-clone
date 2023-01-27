@@ -26,7 +26,7 @@ const ImagesModal = ({images, onClose}) =>{
             onClick = {showPreviousImage}
             viewBox="0 0 24 24"
             className="absolute w-8 h-8 top-[280px] left-[10px]
-                        hover:cursor-pointer bg-slate-200 rounded-full"
+            hover:cursor-pointer bg-slate-200 rounded-full"
             xmlns="http://www.w3.org/2000/svg"
             focusable="false"><g
             fill="#FFFFFF" fill-rule="evenodd">
@@ -50,7 +50,7 @@ const ImagesModal = ({images, onClose}) =>{
             onClick = {showNextImage}
             viewBox="0 0 24 24"
             className="absolute w-8 h-8 top-[280px] left-[750px]
-                    hover:cursor-pointer bg-slate-200 rounded-full"
+            hover:cursor-pointer bg-slate-200 rounded-full"
             xmlns="http://www.w3.org/2000/svg"
             focusable="false"><g
             fill="#FFFFFF"

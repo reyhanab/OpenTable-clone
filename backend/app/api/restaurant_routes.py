@@ -6,7 +6,7 @@ import datetime
 from sqlalchemy import func, distinct
 from .auth_routes import validation_errors_to_error_messages
 import requests
-
+import os
 
 restaurant_routes = Blueprint('restaurants', __name__)
 
@@ -14,10 +14,21 @@ restaurant_routes = Blueprint('restaurants', __name__)
 @restaurant_routes.route('/', methods=['GET'])
 def load_restaurants():
 
-    restaurants = Restaurant.query.all()
+    restaurants = Restaurant.query.distinct(Restaurant.name).all()
     return {"Restaurants":[restaurant.to_dict()
                            for restaurant in restaurants]}
 
+# Get restaurants by page
+# /api/restaurants/page?page=0&page_size=5
+# @restaurant_routes.route('/page', methods=['GET'])
+# def load_restaurants_by_page():
+
+#     page = request.args.get('page', default=0, type=int)
+#     page_size = request.args.get('page_size', default=5, type=int)
+
+#     restaurants = Restaurant.query.distinct(Restaurant.name).limit(page_size).offset(page * page_size)
+#     return {"Restaurants":[restaurant.to_dict()
+#                            for restaurant in restaurants]}
 
 #Get details of a restaurant
 @restaurant_routes.route('/<int:restaurant_id>', methods = ['GET'])
@@ -61,7 +72,6 @@ def add_review(restaurant_id):
     restaurant = Restaurant.query.get_or_404(restaurant_id)
     totalRating = 0
 
-
     form = ReviewForm()
     form["csrf_token"].data = request.cookies["csrf_token"]
     if form.validate_on_submit():
@@ -92,11 +102,12 @@ def add_reservation(restaurant_id):
     count = form.data["count"]
     date = form.data["date"]
     time = form.data["time"]
+    offset = form.data["offset"]
     hour = time.strftime("%H")
     start_hour = datetime.time(int(hour), 0)
     end_hour = datetime.time(int(hour), 59)
 
-    reserved = db.session.query(Reservation, func.sum(Reservation.count))\
+    reserved = db.session.query(Reservation.date, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour)\
         .filter(Reservation.time >= start_hour)\
         .filter(Reservation.date == date)\
@@ -104,6 +115,10 @@ def add_reservation(restaurant_id):
         .group_by(Reservation.date).first()
 
     restaurant = Restaurant.query.get_or_404(restaurant_id)
+    user_has_reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id,
+                                                    Reservation.user_id == current_user.id,
+                                                    Reservation.date == date).first()
+    print("user_has_reservations", user_has_reservations)
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
 
@@ -112,26 +127,28 @@ def add_reservation(restaurant_id):
 
     valid_time = True
     if(date == today):
-        if now.hour == time.hour:
+        if (now.hour-offset) == time.hour:
             if now.minute > time.minute:
                 valid_time = False
-        elif now.hour > time.hour:
+        elif (now.hour-offset) > time.hour:
             valid_time = False
 
     if form.validate_on_submit():
         if valid_reserveation:
-            if valid_time:
-                reservation = Reservation(
-                    user_id = current_user.id,
-                    restaurant_id = restaurant_id,
-                    count = count,
-                    date = date,
-                    time = time
-                )
-                db.session.add(reservation)
-                db.session.commit()
-                return reservation.to_dict()
-            return {"errors": "Reserve time has passed, Sorry!"}, 404
+            if not user_has_reservations:
+                if valid_time:
+                    reservation = Reservation(
+                        user_id = current_user.id,
+                        restaurant_id = restaurant_id,
+                        count = count,
+                        date = date,
+                        time = time
+                    )
+                    db.session.add(reservation)
+                    db.session.commit()
+                    return reservation.to_dict()
+                return {"errors": "Reserve time has passed, Sorry!"}, 404
+            return {"errors": "Reservation have already made on this Restaurant!"}, 404
         return {"errors": "Not enough capacity at this time"}, 404
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
@@ -142,6 +159,8 @@ def add_reservation(restaurant_id):
 def get_reservations(restaurant_id):
 
     reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id).all()
+    test = [reservation.to_dict()
+                           for reservation in reservations]
     return {"Reservations":[reservation.to_dict()
                            for reservation in reservations]}
 
@@ -165,20 +184,24 @@ def get_images(restaurant_id):
                            for image in images]}
 
 
-@restaurant_routes.route('/nearest', methods=['GET'])
+@restaurant_routes.route('/page', methods=['GET'])
 def get_restos():
 
     ip = requests.get("https://geolocation-db.com/json/")
     ip = ip.json()
-
-    response = requests.get(f'http://api.ipapi.com/api/{ip["IPv4"]}?access_key=ee90d22564172e030b9fdbdff5dc4b42')
+    key = os.environ.get('IP_API_KEY')
+    response = requests.get(f'http://api.ipapi.com/api/{ip["IPv4"]}?access_key={key}')
     data = response.json()
-    print("dataaaaaaaaaa", data)
 
-    # distinct_names = Restaurant.query.with_entities(distinct(Restaurant.name)).all()
-    # distinct_names = [r[0] for r in distinct_names]
 
-    restaurants = Restaurant.query.order_by(func.ST_DISTANCE\
-    (Restaurant.loc, func.ST_MakePoint(data['latitude'], data['longitude']))).distinct(Restaurant.name).all()
+    page = request.args.get('page', default=0, type=int)
+    page_size = request.args.get('page_size', default=5, type=int)
+
+
+    restaurants = db.session.query(Restaurant).distinct(func.ST_DISTANCE\
+    (Restaurant.loc, func.ST_MakePoint(data['latitude'], data['longitude'])), Restaurant.name).order_by(func.ST_DISTANCE\
+    (Restaurant.loc, func.ST_MakePoint(data['latitude'], data['longitude']))).limit(page_size).offset(page * page_size)
+
+
     return {"Restaurants":[restaurant.to_dict()
                            for restaurant in restaurants]}

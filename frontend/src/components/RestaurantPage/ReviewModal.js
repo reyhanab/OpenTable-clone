@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createReview, editReview } from "../../store/reviews";
+import { getRestDetails } from "../../store/restaurants";
 
 const ReviewModal = ({preReview ={}, restaurant, onClose, type}) =>{
 
@@ -21,6 +22,7 @@ const ReviewModal = ({preReview ={}, restaurant, onClose, type}) =>{
         if (data.errors){
             setError(data.errors);
         }else{
+            dispatch(getRestDetails(restaurant?.id))
             setReview('')
             setRating('')
             onClose()

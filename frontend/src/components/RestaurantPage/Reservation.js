@@ -11,13 +11,17 @@ const Reservation = ({reservationRef, restaurant}) =>{
     const partySize = PartySize()
     const loadingSvg = useRef(null)
     const datePicker = useRef(null)
-    const [date, setDate] = useState(getDate(new Date()));
+    const [date, setDate] = useState(getDate(Date.now()));
     const [time, setTime] = useState(times[0]);
     const [people, setPeople] = useState(partySize[1])
     const [showTimes, setShowTimes] = useState(false)
     const [loading, setLoading] = useState(false)
-    const currentDate = new Date().toISOString().slice(0, 10);
-
+    let currentDate = new Date()
+    let month = currentDate.getMonth() +1
+    if (month<10) month = `0${month}`
+	const day = currentDate.getDate()
+	const year = currentDate.getFullYear()
+	currentDate = `${year}-${month}-${day}`
 
     const clickDatePicker = (e) => {
         datePicker.current.showPicker()
@@ -72,7 +76,7 @@ const Reservation = ({reservationRef, restaurant}) =>{
                             type="date"
                             onChange={(e) => setDate(getDate(e.target.value))}
                             ref={datePicker}
-                            min={currentDate}
+                            min={`${year}-${month}-${day}`}
                         >
                         </input>
                         <div className='border-b h-10 flex w-full bg-white

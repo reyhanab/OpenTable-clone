@@ -20,7 +20,7 @@ const RestaurantPreview = ({restaurant, takeout = false}) =>{
                 <Link to={`/restaurants/${restaurant?.id}`}>
                     <div>
                         <div>
-                            <img className="rounded-t h-32 w-60 max-w-4xl"
+                            <img className="rounded-t h-32 w-60 max-w-4xl object-cover"
                             src={restaurant?.preview_image} />
                         </div>
                         <div className="m-2.5">

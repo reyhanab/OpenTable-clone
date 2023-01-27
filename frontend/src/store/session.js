@@ -107,7 +107,6 @@ export const editProfile = (data) => async (dispatch) => {
     } else if (res.status < 500) {
       const data = await res.json();
       if (data.errors) {
-        console.log(data.errors, "data.errors")
         return data;
       }
     } else {
