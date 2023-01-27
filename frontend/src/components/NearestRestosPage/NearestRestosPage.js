@@ -46,10 +46,11 @@ const NearestRestos = () =>{
 
                      pages?.map((value, idx) =>{
                         return (<button
-                            className="border rounded-full text-5 w-10 h-10 border-gray-300 focus:border-red-600 focus:border-2 "
+                            className="border rounded-full text-5 w-10 h-10
+                            border-gray-300 focus:border-red-600 focus:border-2 "
                             onClick={() => fetchRestPage(idx)}
                             key={idx}>{idx+1}</button>)
-                    })
+                        })
                     }
                     </div>
 
