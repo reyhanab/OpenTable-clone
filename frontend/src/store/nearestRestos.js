@@ -9,7 +9,10 @@ const loadAllRestaurant = (restaurants) => ({
 
 export const getAllRestaurantsLimited = (page) => async (dispatch) =>{
 
-    const response = await fetch(`/api/restaurants/page?page=${page}`);
+    const ipData = await fetch("https://geolocation-db.com/json/")
+    const ipJson = await ipData.json()
+    const ip = ipJson["IPv4"]
+    const response = await fetch(`/api/restaurants/page?page=${page}&ip=${ip}`);
     const data = await response.json();
 
     dispatch(loadAllRestaurant(data.Restaurants));

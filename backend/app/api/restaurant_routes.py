@@ -187,10 +187,9 @@ def get_images(restaurant_id):
 @restaurant_routes.route('/page', methods=['GET'])
 def get_restos():
 
-    ip = requests.get("https://geolocation-db.com/json/")
-    ip = ip.json()
+    ip = request.args.get('ip')
     key = os.environ.get('IP_API_KEY')
-    response = requests.get(f'http://api.ipapi.com/api/{ip["IPv4"]}?access_key={key}')
+    response = requests.get(f'http://api.ipapi.com/api/{ip}?access_key={key}')
     data = response.json()
 
 
