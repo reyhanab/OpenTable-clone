@@ -25,11 +25,14 @@ const getDate = (date, type=false) => {
       "Dec",
     ];
     let day;
-    const month = date.getMonth();
+    let month;
+
     if ( type == true){
        day = date.getUTCDate();
+       month = date.getUTCMonth();
     }else{
        day = date.getDate();
+       month = date.getMonth();
     }
     const year = date.getFullYear();
 
