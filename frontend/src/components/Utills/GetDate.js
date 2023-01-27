@@ -29,7 +29,7 @@ const getDate = (date, type=false) => {
 
     if ( type == true){
        day = date.getUTCDate();
-       month = date.getUTCMonth();
+       month = date.getUTCMonth() +1;
     }else{
        day = date.getDate();
        month = date.getMonth();
