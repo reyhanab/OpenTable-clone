@@ -57,7 +57,7 @@ const HomePage = ()=> {
                     {/* <p className="ml-auto text-xs font-medium text-red-600"
                     >View all</p> */}
                 </div>
-                <div className="flex space-x-5 mt-5 m-auto pb-20 overflow-auto">
+                <div className="flex space-x-5 mt-5 m-auto mb-20 overflow-auto">
                     {restaurants?.slice(7).map((restaurant, idx) =>{
                         return <RestaurantPreview restaurant={restaurant} takeout={true} key={idx}/>
                     })
