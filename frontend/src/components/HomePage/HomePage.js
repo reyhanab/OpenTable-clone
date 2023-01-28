@@ -21,7 +21,7 @@ const HomePage = ()=> {
 
 
     return (
-        <div className="w-full max-w-screen-2xl m-auto bg-white h-full font-outfit">
+        <div className="w-full max-w-screen-2xl m-auto bg-white h-[93vh] font-outfit">
             <div className="flex flex-col items-center justify-center h-60
                          text-white bg-gradient-to-r from-gdblue to-glblue">
                 <h1 className="font-semibold text-5xl"
@@ -57,12 +57,13 @@ const HomePage = ()=> {
                     {/* <p className="ml-auto text-xs font-medium text-red-600"
                     >View all</p> */}
                 </div>
-                <div className="flex space-x-5 mt-5 m-auto mb-20 overflow-auto">
+                <div className="flex space-x-5 mt-5 m-auto overflow-auto">
                     {restaurants?.slice(7).map((restaurant, idx) =>{
                         return <RestaurantPreview restaurant={restaurant} takeout={true} key={idx}/>
                     })
                     }
                 </div>
+                <div></div>
             </div>
         </div>
     )
