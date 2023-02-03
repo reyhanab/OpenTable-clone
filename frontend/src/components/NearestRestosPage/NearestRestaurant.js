@@ -24,9 +24,7 @@ const NearestRestaurant = ({restaurant}) =>{
                 Check availability
                 </button>
             </Link>
-
             </div>
-
         </div>
     )
 

@@ -35,7 +35,8 @@ const getDate = (date, type=false) => {
       month = date.getMonth();
     }
     const year = date.getFullYear();
-    let result = `${months[month]} ${day} ${year}`;
+    // if (day < 10) day = `0${day}`
+    let result = `${months[month]} ${day}, ${year}`;
 
     return result
 };

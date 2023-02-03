@@ -7,6 +7,7 @@ import reviews from './reviews'
 import reservations from './reservations'
 import images from './images'
 import nearestRestos from "./nearestRestos"
+import totalRestos from "./totalRestaurants"
 
 const rootReducer = combineReducers({
   session,
@@ -15,7 +16,8 @@ const rootReducer = combineReducers({
   reviews,
   reservations,
   images,
-  nearestRestos
+  nearestRestos,
+  totalRestos
 });
 
 

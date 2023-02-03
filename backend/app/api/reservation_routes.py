@@ -38,6 +38,11 @@ def edit_reservation(reservation_id):
         user_has_reservations = Reservation.query.filter(Reservation.restaurant_id == reservation.restaurant_id,
                                                 Reservation.user_id == current_user.id,
                                                 Reservation.date == date).first()
+    # user_has_reservation_same_time = Reservation.query.filter(
+    #                                             Reservation.user_id == current_user.id,
+    #                                             Reservation.date == date,
+    #                                             Reservation.time == start_hour).first()
+
 
     restaurant = Restaurant.query.get_or_404(reservation.restaurant_id)
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True

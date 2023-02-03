@@ -18,6 +18,16 @@ def load_restaurants():
     return {"Restaurants":[restaurant.to_dict()
                            for restaurant in restaurants]}
 
+#Get number of restaurants
+@restaurant_routes.route('/quantity', methods=['GET'])
+def load_number_of_restaurants():
+
+    # restaurants_count = Restaurant.query(func.count(distinct(Restaurant.name))).all()
+    restaurants_count = db.session.query(Restaurant).distinct(Restaurant.name).count()
+    print("********************", restaurants_count)
+    return {"count":restaurants_count}
+
+
 # Get restaurants by page
 # /api/restaurants/page?page=0&page_size=5
 # @restaurant_routes.route('/page', methods=['GET'])
@@ -107,6 +117,7 @@ def add_reservation(restaurant_id):
     start_hour = datetime.time(int(hour), 0)
     end_hour = datetime.time(int(hour), 59)
 
+
     reserved = db.session.query(Reservation.date, func.sum(Reservation.count))\
         .filter(Reservation.time <= end_hour)\
         .filter(Reservation.time >= start_hour)\
@@ -118,6 +129,11 @@ def add_reservation(restaurant_id):
     user_has_reservations = Reservation.query.filter(Reservation.restaurant_id == restaurant_id,
                                                     Reservation.user_id == current_user.id,
                                                     Reservation.date == date).first()
+    user_has_reservation_same_time = Reservation.query.filter(
+                                                    Reservation.user_id == current_user.id,
+                                                    Reservation.date == date,
+                                                    Reservation.time == start_hour).first()
+
     print("user_has_reservations", user_has_reservations)
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
@@ -136,19 +152,21 @@ def add_reservation(restaurant_id):
     if form.validate_on_submit():
         if valid_reserveation:
             if not user_has_reservations:
-                if valid_time:
-                    reservation = Reservation(
-                        user_id = current_user.id,
-                        restaurant_id = restaurant_id,
-                        count = count,
-                        date = date,
-                        time = time
-                    )
-                    db.session.add(reservation)
-                    db.session.commit()
-                    return reservation.to_dict()
-                return {"errors": "Reserve time has passed, Sorry!"}, 404
-            return {"errors": "Reservation have already made on this Restaurant!"}, 404
+                if not user_has_reservation_same_time:
+                    if valid_time:
+                        reservation = Reservation(
+                            user_id = current_user.id,
+                            restaurant_id = restaurant_id,
+                            count = count,
+                            date = date,
+                            time = time
+                        )
+                        db.session.add(reservation)
+                        db.session.commit()
+                        return reservation.to_dict()
+                    return {"errors": "Reserve time has passed, Sorry!"}, 404
+                return {"errors": "Reservation have already been made on this time!"}, 404
+            return {"errors": "Reservation have already been made on this Restaurant!"}, 404
         return {"errors": "Not enough capacity at this time"}, 404
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 

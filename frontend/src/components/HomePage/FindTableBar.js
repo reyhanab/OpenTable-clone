@@ -16,13 +16,30 @@ const FindTableBar = (
     const [dateInput, setDateInput] = useState(getDate(date));
     const [timeInput, setTimeInput] = useState(time);
     const [peopleInput, setPeopleInput] = useState(people)
-	let currentDate = new Date()
+	const [currentDate, setCurrentDate] = useState(new Date())
 	let month = currentDate.getMonth() +1
 	if (month<10) month = `0${month}`
 	const day = currentDate.getDate()
 	const year = currentDate.getFullYear()
-	currentDate = `${year}-${month}-${day}`
-	
+
+	let arr = dateInput.split(' ')
+	const months = [
+		"Jan",
+		"Feb",
+		"Mar",
+		"Apr",
+		"May",
+		"June",
+		"July",
+		"Aug",
+		"Sep",
+		"Oct",
+		"Nov",
+		"Dec",
+	]
+
+	const dateValue = `${arr[2]}-${months.indexOf(arr[0]) + 1 < 10 ? `0${months.indexOf(arr[0]) + 1}` : months.indexOf(arr[0]) + 1}-${arr[1].length < 3 ? `0${arr[1][0]}` : arr[1].slice(0,2) }`
+
 
 
 	const offsetDate = new Date();
@@ -33,6 +50,7 @@ const FindTableBar = (
 		if(setPayload){
 			setPayload({
 				date: new Date(dateInput).toISOString().slice(0,10),
+				// date : getDate(dateInput),
 				time: timeInput,
 				count: Number(peopleInput.split(" ")[0]),
 				offset: offsetInHours
@@ -54,7 +72,7 @@ const FindTableBar = (
 					<input
 						className="w-[100%] h-[100%] z-[-1] absolute"
 						type="date"
-						value={dateInput}
+						value={dateValue}
 						disabled={type=="create" ? true : false}
 						onChange={(e) => setDateInput(getDate(e.target.value))}
 						ref={datePicker}

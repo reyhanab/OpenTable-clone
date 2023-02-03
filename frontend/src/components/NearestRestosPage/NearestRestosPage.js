@@ -3,13 +3,15 @@ import { useDispatch, useSelector } from "react-redux";
 import NearestRestaurant from "./NearestRestaurant";
 import { getAllRestaurantsLimited } from "../../store/nearestRestos";
 import { getAllRestaurants } from "../../store/restaurants";
+import { getTotalRestaurants } from "../../store/totalRestaurants";
 
 const NearestRestos = () =>{
 
     const dispatch = useDispatch()
     const allRestaurants = useSelector((state) => Object.values(state.restaurants))
+    const totalRestos = useSelector((state) => state.totalRestos.count)
     const restaurants = useSelector((state) => Object.values(state.nearestRestos))
-    const [pages, setPages] = useState(new Array(Math.round(allRestaurants.length % 5)).fill('1'))
+    const [pages, setPages] = useState(new Array(Math.round(totalRestos? totalRestos : 0 % 5)).fill('1'))
     const [page, setPage] = useState(0)
 
     const fetchRestPage = (idx) =>{
@@ -19,10 +21,11 @@ const NearestRestos = () =>{
     useEffect(()=>{
         async function inner(){
             if (allRestaurants.length == 0) {
-                const data = await dispatch(getAllRestaurants())
-                const arr = new Array(Math.round(data.Restaurants.length % 5)).fill('1')
-                setPages(arr)
+                await dispatch(getAllRestaurants())
             }
+            const total = await dispatch(getTotalRestaurants())
+            const arr = new Array(Math.round(total.count % 5)).fill('1')
+            setPages(arr)
             dispatch(getAllRestaurantsLimited(page))
         }
         inner()

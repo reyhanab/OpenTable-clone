@@ -36,14 +36,21 @@ const RestaurantPage = () =>{
         async function inner(){
             const data = await dispatch(getAllRestaurants())
             await dispatch(loadAllReservations(Object.keys(data.Restaurants)))
+            await dispatch(getRestDetails(restaurantId))
+            await dispatch(loadReviews(restaurantId))
+            await dispatch(loadImages(restaurantId))
         }
-        if(!restaurant) inner()
+        if(!restaurant) {
+            (async() =>{
+            await dispatch(getRestDetails(restaurantId))
+            await dispatch(loadReviews(restaurantId))
+            await dispatch(loadImages(restaurantId))
+        })()
+        }
         else {
-            // dispatch(getRestDetails(restaurant?.id))
-            dispatch(loadReviews(restaurant?.id))
-            dispatch(loadImages(restaurant?.id))
+            inner()
         }
-    },[dispatch, restaurant?.id])
+    },[dispatch, restaurantId])
 
 
     const handleShowMore = () =>{

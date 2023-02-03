@@ -15,7 +15,6 @@ const ReviewOptionsModal = ({review, onClose})=>{
     const handleDelete = async (e)=>{
         e.preventDefault()
         await dispatch(deleteReviewThunk(review?.id))
-        console.log(restaurant)
         dispatch(getRestDetails(restaurant?.id))
         onClose()
     }
