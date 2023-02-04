@@ -19,7 +19,7 @@ const FindTableBar = (
 	const [currentDate, setCurrentDate] = useState(new Date())
 	let month = currentDate.getMonth() +1
 	if (month<10) month = `0${month}`
-	const day = currentDate.getDate()
+	const day = currentDate.getUTCDate()
 	const year = currentDate.getFullYear()
 
 	let arr = dateInput.split(' ')
@@ -38,7 +38,10 @@ const FindTableBar = (
 		"Dec",
 	]
 
-	const dateValue = `${arr[2]}-${months.indexOf(arr[0]) + 1 < 10 ? `0${months.indexOf(arr[0]) + 1}` : months.indexOf(arr[0]) + 1}-${arr[1].length < 3 ? `0${arr[1][0]}` : arr[1].slice(0,2) }`
+	const dateValue = `${arr[2]}-${months.indexOf(arr[0]) + 1 < 10 ?
+		 `0${months.indexOf(arr[0]) + 1}` :
+		  months.indexOf(arr[0]) + 1}-${arr[1].length < 3 ?
+		 `0${arr[1][0]}` : arr[1].slice(0,2) }`
 
 
 

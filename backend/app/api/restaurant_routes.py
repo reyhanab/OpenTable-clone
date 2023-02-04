@@ -24,7 +24,6 @@ def load_number_of_restaurants():
 
     # restaurants_count = Restaurant.query(func.count(distinct(Restaurant.name))).all()
     restaurants_count = db.session.query(Restaurant).distinct(Restaurant.name).count()
-    print("********************", restaurants_count)
     return {"count":restaurants_count}
 
 
@@ -134,7 +133,6 @@ def add_reservation(restaurant_id):
                                                     Reservation.date == date,
                                                     Reservation.time == start_hour).first()
 
-    print("user_has_reservations", user_has_reservations)
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
 

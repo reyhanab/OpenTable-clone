@@ -15,6 +15,7 @@ const Profile = () =>{
     const [profilePicture, setProfilePicture] = useState(null)
     const [imageLoading, setImageLoading] = useState(false)
     const [errors, setErrors] = useState([])
+    const is_demo = user?.email == "demo@aa.io"
 
     const onSubmit = async (e) =>{
         e.preventDefault();
@@ -59,6 +60,7 @@ const Profile = () =>{
                         placeholder:text-gray-500 hover:border-1 hover:border-black"
                     value={firstName}
                     onChange={e => setFirstName(e.target.value)}
+                    disabled = {is_demo}
                     >
                 </input>
             </div>
@@ -69,6 +71,7 @@ const Profile = () =>{
                         placeholder:text-gray-500 hover:border-1 hover:border-black"
                     value={lastName}
                     onChange={e => setLastName(e.target.value)}
+                    disabled = {is_demo}
                     >
                 </input>
             </div>
@@ -79,6 +82,7 @@ const Profile = () =>{
                         placeholder:text-gray-500 hover:border-1 hover:border-black"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
+                    disabled = {is_demo}
                     >
                 </input>
             </div>
@@ -89,6 +93,7 @@ const Profile = () =>{
                         placeholder:text-gray-500 hover:border-1 hover:border-black"
                     value={phoneNumber}
                     onChange={e => setPhoneNumber(e.target.value)}
+                    disabled = {is_demo}
                     >
                 </input>
             </div>
@@ -99,6 +104,7 @@ const Profile = () =>{
                         placeholder:text-gray-500 hover:border-1 hover:border-black"
                     value={city}
                     onChange={e => setCity(e.target.value)}
+                    disabled = {is_demo}
                     >
                 </input>
             </div>
@@ -109,6 +115,7 @@ const Profile = () =>{
                         placeholder:text-gray-500 hover:border-1 hover:border-black"
                     value={address}
                     onChange={e => setAddress(e.target.value)}
+                    disabled = {is_demo}
                     >
                 </input>
             </div>
@@ -153,6 +160,7 @@ const Profile = () =>{
                     </div>
                 )
             }
+            {is_demo && <div className="text-red-500"> Demo User's information cannot be changed!</div>}
             </div>
         </form>
     )
