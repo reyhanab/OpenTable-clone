@@ -56,10 +56,10 @@ const Profile = () =>{
             <div>
                 <p>First name</p>
                 <input
-                data-bs-toggle="tooltip" title="Editing first name is not allowed!"
+                data-bs-toggle={is_demo?"tooltip":""} title={is_demo?"Editing first name is not allowed!":""}
                     className="w-full h-12 border border-gray-300 rounded-md pl-3 mt-3
                         placeholder:text-gray-500 hover:border-1 hover:border-black
-                        text-red-600 hover:text-red-700 ease-in-out"
+                        disabled:text-red-600 ease-in-out"
                     value={firstName}
                     onChange={e => setFirstName(e.target.value)}
                     disabled = {is_demo}
@@ -69,10 +69,10 @@ const Profile = () =>{
             <div>
                 <p>Last name</p>
                 <input
-                    data-bs-toggle="tooltip" title="Editing last name is not allowed!"
+                    data-bs-toggle={is_demo?"tooltip":""} title={is_demo?"Editing last name is not allowed!":""}
                     className="w-full h-12 border border-gray-300 rounded-md pl-3 mt-3
                         placeholder:text-gray-500 hover:border-1 hover:border-black
-                        text-red-600 hover:text-red-700 ease-in-out"
+                        disabled:text-red-600 ease-in-out"
                     value={lastName}
                     onChange={e => setLastName(e.target.value)}
                     disabled = {is_demo}
@@ -82,10 +82,10 @@ const Profile = () =>{
             <div>
                 <p>Email </p>
                 <input
-                    data-bs-toggle="tooltip" title="Editing email is not allowed!"
+                    data-bs-toggle={is_demo?"tooltip":""} title={is_demo?"Editing email is not allowed!":""}
                     className="w-full h-12 border border-gray-300 rounded-md pl-3 mt-3
                         placeholder:text-gray-500 hover:border-1 hover:border-black
-                        text-red-600 hover:text-red-700 ease-in-out"
+                        disabled:text-red-600 ease-in-out"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     disabled = {is_demo}
@@ -147,7 +147,6 @@ const Profile = () =>{
 
             </div>
             <button
-
                     type="submit"
                     className="w-full h-12 bg-red-500 text-white rounded-md"
                     >
@@ -164,7 +163,6 @@ const Profile = () =>{
                     </div>
                 )
             }
-            {/* {is_demo && <div className="text-red-500"> Demo User's information cannot be changed!</div>} */}
             </div>
         </form>
     )
