@@ -1,5 +1,5 @@
 
-const getDate = (date, type=false) => {
+const getDate = (date, type=false, ) => {
 
     // newDate = new Date(newDate.getTime() + newDate.getTimezoneOffset() * 60000)
     if (!String(date).includes('-')){

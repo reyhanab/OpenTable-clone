@@ -8,15 +8,19 @@ const loadAllRestaurant = (restaurants) => ({
 
 
 export const getAllRestaurantsLimited = (page) => async (dispatch) =>{
+    try{
+        const ipData = await fetch("https://geolocation-db.com/json/")
+        const ipJson = await ipData.json()
+        const ip = ipJson["IPv4"]
+        const response = await fetch(`/api/restaurants/page?page=${page}&ip=${ip}`);
+        const data = await response.json();
+        dispatch(loadAllRestaurant(data.Restaurants));
+        return data;
 
-    const ipData = await fetch("https://geolocation-db.com/json/")
-    const ipJson = await ipData.json()
-    const ip = ipJson["IPv4"]
-    const response = await fetch(`/api/restaurants/page?page=${page}&ip=${ip}`);
-    const data = await response.json();
+    }catch{
+        alert("Please disable your ad block!")
+    }
 
-    dispatch(loadAllRestaurant(data.Restaurants));
-    return data;
 }
 
 const nearestRestaurantsReducer = (state = {}, action) => {

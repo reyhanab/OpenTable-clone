@@ -218,10 +218,7 @@
 
 // export default GetTime;
 
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { loadReservations } from "../../store/reservations";
-
+import { useSelector } from "react-redux";
 
 const GetTime = ({restaurant, date = new Date(), time = new Date(), resPage = false}) =>{
 

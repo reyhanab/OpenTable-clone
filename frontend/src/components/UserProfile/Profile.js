@@ -133,7 +133,7 @@ const Profile = () =>{
 
                 </input>
                 {
-                user.profile_picture && (
+                user?.profile_picture && (
                 <img
                 className='w-8 h-8 border rounded-full'
                 src={user?.profile_picture}
