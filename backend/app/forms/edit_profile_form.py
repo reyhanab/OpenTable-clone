@@ -26,7 +26,8 @@ class EditProfileForm(FlaskForm):
                             ])
     email = StringField('email', validators=[optional, Email(), email_exists])
     phone_number = StringField('phone_number', validators=[Optional(),
-                        Length(min=10, message="invalid phone number")])
+                        Length(min=10, message="invalid phone number")
+                        ])
     city = StringField('city', validators=[optional])
     address = StringField('address', validators=[optional])
     profile_picture = FieldList(FormField('profile_picture'), validators=[optional])

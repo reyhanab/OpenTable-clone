@@ -21,7 +21,7 @@ const HomePage = ()=> {
 
 
     return (
-        <div className="w-full max-w-screen-2xl m-auto bg-white h-[93vh] font-outfit">
+        <div className="w-full max-w-screen-2xl m-auto bg-white h-100% font-outfit">
             <div className="flex flex-col items-center justify-center h-60
                          text-white bg-gradient-to-r from-gdblue to-glblue">
                 <h1 className="font-semibold text-5xl"
@@ -36,8 +36,7 @@ const HomePage = ()=> {
                 </div>
 
             </div>
-            <div className="max-w-7xl mx-auto mt-10"
-            >
+            <div className="max-w-7xl mx-auto mt-10 pb-24">
                 <div className="flex pb-4 border-b items-center">
                     <p className="font-medium text-2xl"
                     >Available for dinner now</p>

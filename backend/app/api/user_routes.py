@@ -4,6 +4,7 @@ from app.models import User, Saved, db
 from app.forms import EditProfileForm
 from .auth_routes import validation_errors_to_error_messages
 from ..aws_helper import allow_file, get_unique_filename, upload_file_to_s3
+import psycopg2
 
 user_routes = Blueprint('users', __name__)
 
@@ -75,18 +76,19 @@ def edit_user_profile():
     else:
         url = current_user.profile_picture
 
-
-    if form.validate_on_submit():
-        for key, val in form.data.items():
-            if val != "undefined":
-                setattr(current_user, key, val)
-            else:
-                setattr(current_user, key, None)
-        if url:
-            current_user.profile_picture = url
-
-        db.session.commit()
-        return current_user.to_dict()
-
-    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+        if form.validate_on_submit():
+                for key, val in form.data.items():
+                    if val != "undefined":
+                        setattr(current_user, key, val)
+                    else:
+                        setattr(current_user, key, None)
+                if url:
+                    current_user.profile_picture = url
+                try:
+                    db.session.commit()
+                    return current_user.to_dict()
+                except:
+                    print("************* entering catch")
+                    return {'errors': validation_errors_to_error_messages({"error":["Invalid phone number!"]})}, 401
+        return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
