@@ -7,7 +7,7 @@ import getTimeNav, { allTimes } from "../Utills/GetTimeNavbar";
 import PartySize from "../Utills/PartySize";
 
 const FindTableBar = (
-	{type, setPayload, date = new Date(), time = getTimeNav(), people="2 people"}
+	{type, setPayload, date = Date.now(), time = getTimeNav(), people="2 people"}
 	) => {
 
 	const times = allTimes()
@@ -19,7 +19,7 @@ const FindTableBar = (
 	const [currentDate, setCurrentDate] = useState(new Date())
 	let month = currentDate.getMonth() +1
 	if (month<10) month = `0${month}`
-	const day = currentDate.getUTCDate()
+	const day = currentDate.getDate()
 	const year = currentDate.getFullYear()
 
 	let arr = dateInput.split(' ')
