@@ -19,7 +19,8 @@ const Reservation = ({reservationRef, restaurant}) =>{
     let currentDate = new Date()
     let month = currentDate.getMonth() +1
     if (month<10) month = `0${month}`
-	const day = currentDate.getDate()
+	let day = currentDate.getDate()
+	if (day<10) day = `0${day}`
 	const year = currentDate.getFullYear()
 	currentDate = `${year}-${month}-${day}`
 
