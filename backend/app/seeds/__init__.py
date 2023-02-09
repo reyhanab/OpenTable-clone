@@ -37,7 +37,7 @@ def seed():
     seed_reservations()
     seed_menu_items()
     seed_menus()
-    seed_reviews()
+    # seed_reviews()
     # seed_images()
     seed_saved()
     # Add other seed functions here
@@ -48,7 +48,7 @@ def seed():
 def undo():
     undo_saved()
     # undo_images()
-    undo_reviews()
+    # undo_reviews()
     undo_menus()
     undo_menu_items()
     undo_reservations()

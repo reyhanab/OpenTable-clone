@@ -21,8 +21,8 @@ const UserReservations = () =>{
 
     useEffect(()=> {
         async function inner(){
-            const data = await dispatch(getAllRestaurants())
-            dispatch(loadAllReservations(Object.keys(data.Restaurants)))
+          const data = await dispatch(getAllRestaurants())
+          dispatch(loadAllReservations(Object.keys(data.Restaurants)))
         }
         inner()
     },[dispatch])
