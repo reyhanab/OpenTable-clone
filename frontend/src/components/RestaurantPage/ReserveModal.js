@@ -56,7 +56,7 @@ const ReserveModal = ({restaurant, date, time, people, onClose, type = "create",
                     people={people}
                     type={type}
                     setPayload={setPayload}
-                    status={false}
+                    status={type == "create"? false: true}
                     />
                 </div>
                 <button
