@@ -3,7 +3,7 @@ from app.models import Restaurant, Menu, Review, Reservation,Image, db
 from flask_login import current_user, login_required
 from app.forms import ReviewForm, ReservationForm
 import datetime
-from sqlalchemy import func, distinct
+from sqlalchemy import func, distinct, desc
 from .auth_routes import validation_errors_to_error_messages
 import requests
 import os
@@ -14,7 +14,7 @@ restaurant_routes = Blueprint('restaurants', __name__)
 @restaurant_routes.route('/', methods=['GET'])
 def load_restaurants():
 
-    restaurants = Restaurant.query.distinct(Restaurant.name).all()
+    restaurants = Restaurant.query.distinct(Restaurant.name, Restaurant.id).order_by(desc(Restaurant.id)).all()
     return {"Restaurants":[restaurant.to_dict()
                            for restaurant in restaurants]}
 
