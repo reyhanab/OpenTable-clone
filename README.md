@@ -1,6 +1,6 @@
 # OpenTable clone
 
-This is the starter for the OpenTable clone project.
+This is the starter for the OpenTable clone project. [Live](https://yourtable.onrender.com/)
 
 ## Description
 
