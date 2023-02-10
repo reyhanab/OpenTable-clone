@@ -42,7 +42,8 @@ def edit_reservation(reservation_id):
                                                 Reservation.user_id == current_user.id,
                                                 Reservation.id != reservation.id,
                                                 Reservation.date == date,
-                                                Reservation.time == start_hour).first()
+                                                Reservation.time <= end_hour,
+                                                Reservation.time >= start_hour).first()
 
 
     restaurant = Restaurant.query.get_or_404(reservation.restaurant_id)

@@ -131,7 +131,9 @@ def add_reservation(restaurant_id):
     user_has_reservation_same_time = Reservation.query.filter(
                                                     Reservation.user_id == current_user.id,
                                                     Reservation.date == date,
-                                                    Reservation.time == start_hour).first()
+                                                    Reservation.time <= end_hour,
+                                                    Reservation.time >= start_hour).first()
+
 
     if (reserved is None or len(reserved) == 0) and count <= restaurant.capacity : valid_reserveation = True
     else: valid_reserveation = count + reserved[1] <= restaurant.capacity
