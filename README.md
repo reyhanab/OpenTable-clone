@@ -2,7 +2,7 @@
 
 ## Description
 
-A clone of OpenTable. OpenTable is an online restaurant reservation service company.[Live Link](https://yourtable.onrender.com/)
+A clone of OpenTable. OpenTable is an online restaurant reservation service company. [Live Link](https://yourtable.onrender.com/)
 
 ## About the project
 
