@@ -1,10 +1,8 @@
 # OpenTable clone
 
-This is the starter for the OpenTable clone project. [Live Link](https://yourtable.onrender.com/)
-
 ## Description
 
-A clone of OpenTable. OpenTable is an online restaurant reservation service company.
+A clone of OpenTable. OpenTable is an online restaurant reservation service company.[Live Link](https://yourtable.onrender.com/)
 
 ## About the project
 
