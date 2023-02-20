@@ -1,10 +1,8 @@
 # OpenTable clone
 
-This is the starter for the OpenTable clone project.
-
 ## Description
 
-A clone of OpenTable. OpenTable is an online restaurant reservation service company.
+A clone of OpenTable. OpenTable is an online restaurant reservation service company. [Live Link](https://yourtable.onrender.com/)
 
 ## About the project
 
@@ -78,12 +76,7 @@ You will need to run `npm install` to install all your dependencies before start
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url-daniel]: https://www.linkedin.com/in/daniel-kachun-wong/
-[linkedin-url-reyhaneh]:https://www.linkedin.com/in/reyhaneh-abdollahi-408895110/
-[linkedin-url-stanley]:https://www.linkedin.com/in/stanley-ou/
 [product-screenshot]: https://user-images.githubusercontent.com/90014250/193957812-22cd83df-f0b3-4479-b593-129798382a1d.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
