@@ -101,7 +101,7 @@ const FindTableBar = (
 							</svg>
 						</span>
 						{dateInput}
-						<Svg />
+						{type != "create" && <Svg />}
 					</div>
 				</div>
 				<div className="inline-flex items-center justify-end h-10 w-40 cursor-pointer relative">
@@ -123,7 +123,7 @@ const FindTableBar = (
 							8.13400675 5,12 C5,15.8659932 8.13400675,19 12,19 Z" fill="#2D333F"></path></g></svg>
 						</span>
 						{timeInput}
-						<Svg />
+						{type != "create" && <Svg />}
 					</div>
 					<select
 						className="w-[100%] h-[100%] absolute opacity-0"
