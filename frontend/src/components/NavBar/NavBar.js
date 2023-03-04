@@ -35,7 +35,7 @@ const NavBar = ({dropDown, setDropDown}) => {
           <img className=' w-12 h-9'
           src='https://www.pngkey.com/png/full/157-1573002_stacked-lockup-open-table-logo-png.png'/>
           <p className='font-extrabold text-xl font-sans'
-          >OpenTable</p>
+          >YourTable</p>
         </NavLink>
 
         {/* <div
