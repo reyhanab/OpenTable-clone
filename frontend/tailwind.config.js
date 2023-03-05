@@ -21,7 +21,8 @@ module.exports = {
         'signup_blue': '#257f9f',
         'black':'#2d333f',
         'name_blue':'#247F9E',
-        'star_yellow':"#FDAF08"
+        'star_yellow':"#FDAF08",
+        'footer_blue':'#2D333F'
       }
     }
   },
