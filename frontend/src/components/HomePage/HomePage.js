@@ -5,6 +5,7 @@ import FindTableBar from "./FindTableBar";
 import RestaurantPreview from "./RestaurantPreview";
 import { loadAllReservations } from "../../store/reservations";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const HomePage = ()=> {
 
@@ -62,8 +63,10 @@ const HomePage = ()=> {
                     })
                     }
                 </div>
-                <div></div>
             </div>
+                <div className="bg-footer_blue text-white px-[200px] py-[40px]">
+                    <Footer />
+                </div>
         </div>
     )
 }
