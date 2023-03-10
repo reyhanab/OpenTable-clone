@@ -22,7 +22,8 @@ module.exports = {
         'black':'#2d333f',
         'name_blue':'#247F9E',
         'star_yellow':"#FDAF08",
-        'footer_blue':'#2D333F'
+        'footer_blue':'#2D333F',
+        'icons':'#b2b2b2'
       }
     }
   },
