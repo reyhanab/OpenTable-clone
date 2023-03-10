@@ -1,7 +1,7 @@
 
 const Footer = () =>{
     return (
-        <div className="flex space-x-64">
+        <div className="flex justify-between text-lg">
             <div>
                 <p>
                     Contact Me
@@ -32,32 +32,23 @@ const Footer = () =>{
                 </ul>
             </div>
             <div>
-            <i class="fa fa-copyright" aria-hidden="true"></i><span className="pl-4">RA</span>
-            <div>
-                <p className="pt-5">
-                    Technology used in this project
-                </p>
-                <div className="flex flex-wrap justify-between">
+                <i class="fa fa-copyright" aria-hidden="true"></i><span className="pl-4">RA</span>
+                <div>
+                    <p className="pt-5 pb-5">
+                        Technology used in this project
+                    </p>
+                    <div className="flex flex-wrap justify-between">
+                        <i class="fa-brands fa-square-js"></i>
+                        <i class="fa-brands fa-python"></i>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3-alt"></i>
 
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-react-original-wordmark colored"></i>
-                    <i class="devicon-redux-plain colored"></i>
-                    <i class="devicon-python-plain-wordmark colored"></i>
-                    <i class="devicon-postgresql-plain-wordmark colored"></i>
-                    <i class="devicon-sequelize-plain-wordmark" style="color: rgb(72, 74, 76);"></i>
-                    <i class="devicon-express-original-wordmark" style="color: rgb(72, 74, 76);"></i>
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <i class="devicon-amazonwebservices-original" style="color: rgb(72, 74, 76);"></i>
-                    <i class="devicon-sqlalchemy-plain" style="color: rgb(72, 74, 76);"></i>
-                    <i class="devicon-flask-original-wordmark" style="color: rgb(72, 74, 76);"></i>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-heroku-plain-wordmark colored"></i>
-                    <i class="devicon-git-plain-wordmark colored"></i>
-                    <i class="devicon-docker-plain-wordmark colored"></i>
 
+
+
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
